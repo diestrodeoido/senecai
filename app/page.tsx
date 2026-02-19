@@ -132,7 +132,7 @@ export default function SenecAI() {
     document.head.appendChild(link);
   }, []);
 
-  const t = textos[idioma];
+  const t = textos[idioma as keyof typeof textos];
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
