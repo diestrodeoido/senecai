@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 export default function SenecAI() {
-  const [idioma, setIdioma] = useState('es');
+  const [idioma, setIdioma] = useState<'es' | 'en'>('es');
   const [seccionActiva, setSeccionActiva] = useState('home');
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [piezaSeleccionada, setPiezaSeleccionada] = useState<PiezaSeleccionada>(null);
