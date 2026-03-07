@@ -1,5 +1,10 @@
 'use client';
 
+type PiezaSeleccionada = {
+  tipo: 'carta' | 'email';
+  pieza: any;
+} | null;
+
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -7,7 +12,7 @@ export default function SenecAI() {
   const [idioma, setIdioma] = useState('es');
   const [seccionActiva, setSeccionActiva] = useState('home');
   const [menuAbierto, setMenuAbierto] = useState(false);
-  const [piezaSeleccionada, setPiezaSeleccionada] = useState(null);
+  const [piezaSeleccionada, setPiezaSeleccionada] = useState<PiezaSeleccionada>(null);
 
   React.useEffect(() => {
     const link = document.createElement('link');
