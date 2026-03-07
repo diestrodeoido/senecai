@@ -400,7 +400,7 @@ They say that he who has no enemies does not deserve to have friends. You must h
     }
   };
 
-  const t = textos[idioma];
+  const t = textos[idioma as keyof typeof textos];
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
