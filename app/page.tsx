@@ -219,6 +219,65 @@ I ask myself then, Seneca: do we really all need those true friends—"one soul 
 
 Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`
         }
+      },
+      {
+        id: 4,
+        titulo: { es: "Sobre el miedo a la muerte", en: "On the Fear of Death" },
+        fecha: "15 de abril de 2024",
+        contenido: {
+          es: `Hace unos cinco años, cuando mi esposa estaba embarazada de mi segunda hija, viví un episodio en el que estuve cerca a la muerte. Recién en ese momento entendí que desde que nací estoy siendo conducido a la muerte, como me explicabas en tu carta, mi querido Séneca.
+
+Intentábamos con unos amigos ingresar por una playa con olas grandes para iniciar una travesía de varios kilómetros de nado. La distancia no era problema alguno, por cuanto ya había nadado similares y además estaba bien entrenado — pero las olas que impedían el ingreso, sí que eran de temer.
+
+Si de mi solamente hubiera dependido, no habría intentado atravesar esas olas, pero mis dos amigos ya las habían cruzado y un tablista que parecía dominarlas me animó a seguir. Me aventuré entonces, pero luego de atravesar algunas cuantas vino el momento que temía: una de las grandes olas reventó antes de que la pudiera cruzar, empujándome hacia el fondo del mar.
+
+Recuerdo haber visualizado varios momentos de mi vida en segundos, a la vez que me desesperaba por no tener aire suficiente para salir a flote. Pude salir finalmente, respirar profundo, sentir un éxtasis enorme por seguir vivo e iniciar la travesía, sabiendo que me podría haber muerto — aunque no queriendo aceptarlo por completo.
+
+Hasta antes de esto no recuerdo haber tenido miedo real a la muerte, al menos de la mía. El único contacto que había tenido con ella era cuando alguien cercano se moría, siendo la experiencia de ver morir a mi padre, sin duda la más fuerte.
+
+Recuerdo haber llorado delante de él semanas antes, sabiendo que si no hacíamos algo radical por su salud, lo íbamos a perder. Esta yo allí explicándole sobre un tratamiento alternativo para salvar sus riñones cuando entendí que ya nos quedaba poco tiempo con él, y me quebré.
+
+Los días siguientes vi cómo mi padre se iba apagando lentamente, no sólo en fortaleza física sino en sus ganas de vivir. Tan evidente era para mí, que el día que tuvimos que llevarlo a la clínica por una alerta con sus signos vitales, yo sabía que ese día probablemente sería su último, al punto que quise yo quedarme con él para acompañarlo en la noche, durante sus últimas horas.
+
+Mi padre también tenía miedo a la muerte, pero el sufrimiento por su enfermedad era tan duro que estoy seguro que él ya no quería seguir viviendo y por lo tanto eligió dejarse llevar.
+
+Creo que tuve mucho miedo a la muerte cuando casi me ahogo porque todavía no conocía a mi segunda hija, porque habría dejado sin padre a mi primera hija y por dejar sola a mi esposa estando recién casados, en ese mismo orden. No recuerdo haber tenido miedo por mí — aunque reconozco que la idea de ahogarme me aterraba. El miedo era por ellas.  Si hoy algo temo respecto a la muerte, estoy logrando no pensar en mí, pero inevitablemente pienso en todos aquellos en los que algún efecto podría tener que yo no esté.
+
+Desde entonces no he vivido algo similar, pero estoy preparándome para enfrentar estos miedos, sin duda gracias al estoicismo. He llegado a entender, al menos, no sólo que estoy muriendo todos los días, sino que mi vida se puede terminar en cualquier momento. Y no pudiendo hacer nada al respecto, he decidido aprovechar al máximo el tiempo que por aquí me queda.
+
+Justo hace poco que asistí a la celebración de los cincuenta años de un amigo y se me pidió dar unas palabras, insistí en recordar que era ese preciso instante lo único que tenemos — no importa si es cumplir una década, un año, un día, o en realidad, solamente un segundo más de vida.
+
+Me quedo, Séneca, con la imagen del agua del río, que simplemente fluye con el canal que la naturaleza le ha cedido, y aunque piedras y escombros se cruzarán en el camino, sólo tiene permitido fluir entre ellos y llegar al mismo destino que todos.
+
+No sólo de agua estamos hechos, sino que agua somos en este hermoso río que es la vida y que sin duda tiene un destino final en el que simplemente —felizmente prefiero decir — pasaremos a ser parte del todo.`,
+          en: `About five years ago, when my wife was pregnant with our second daughter, I lived through an episode where I came close to death. Only then did I understand what you were telling me in your letter, my dear Seneca—that from the moment I was born, I have been led toward death.
+
+We were trying with some friends to enter through a beach with large waves to begin a journey of several kilometers of swimming. The distance was not a problem, as I had already swum similar distances and was well trained—but the waves that prevented entry were indeed fearsome.
+
+If it had depended only on me, I would not have attempted to cross those waves, but my two friends had already crossed them and a surfer who seemed to master them encouraged me to follow. I ventured then, but after crossing several came the moment I feared: one of the large waves broke before I could cross it, pushing me toward the ocean floor.
+
+I remember visualizing several moments of my life in seconds, while I desperately needed air to resurface. I was finally able to get out, breathe deeply, feel an enormous ecstasy at being alive and beginning the journey, knowing I could have died—though not wanting to fully accept it.
+
+Until before this I do not remember having real fear of death, at least of my own. The only contact I had had with it was when someone close to me died, the experience of watching my father die being, without question, the most powerful.
+
+I remember having cried before him weeks earlier, knowing that if we did not do something radical for his health, we would lose him. I was there explaining to him about an alternative treatment to save his kidneys when I understood that we had little time left with him, and I broke down.
+
+The days that followed I watched my father slowly fade away, not only in physical strength but in his will to live. It was so evident to me that the day we had to take him to the clinic because of an alert with his vital signs, I knew that day would probably be his last. I wanted to stay with him to keep him company through that night, during his final hours.
+
+My father was also afraid of death, but the suffering from his illness was so harsh that I am certain he no longer wanted to go on living and therefore chose to let himself go.
+
+I believe I had much fear of death when I nearly drowned because I still had not met my second daughter, because I would have left my first daughter without a father, and because I would have left my wife alone after we had barely begun our marriage—in that very order. I do not remember having fear for myself—though I recognize that the idea of drowning terrified me. The fear was for them.
+
+If there is anything I fear about death today, I am managing not to think about myself, but I inevitably think of all those who would be affected by my not being here.
+
+Since then I have not lived through anything similar, but I am preparing myself to face these fears, undoubtedly thanks to Stoicism. I have come to understand, at least, not only that I am dying every day, but that my life can end at any moment. And since I can do nothing about it, I have decided to make the most of the time I have left here.
+
+Just recently I attended the celebration of a friend's fiftieth birthday and was asked to say a few words. I insisted on reminding everyone that this precise moment was the only thing we have—whether it is completing a decade, a year, a day, or truly just one more second of life.
+
+I remain, Seneca, with the image of the water of the river, which simply flows with the channel that nature has given it, and though stones and debris will cross its path, it is only permitted to flow among them and reach the same destination as all things.
+
+We are not only made of water, but we are water in this beautiful river that is life, and which undoubtedly has a final destination where we will simply—happily I prefer to say—become part of the whole.`
+        }
       }
     ],
     emails: [
@@ -360,6 +419,51 @@ Friendship can then concentrate on coincidences to accept differences, but it ca
 
 They say that he who has no enemies does not deserve to have friends. You must have some enemies out there, Lucilius, even if they have not been introduced to you yet. In any case, for you they will be at most acquaintances, because to have your friendship is truly something exclusive, worthy of yourself, of extraterrestrials, and of the one or two earthlings who, like me, esteem you too much.`
         }
+      },
+      {
+        id: 4,
+        titulo: { es: "Sobre el miedo a la muerte", en: "On the Fear of Death" },
+        fecha: "16 de abril de 2024",
+        contenido: {
+          es: `Tengo tatuado en un brazo el memento mori, pero ahora quiero agregar —tal vez en el otro — el sine timore, porque no sólo tengo claro que, como todos, me voy a morir, sino que ya no le tengo miedo.
+
+Es razonable temer lo desconocido. De la muerte—específicamente de lo que ocurre realmente cuando viene—nadie ha podido contarnos. Pero observa bien Lucilio: no tememos a la muerte misma, sino a perder lo que sí tenemos y por lo tanto conocemos. Morir es perder tu vida actual, eso que valoras enormemente.
+
+Es otro el tipo de miedo que aparece cuando piensas en lo que podría pasar con aquellos que amas: tus hijos, tu esposa, aquellos que dependen de ti. Pero este miedo no te pertenece realmente—solo puede serles suyo. Lo natural es que te importe.
+
+Está bien temerle al dolor, a la tristeza, a la bancarrota o a algún asesino, porque aun sin haberlos enfrentado, seguro tienes una buena idea de lo que implican. Pero si tiene sentido temerle a lo conocido, ¿por qué temerle automáticamente a lo desconocido?
+
+Nada es más desconocido que la muerte, sobretodo en la actualidad. Las guerras ya no son tan frecuentes ni tan cercanas para muchos. Las más letales enfermedades tienen cura. Algunos aún conviven con la muerte diariamente, pero verla pasar no implica entenderla. No sólo nadie entiende el por qué o el para qué, sino mucho menos el qué es realmente la muerte. 
+
+La muerte no es solo desconocida, sino es un evento instantáneo. Cuando realmente ocurra, no podremos tener consciencia de ella — no solo porque no podríamos recordarla, sino porque no tenemos capacidad de concebir algo de duración infinitesimal.
+
+No tienes que conocer cuándo vas a morir, ni cómo, para saber que lo único que tienes es la vida, que podríamos definirla como aquello que existe entre el nacimiento y la defunción. Algunos parecen tener la suerte de la vida extensa, pero pocos tienen la verdadera dicha de gozar la vida en profundidad, sin preocuparse por la extensión.
+
+Si no puedes controlar cuánto vivirás ni cuándo acabará, claramente sólo te queda el cómo. Y la mejor imagen para entenderlo es la del agua de un río que fluye por su canal naturalmente, sin que le molesten las piedras ni los escombros,  destinada a reunirse en el gran mar en donde todo converge —de lo que por algún capricho nos desprendimos temporalmente.
+
+Deberías querer morirte, Lucilio, porque si te va a ocurrir —y vaya que sí—, quieres quererlo. No hay peor sufrimiento que el que ocurre innecesariamente ante algo inevitable. Y no sólo deberías querer morirte, sino que no encontrarás razón alguna para tenerle miedo. 
+
+Y por todo esto, hoy vas a tener el mejor día de tu vida, y si te es permitido, mañana también.`,
+          en: `I have tattooed on my arm the memento mori, but now I want to add—perhaps on the other—the sine timore, because not only am I clear that, like all, I will die, but I no longer fear it.
+
+It is reasonable to fear the unknown. Of death—specifically of what really happens when it comes—no one has been able to tell us. But observe well, Lucilius: we do not fear death itself, but losing what we do have and therefore know. To die is to lose your present life, that which you value enormously.
+
+It is another kind of fear that appears when you think about what could happen to those you love: your children, your spouse, those who depend on you. But this fear does not truly belong to you—it can only be theirs. What is natural is that it matters to you.
+
+It is good to fear pain, sadness, ruin, or some assassin, because even without having faced them, you surely have a good idea of what they entail. But if it makes sense to fear what is known, why fear automatically what is unknown?
+
+Nothing is more unknown than death, especially in our time. Wars are no longer so frequent or so near to many of us. The most lethal diseases have cures. Some still live with death daily, but seeing it pass does not mean understanding it. Not only does no one understand the why or the wherefore, but much less what death really is.
+
+Death is not only unknown, but it is an instantaneous event. When it really occurs, we will not be able to have consciousness of it—not only because we could not remember it, but because we do not have the capacity to conceive of something of infinitesimal duration.
+
+You do not need to know when you will die, nor how, to know that the only thing you have is life, which we might define as that which exists between birth and death. Some seem to have the fortune of a long life, but few have the true joy of enjoying life in depth, without worrying about its length.
+
+If you cannot control how long you will live or when it will end, clearly all that remains to you is the how. And the best image for understanding this is that of water flowing through a river's channel naturally, unbothered by stones or debris, destined to reunite in the great sea where everything converges—from which for some caprice we have temporarily separated ourselves.
+
+You should want to die, Lucilius, because if it will happen to you—and surely it will—you want to want it. There is no worse suffering than that which occurs unnecessarily before something inevitable. And not only should you want to die, but you will find no reason whatsoever to fear it.
+
+And because of all this, today you will have the best day of your life, and if it is permitted, tomorrow as well.`
+        }
       }
     ]
   };
@@ -371,10 +475,10 @@ They say that he who has no enemies does not deserve to have friends. You must h
         subtitulo: "Continuando la conversación con Séneca",
         introduccion: "Mientras escuchaba una clase sobre una de las Cartas de Séneca a Lucilio, me pregunté: ¿existirán esas cartas que enviaba Lucilio o todo era parte del arsenal literario de Séneca? Luego entendí que esto no importaba. Lo que importaba eran las enormes lecciones de vida que hay en estos textos. Sin embargo, no se me ocurrió mejor forma para aprender sobre esto que continuar la conversación con Séneca, porque todos somos Lucilio, pero también podemos ser de vez en cuando, Séneca.",
       },
-      nav: { cartas: "Cartas", emails: "Emails", buzon: "Buzón", about: "Sobre mí" },
-      sections: { cartas: "Cartas a Séneca", emails: "Emails a Lucilio", buzon: "Buzón de SénecAI" },
+      nav: { cartas: "Cartas", emails: "Emails", buzon: "Buzón", about: "Acerca de" },
+      sections: { cartas: "Cartas a Séneca", emails: "Emails a Lucilio", buzon: "Buzón de SénecAI", about: "Acerca de" },
       about: {
-        titulo: "Sobre Luis",
+        titulo: "---",
         contenido: "Filósofo sin academia, mente con cuerpo, emprendedor el resto del tiempo. Empecé escribiendo en mi blog Diestro de Oído, pero necesitaba un carril para avanzar derecho, y lo encontré en las cartas de Séneca que escribió para mi, pero también para ti.",
         parrafo2: "Como cuando se aprende a tocar música, SénecAI es mi cover personal sobre uno de los discos que marcaron mi vida."
       },
@@ -391,10 +495,10 @@ They say that he who has no enemies does not deserve to have friends. You must h
         introduccion: "While listening to a lecture on one of Seneca's Letters to Lucilius, I wondered: did Lucilius's letters even exist, or was it all part of Seneca's literary arsenal? Then I understood that it didn't matter. What did matter were the enormous life lessons in these texts. However, I found no better way to learn about this than to continue the conversation with Seneca, because we are all Lucilius, but we can also be a Seneca from time to time.",
       },
       nav: { cartas: "Letters", emails: "Emails", buzon: "Mailbox", about: "About me" },
-      sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox" },
+      sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox", about: "About Luis" },
       about: {
         titulo: "About Luis",
-        contenido: "Philosopher without academy, entrepreneur without ambitions, mind with body. I started writing on my blog Diestro de Oído, but I needed a path to move straight ahead, and I found it in Seneca's letters that he wrote for me, but also for you.",
+        contenido: "Philosopher without academy, mind with body, entrepreneur for the rest of the time. I started writing on my blog Diestro de Oído, but I needed a path to move straight ahead, and I found it in Seneca's letters that he wrote for me, but also for you.",
         parrafo2: "Just as when learning to play music, SenecAI is my personal cover of one of the records that marked my life."
       },
       buzon: {
