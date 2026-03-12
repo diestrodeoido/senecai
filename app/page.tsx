@@ -497,7 +497,7 @@ And because of all this, today you will have the best day of your life, and if i
       nav: { cartas: "Letters", emails: "Emails", buzon: "Mailbox", about: "About" },
       sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox", about: "About" },
       about: {
-        titulo: "About",
+        titulo: "___",
         contenido: "Philosopher without academy, mind with body, entrepreneur for the rest of the time. I started writing on my blog Diestro de Oído, but I needed a path to move straight ahead, and I found it in Seneca's letters that he wrote for me, but also for you.",
         parrafo2: "Just as when learning to play music, SenecAI is my personal cover of one of the records that marked my life."
       },
