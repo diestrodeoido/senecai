@@ -494,10 +494,10 @@ And because of all this, today you will have the best day of your life, and if i
         subtitulo: "Continuing the Conversation with Seneca",
         introduccion: "While listening to a lecture on one of Seneca's Letters to Lucilius, I wondered: did Lucilius's letters even exist, or was it all part of Seneca's literary arsenal? Then I understood that it didn't matter. What did matter were the enormous life lessons in these texts. However, I found no better way to learn about this than to continue the conversation with Seneca, because we are all Lucilius, but we can also be a Seneca from time to time.",
       },
-      nav: { cartas: "Letters", emails: "Emails", buzon: "Mailbox", about: "About me" },
-      sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox", about: "About Luis" },
+      nav: { cartas: "Letters", emails: "Emails", buzon: "Mailbox", about: "About" },
+      sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox", about: "About" },
       about: {
-        titulo: "About Luis",
+        titulo: "About",
         contenido: "Philosopher without academy, mind with body, entrepreneur for the rest of the time. I started writing on my blog Diestro de Oído, but I needed a path to move straight ahead, and I found it in Seneca's letters that he wrote for me, but also for you.",
         parrafo2: "Just as when learning to play music, SenecAI is my personal cover of one of the records that marked my life."
       },
