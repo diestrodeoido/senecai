@@ -392,7 +392,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-3xl font-bold">
-            <SENEC<span className="text-yellow-600">AI</span>>
+            <div>SENEC<span className="text-yellow-600">AI</span></div>
           </h1>
 
           <nav className="flex items-center gap-8">
