@@ -1,364 +1,37 @@
-'use client';
-
-import { useState } from 'react';
-import { ChevronDown, Send, Loader } from 'lucide-react';
-
-type Idioma = 'es' | 'en';
-type Seccion = 'home' | 'cartas' | 'emails' | 'buzon' | 'about';
-
-interface PiezaSeleccionada {
-  tipo: 'carta' | 'email';
-  indice: number;
-}
-
-const textos = {
-  es: {
-    sections: { cartas: "Cartas a Séneca", emails: "Emails a Lucilio", buzon: "Buzón de SénecAI" },
-    home: {
-      titulo: "SenecAI",
-      subtitulo: "Cartas filosóficas en diálogo con Séneca",
-      descripcion: "Un proyecto de reflexión personal y divulgación que recupera la tradición de las cartas filosóficas para explorar cómo la sabiduría estoica ilumina nuestras vidas contemporáneas."
-    },
-    about: {
-      titulo: "---",
-      bio: "Filósofo sin academia, mente con cuerpo, emprendedor el resto del tiempo.",
-    },
-    buzon: {
-      titulo: "Buzón de SénecAI",
-      descripcion: "Escribe tu pregunta o comparte una situación que te preocupa. Séneca te responderá con la sabiduría de sus cartas.",
-      placeholder: "¿Qué te inquieta? ¿Qué pregunta llevas contigo?",
-      enviar: "Enviar pregunta",
-      esperando: "Séneca está reflexionando...",
-      respuestaDe: "Respuesta de Séneca:",
-    }
-  },
-  en: {
-    sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "SenecAI Mailbox" },
-    home: {
-      titulo: "SenecAI",
-      subtitulo: "Philosophical letters in dialogue with Seneca",
-      descripcion: "A project of personal reflection and outreach that recovers the tradition of philosophical letters to explore how Stoic wisdom illuminates our contemporary lives."
-    },
-    about: {
-      titulo: "---",
-      bio: "Philosopher without academy, mind with body, entrepreneur for the rest of the time.",
-    },
-    buzon: {
-      titulo: "SenecAI Mailbox",
-      descripcion: "Write your question or share a situation that concerns you. Seneca will respond with the wisdom of his letters.",
-      placeholder: "What troubles you? What question do you carry with you?",
-      enviar: "Send question",
-      esperando: "Seneca is reflecting...",
-      respuestaDe: "Seneca's response:",
-    }
-  }
-};
-
-const cartasData = {
-  es: [
-    {
-      numero: 1,
-      titulo: "Sobre el valor del tiempo",
-      contenido: `Mi querido Séneca,
-
-Tu carta sobre el tiempo me ha golpeado como pocas cosas lo hacen. "Unos tiempos se nos arrebatan, otros se nos sustraen y otros se nos escapan." Leí estas líneas en una mañana cualquiera, mientras comprobaba mi correo por enésima vez, sabiendo que debería estar escribiendo.
-
-He reconocido en mí esa negligencia de la que hablas. No es que me roben el tiempo—es que lo entrego voluntariamente a cosas que importan poco. Las horas se deslizan entre notificaciones, entre conversaciones intrascendentes, entre la ilusión de estar ocupado. Y lo más arduo de aceptar es que yo soy el culpable.
-
-Lo que tu sabiduría me muestra es que no se trata solo de "administrar" el tiempo, sino de elegir qué merece poseer mis horas. Cuando finalmente decidí apartar el teléfono y sentarme a escribir, descubrí algo: el tiempo no era escaso. Siempre estuvo ahí. Lo que faltaba era decisión.
-
-Tu pregunta sigue resonando: "¿Acapara todas las horas?" Estoy aprendiendo a responder que sí—a que cada día sea mío por completo, no en fragmentos robados.
-
-Con gratitud por tu claridad,
-Un aprendiz`
-    },
-    {
-      numero: 2,
-      titulo: "Sobre la diversidad de las lecturas",
-      contenido: `Querido Séneca,
-
-Tu consejo sobre las lecturas me ha hecho detenerme. Yo era de esos que acumulaba libros como si la cantidad fuera virtud, saltando de uno a otro sin profundidad. Creía que leer más me haría más sabio. Qué ingenuo.
-
-Cuando leí tus palabras sobre la necesidad de digerir profundamente una idea, reconocí mi error. He estado en todas partes y en ninguna—disperso entre cien autores sin realmente habitar ninguno.
-
-Entonces hice lo que sugerías: elegí. Tomé un libro, uno solo, y me atrincheré en sus páginas. Releeí pasajes. Pensé en ellos mientras caminaba. Y fue entonces cuando la lectura dejó de ser acumulación para convertirse en conversación.
-
-Lo que más me ha impactado es entender que la calidad de lo que absorbemos importa infinitamente más que la cantidad. Una idea profundamente comprendida remueve más que cien sobrevoleadas.
-
-Sigo siendo un lector, pero ahora sé que leo para transformarme, no para coleccionar.
-
-Tuyo en el aprendizaje,
-Un discípulo`
-    },
-    {
-      numero: 3,
-      titulo: "Sobre la elección de amigos",
-      contenido: `Mi estimado Séneca,
-
-Tu prudencia sobre la amistad me ha enseñado algo que duele reconocer: he sido demasiado liberal en otorgar ese título. No todos los que me rodean son amigos. Algunos son apenas conocidos que ocurren estar cerca.
-
-Lo que tu sabiduría me muestra es que la verdadera amistad exige discernimiento antes y entrega después. "Ponder for a long time" —reflexiona lentamente— antes de admitir a alguien. Pero una vez decidido, acoge con el alma completa.
-
-He estado practicando esta distinción. Hay personas en mi vida que merecen ese juicio lento, esa evaluación honesta de si realmente podemos caminar juntos. Y he descubierto que cuando finalmente digo "sí" a alguien, lo digo con una profundidad que antes no conocía.
-
-Lo más liberador es aceptar que no necesito tantos amigos. Necesito amigos verdaderos. La diferencia es abismal.
-
-Tu enseñanza me ha devuelto la soledad como regalo, no como castigo.
-
-Con admiración profunda,
-Un aprendiz`
-    },
-    {
-      numero: 4,
-      titulo: "Sobre el miedo a la muerte",
-      contenido: `Querido maestro Séneca,
-
-He llegado a tu carta sobre la muerte en un momento en que la mía se ha sentido cercana—no por enfermedad, sino por claridad. Algo en mi vida me obligó a mirarla de frente, y descubrí que el miedo no era a morir, sino a haber vivido mal.
-
-"La mayoría fluctúa miserablemente entre las penas de la vida y el miedo a morir, y no quiere vivir, pero no sabe morir." Estas palabras me atravesaron. He sido esa mayoría—a medias en todo, comprometido a nada, temiendo simultáneamente la vida y su fin.
-
-Pero entonces vi lo que intentabas enseñar: que morir bien es una consecuencia de vivir bien. No se trata de negar la muerte ni de obsesionarse con ella. Se trata de vivir tan plenamente que cuando llegue, llegue sin protesta.
-
-He comenzado a preguntarme cada mañana: "¿Si hoy fuera el último, estaría satisfecho con lo que haría?" No como un ejercicio morboso, sino como un acto de libertad. Porque una vida vivida bajo esa pregunta no tiene tiempo para la negligencia.
-
-La muerte, descubro ahora, es mi mejor maestra. No porque me asuste, sino porque me devuelve a lo que importa.
-
-Con gratitud infinita,
-Tu aprendiz`
-    }
-  ],
-  en: [
-    {
-      numero: 1,
-      titulo: "On the Value of Time",
-      contenido: `My dear Seneca,
-
-Your letter on time has struck me as few things do. "Some times are snatched from us, others are stolen, and still others slip away." I read these lines one ordinary morning while checking my email for the nth time, knowing I should have been writing.
-
-I have recognized in myself that negligence you speak of. It is not that time is stolen from me—I surrender it willingly to things that matter little. Hours slip away between notifications, between trivial conversations, between the illusion of busyness. And what is hardest to accept is that I am responsible.
-
-What your wisdom shows me is that it is not merely a matter of "managing" time, but of choosing what deserves to possess my hours. When I finally decided to set aside my phone and sit to write, I discovered something: time was not scarce. It was always there. What was missing was decision.
-
-Your question continues to echo: "Master all the hours?" I am learning to answer yes—to make each day completely mine, not in stolen fragments.
-
-With gratitude for your clarity,
-A student`
-    },
-    {
-      numero: 2,
-      titulo: "On Reading Diversity",
-      contenido: `Dear Seneca,
-
-Your advice on reading has made me pause. I was the kind who accumulated books as if quantity were virtue, jumping from one to another without depth. I believed that reading more would make me wiser. How naive.
-
-When I read your words on the necessity of thoroughly digesting an idea, I recognized my error. I have been everywhere and nowhere—scattered among a hundred authors without truly inhabiting any of them.
-
-So I did what you suggested: I chose. I took one book, only one, and entrenched myself in its pages. I reread passages. I thought about them while walking. And it was then that reading ceased to be accumulation and became conversation.
-
-What has most struck me is understanding that the quality of what we absorb matters infinitely more than quantity. One idea deeply grasped moves more than a hundred skimmed.
-
-I remain a reader, but now I know that I read to transform myself, not to collect.
-
-Yours in learning,
-A disciple`
-    },
-    {
-      numero: 3,
-      titulo: "On Choosing Friends",
-      contenido: `My esteemed Seneca,
-
-Your prudence on friendship has taught me something that pains me to recognize: I have been too liberal in bestowing that title. Not everyone around me is a friend. Some are merely acquaintances who happen to be near.
-
-What your wisdom shows me is that true friendship demands discernment before and devotion after. "Ponder for a long time" before admitting someone. But once decided, welcome them with your whole soul.
-
-I have been practicing this distinction. There are people in my life who deserve that slow judgment, that honest evaluation of whether we can truly walk together. And I have discovered that when I finally say "yes" to someone, I say it with a depth I never knew before.
-
-Most liberating is accepting that I do not need so many friends. I need true friends. The difference is abyssal.
-
-Your teaching has given me solitude back as a gift, not a punishment.
-
-With deep admiration,
-A student`
-    },
-    {
-      numero: 4,
-      titulo: "On the Fear of Death",
-      contenido: `Dear Master Seneca,
-
-I have come to your letter on death at a moment when mine has felt near—not from illness, but from clarity. Something in my life forced me to look it in the face, and I discovered that the fear was not of dying, but of having lived poorly.
-
-"The majority fluctuate miserably between the sorrows of life and the fear of dying, unwilling to live, yet not knowing how to die." These words pierced me. I have been that majority—half in everything, committed to nothing, fearing both life and its end simultaneously.
-
-But then I saw what you were trying to teach: that dying well is a consequence of living well. It is not about denying death or obsessing over it. It is about living so fully that when it comes, it comes without protest.
-
-I have begun to ask myself each morning: "If today were the last, would I be satisfied with what I would do?" Not as a morbid exercise, but as an act of freedom. Because a life lived under that question has no time for negligence.
-
-Death, I discover now, is my best teacher. Not because it frightens me, but because it returns me to what matters.
-
-With infinite gratitude,
-Your student`
-    }
-  ]
-};
-
-const emailsData = {
-  es: [
-    {
-      numero: 1,
-      titulo: "Sobre el valor del tiempo",
-      contenido: `Estimado Lucilio,
-
-El tiempo es la única riqueza que posees y, paradójicamente, la que menos reconoces como tal. Mientras amasas fortunas en dinero, desperdicias aquello que ningún comerciante puede reponerle.
-
-Observa bien: algunos hombres tienen el tiempo arrebatado por circunstancias ajenas, otros lo pierden a través de negligencia. Pero tú—querido Lucilio—tienes el privilegio de ser el dueño de tu tiempo. La pregunta entonces no es si tienes suficiente. Es cómo lo gastarás.
-
-He aprendido que el ocioso se queja de que la vida es breve. El ocupado se da cuenta de que es larga. La diferencia no está en los años, sino en cómo los habitas. Cuando dominas tus horas, ningún futuro te intimida. Acapara todas las horas del día de hoy, y mañana dejará de aterrarte.
-
-Recuerda: nadie es verdaderamente pobre sino quien no controla su tiempo.
-
-Con afecto,
-Séneca`
-    },
-    {
-      numero: 2,
-      titulo: "Sobre las lecturas",
-      contenido: `Mi querido Lucilio,
-
-Muchos creen que leer mucho es sabiduria. Son los mismos que visitan bibliotecas como quien visita el mercado—recogiendo sin elegir, acumulando sin digerir. Permíteme decirte: eres más sabio con diez líneas comprendidas que con diez libros apenas hojeados.
-
-La lectura no es un acto de cantidad sino de comunión. Cuando lees, te sientas con una mente a través de los siglos. Esa conversación debe ser profunda, o no es conversación en absoluto.
-
-Sé selectivo. Elige autores que te desafíen, que te obliguen a pensar. Luego, relee. La primera lectura es encuentro; la segunda, amistad. Y es en esa amistad donde reside el verdadero aprendizaje.
-
-Harold Bloom lo expresó bien: solo la lectura profunda y constante establece y aumenta un yo autónomo. Hasta que no te conviertas en ti mismo, ¿qué beneficio puedes ser para otros?
-
-Con admiración por tu sed de saber,
-Séneca`
-    },
-    {
-      numero: 3,
-      titulo: "Sobre la elección de amigos",
-      contenido: `Estimado Lucilio,
-
-La amistad verdadera es rara. Y precisamente porque es rara, debe ser cuidadosamente elegida.
-
-Juzga lentamente a quien deseas admitir en tu círculo íntimo. Observa en silencio. ¿Camina esta persona hacia la virtud o la evita? ¿Busca la verdad o solo aplausos? ¿Estaría dispuesta a decirte una verdad incómoda, aunque le cueste?
-
-Pero una vez hayas decidido, acógela con toda tu alma. Habla con ella como contigo mismo. No hay amistad donde hay cautela permanente.
-
-Como dijo Ming-Dao Deng: "Con mi amigo desaparecido del mundo, ¿para quién tocaría mi música?" La verdadera amistad es una rara armonía. Y como toda armonía, requiere tiempo para ser perfeccionada.
-
-Elige pocos. Ama profundo. Este es el camino de la amistad sabia.
-
-Tu maestro,
-Séneca`
-    },
-    {
-      numero: 4,
-      titulo: "Sobre el miedo a la muerte",
-      contenido: `Mi estimado Lucilio,
-
-El miedo a la muerte es, en realidad, miedo a la vida mal vivida. Por eso te digo: vive bien, y la muerte perderá su poder sobre ti.
-
-Observe cómo la mayoría fluctúa miserablemente entre las penas de la vida y el miedo a morir. No quiere vivir plenamente por temor a lo que pueda suceder. No sabe morir porque nunca supo vivir. Es un estado lamentable.
-
-Pero aquí está el secreto que los antiguos sabían: la muerte no es el enemigo. El enemigo es la negligencia. Es haber vivido por otros, según sus expectativas, persiguiendo sus sueños. Es llegar al final y descubrir que nunca fuiste tuyo.
-
-Por eso pregúntate cada mañana: ¿estoy viviendo, o solo esperando? Porque una vida vivida bajo esa pregunta no teme a la muerte. La recibe como conclusión natural, no como tragedia.
-
-Epicuro lo entendió perfectamente: "De la muerte no tenemos nada que temer, porque cuando la muerte existe, nosotros no existimos; y mientras nosotros existimos, la muerte no existe."
-
-Vive, Lucilio. Vive plenamente. Entonces podrás decir, al final: fue suficiente.
-
-Con amor eterno,
-Séneca`
-    }
-  ],
-  en: [
-    {
-      numero: 1,
-      titulo: "On the Value of Time",
-      contenido: `Esteemed Lucilius,
-
-Time is the only wealth you possess, and paradoxically, the one you least recognize as such. While you amass fortunes in money, you squander that which no merchant can replenish for you.
-
-Observe well: some men have time snatched from them by circumstances beyond their control. Others lose it through negligence. But you—dear Lucilius—have the privilege of being the master of your time. The question then is not whether you have enough. It is how you will spend it.
-
-I have learned that the idle complain that life is short. The occupied discover that it is long. The difference lies not in the years, but in how you inhabit them. When you master your hours, no future intimidates you. Master all the hours of today, and tomorrow will cease to frighten you.
-
-Remember: no one is truly poor except he who does not control his time.
-
-With affection,
-Seneca`
-    },
-    {
-      numero: 2,
-      titulo: "On Reading",
-      contenido: `My dear Lucilius,
-
-Many believe that reading much is wisdom. They are the same ones who visit libraries as one visits the marketplace—gathering without choosing, accumulating without digesting. Let me tell you: you are wiser with ten lines understood than with ten books barely skimmed.
-
-Reading is not an act of quantity but of communion. When you read, you sit with a mind across the centuries. That conversation must be deep, or it is not conversation at all.
-
-Be selective. Choose authors who challenge you, who force you to think. Then, reread. The first reading is encounter; the second, friendship. And it is in that friendship where true learning resides.
-
-Harold Bloom expressed it well: only deep, constant reading fully establishes and augments an autonomous self. Until you become yourself, what benefit can you be to others?
-
-With admiration for your thirst for knowledge,
-Seneca`
-    },
-    {
-      numero: 3,
-      titulo: "On Choosing Friends",
-      contenido: `Esteemed Lucilius,
-
-True friendship is rare. And precisely because it is rare, it must be carefully chosen.
-
-Judge slowly the one you wish to admit to your inner circle. Observe in silence. Does this person walk toward virtue or away from it? Does he seek truth or only applause? Would he be willing to tell you an uncomfortable truth, even if it cost him?
-
-But once you have decided, welcome him with your whole soul. Speak with him as you speak with yourself. There is no friendship where there is permanent caution.
-
-As Ming-Dao Deng said: "With my friend gone from the world, who will I play my music for?" True friendship is a rare harmony. And like all harmony, it requires time to be perfected.
-
-Choose few. Love deeply. This is the way of wise friendship.
-
-Your teacher,
-Seneca`
-    },
-    {
-      numero: 4,
-      titulo: "On the Fear of Death",
-      contenido: `My esteemed Lucilius,
-
-The fear of death is, in reality, fear of having lived poorly. So I tell you: live well, and death will lose its power over you.
-
-Observe how the majority fluctuate miserably between the sorrows of life and the fear of dying. They do not wish to live fully for fear of what may happen. They do not know how to die because they never knew how to live. It is a lamentable state.
-
-But here is the secret the ancients knew: death is not the enemy. The enemy is negligence. It is to have lived for others, according to their expectations, pursuing their dreams. It is to arrive at the end and discover that you were never your own.
-
-So ask yourself each morning: Am I living, or merely waiting? Because a life lived under that question does not fear death. It receives it as a natural conclusion, not as tragedy.
-
-Epicurus understood it perfectly: "We have nothing to fear from death, because when death exists, we do not exist; and while we exist, death does not exist."
-
-Live, Lucilius. Live fully. Then you can say, at the end: it was enough.
-
-With eternal love,
-Seneca`
-    }
-  ]
-};
-
-export default function Home() {
-  const [idioma, setIdioma] = useState<Idioma>('es');
-  const [seccionActual, setSeccionActual] = useState<Seccion>('home');
-  const [piezaSeleccionada, setPiezaSeleccionada] = useState<PiezaSeleccionada | null>(null);
+import { useState } from "react";
+import { Send, Loader } from "lucide-react";
+
+const SubstackEmbed = ({ idioma }) => (
+  <div className="mt-12 flex justify-center">
+    <div className="border border-gray-200 rounded-lg p-6 bg-white text-center" style={{maxWidth: '480px', width: '100%'}}>
+      <p className="text-gray-700 font-medium mb-1" style={{fontFamily: 'Georgia, serif'}}>
+        {idioma === 'es' ? 'Suscríbete para recibir nuevas entradas' : 'Subscribe to receive new entries'}
+      </p>
+      <p className="text-gray-500 text-sm mb-4">
+        {idioma === 'es' ? 'Recibirás cada nueva Carta o Email al ser publicada.' : "You'll receive each new Letter or Email as soon as it's published."}
+      </p>
+      <a
+        href="https://diestrodeoido.substack.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-yellow-600 text-white px-6 py-2 rounded hover:bg-yellow-700 transition font-medium text-sm"
+      >
+        {idioma === 'es' ? 'Suscribirme en Substack →' : 'Subscribe on Substack →'}
+      </a>
+    </div>
+  </div>
+);
+
+export default function SenecAI() {
+  const [idioma, setIdioma] = useState('es');
+  const [seccionActiva, setSeccionActiva] = useState('home');
+  const [menuAbierto, setMenuAbierto] = useState(false);
+  const [piezaSeleccionada, setPiezaSeleccionada] = useState(null);
   const [pregunta, setPregunta] = useState('');
   const [respuesta, setRespuesta] = useState('');
   const [cargando, setCargando] = useState(false);
 
-  const t = textos[idioma];
-
-  const handleEnviarPregunta = async (e: React.FormEvent) => {
+  const handleEnviarPregunta = async (e) => {
     e.preventDefault();
     if (!pregunta.trim()) return;
 
@@ -386,234 +59,616 @@ export default function Home() {
     }
   };
 
+  const piezas = {
+    cartas: [
+      {
+        id: 1,
+        titulo: { es: "Sobre el valor del tiempo", en: "On the Value of Time" },
+        fecha: "15 de enero de 2026",
+        contenido: {
+          es: `Mi querido Séneca, justo estando a punto de empezar a escribirte esto, sentí cómo algunas obligaciones querían sustraerme el tiempo, tras notar que había recibido varios mensajes. Me resistí a leerlos, aún con un ligero miedo de que podría haber allí algo urgente o importante. Consciente de que difícilmente nada habría más valioso que este preciso momento, me volqué con toda mi atención a estas líneas, sabiendo que romper mi atención sería no haber abrazado tu consejo.
+
+Clasifico ahora cada situación: ¿me arrebata el tiempo? La evito. ¿Me lo sustrae? La pospongo, al menos hasta cuando sea realmente indispensable enfrentarla. Seguramente también están aquellas en las que se me escapa el tiempo, pero con sólo ser más consciente ahora, espero reducir estas últimas.
+
+Solía considerar negligentes a quienes creen tener más tiempo del que disponen. "El día tiene 24 horas más la noche", dicen ellos, como si la vida fuera infinita. Pero hoy veo que hay algo peor: estar consciente del tiempo finito y desperdiciarlo de todas formas. De ese grupo, desgraciadamente, también soy parte, y es con la comprensión visceral de esta tragedia, que estoy empezando a conseguir, gracias a tus consejos, que mi vida parece estar cambiando radicalmente.
+
+Como buen administrador de mis cuentas, al igual que tú, vengo llevando con decente precisión el control del tiempo que le dedico a aquellas actividades que considero valiosas, como leer, escribir, escuchar clases o desarrollar ideas, siendo que todas las demás solamente pueden servirle a estas primeras.
+
+No es difícil deducir entonces que mi tiempo real de vida en estos 45 años ha sido no más de 5 años. Estuve muerto la mayoría. Con una excepción: existe un tiempo que ni siquiera intento medir, ese que paso con mi familia y amigos. Estos no son momentos cuyo valor pueda calcularse por extensión—kairos sobre kronos—. Son momentos donde realmente existo, incluso cuando creía estar muerto.
+
+Dentro de esa muerte, hay momentos donde, aunque no hago lo que realmente valoro, sí lo hago de la mejor manera posible. Como cuando me dedico al neg-ocio—no para generar dinero, sino para generarme más tiempo, para que la empresa dependa de mi visión, no de mi presencia, y para ayudar a otros en su crecimiento.
+
+Esto de ayudar a otras personas a ir cubriendo sus diversas necesidades, según su lugar actual en la pirámide de Maslow, es un tipo de inversión que me da la sensación de ser tremendamente rentable, provocándome alocar más capital en esta categoría, aún a expensas de las inversiones de tiempo que sean exclusivamente para mí o los míos. Ayudar a alguien es siempre una inversión—pero aquí está lo extraño: el retorno no es mío. Y sin embargo, es lo que más me alimenta. ¿Cómo puede ser eso una inversión? La respuesta puede estar en los tipos de felicidad que concibe el utilitarismo, donde la que viene del altruismo no tiene competencia.
+
+Curioso que una de las formas de ayudar más a las personas tenga que ver justamente con el manejo de sus tiempos, de lo que venimos hablando. En estas épocas creo que son dos las formas en las que la gente deja que se les vaya el tiempo como de ninguna manera lo harían con su dinero.
+
+Primero están las distracciones, que hoy en día vienen a través de alguna pantalla. Yo mismo paso, en promedio, dos horas diarias en la pantalla del celular. Sé que buena parte tiene utilidad, pero la mayoría es tiempo muerto, indiscutiblemente. He visto personas pasar el triple allí, prestando atención a lo que claramente no importa. Yo fui uno de esos. Lo sigo siendo algunos días.
+
+Luego está uno de los peores inventos culturales: las reuniones de trabajo, que tienen poco de trabajo y mucho de sólo de asistencia. No sólo son numerosas e interminables, hoy en día virtuales (más pantallas), sino casi siempre inefectivas y las más de las veces, innecesarias. Pocas veces preparadas, frecuentemente sobre asistidas y sin acuerdos efectivos, si me preguntan, es la manera más frecuente de perder tiempo en grupo, como si perderlo sólo no fuera suficiente. No hemos llegado a la máquina del tiempo pero hemos creado la mejor máquina de perder tiempo grupalmente.
+
+No puedo restituir, Séneca, la inversión de tiempo que has hecho conmigo para escribirme sobre esto, pero claramente puedo multiplicarla difundiendo con otros de mi generación y espero, futuras. Empezaré a honrar tus consejos, empezando por separarle el tiempo adecuado y el mejor momento a todas aquellas actividades que me hacen sentir realmente vivo, y aunque cuando las recuerde serán recuerdos de un muerto, habrá sido esa una buena vida.
+
+Sé que sigo con el marcador en contra, Séneca, pero luego de hoy creo haber marcado el descuento y sobre todo, sé cómo debo replantear el encuentro, que de ninguna manera quiero perder.
+
+Me despido, amigo, habiendo querido decirte mucho más, pero consciente de que por hoy, se me acabó el tiempo para esto.`,
+          en: `My dear Seneca, just as I was about to begin writing this, I felt how certain obligations wanted to steal my time, noticing that I had received several messages. I resisted reading them, even with a slight fear that something urgent or important might be there. Aware that hardly anything could be more valuable than this precise moment, I turned with all my attention to these lines, knowing that breaking my focus would mean I had not truly embraced your counsel.
+
+Nowadays I try to classify every situation: Does it steal my time? I avoid it. Does it drain my time? I postpone it, at least until it becomes truly necessary to face it. Surely there are also those in which time simply slips away from me, but by being more conscious now, I hope to reduce these instances.
+
+I used to consider negligent those who believe they have more time than they actually possess. "The day has 24 hours plus the night," they say, as if life were infinite. But today I see something worse: being aware of finite time and squandering it anyway. From that group, unfortunately, I am also part, and it is with the visceral understanding of this tragedy—which I am beginning to grasp thanks to your counsel—that my life seems to be changing radically.
+
+Like a good accountant of my accounts, as you are, I have been keeping a decent record of the time I dedicate to those activities I consider valuable: reading, writing, attending classes, developing ideas—all others serving only these.
+
+It is not difficult to deduce then that my real lifetime in these 45 years has been no more than 5 years. I was dead most of the time. With one exception: there is a time I do not even attempt to measure—the time I spend with my family and friends. These are not moments whose value can be calculated by duration alone—kairos over chronos. They are moments where I truly exist, even when I believed I was dead.
+
+Within that death, there are moments where, although I am not doing what I truly value, I am at least doing it in the best way possible. Like when I dedicate myself to the neg-ocio—not to generate money, but to generate more time for myself, so my company depends on my vision, not my presence, and to help others in their professional growth.
+
+Helping others cover their diverse needs, according to their place on Maslow's pyramid, is a type of investment that feels tremendously profitable to me, prompting me to allocate more capital to this category, even at the expense of investments of time that are exclusively for myself or my own. Helping someone is always an investment—but here is the strange part: the return is not mine. And yet, it is what nourishes me most. How can that be an investment? The answer may lie in the types of happiness that utilitarianism conceives, where the kind that comes from altruism has no equal.
+
+Curious that one of the best ways to help people has to do precisely with the management of their time, which is what we have been discussing. In these times, I believe there are two ways in which people allow their time to slip away as they would never allow their money to slip away.
+
+First, there are distractions, which nowadays come through some screen. I myself spend, on average, two hours daily looking at my phone screen. I know that much of it has utility, but the majority is, undoubtedly, dead time. I have seen people spend triple that there, paying attention to what clearly does not matter. I was one of them. I still am, some days.
+
+Then there is one of the worst cultural inventions: work meetings, which have little work about them and almost everything about mere attendance. Not only are they numerous and endless, nowadays virtual (more screens), but almost always ineffective and most often unnecessary. Rarely well-prepared, frequently over-attended, and without real agreements—if you ask me, it is the most common way to waste time in a group, as if wasting it alone were not enough. We have not reached the time machine, but we have created the finest machine for wasting time collectively.
+
+I cannot repay you, Seneca, for the investment of time you have made in me by writing about this, but I can certainly multiply it by spreading it to others of my generation and, I hope, future ones. I will begin to honor your counsel, starting by giving adequate time and the best moment to all those activities that make me feel truly alive, and although when I remember them they will be the memories of a dead man, it will have been a good life.
+
+I know I am still behind on the scoreboard, Seneca, but after today I believe I have scored my first goal, and above all, I know exactly how I must reshape the match, which I have no intention of losing.
+
+I bid you farewell, friend, having wished to tell you much more, but aware that for today, my time for this has run out.`
+        }
+      },
+      {
+        id: 2,
+        titulo: { es: "Sobre la diversidad de las lecturas", en: "On Reading Diversity" },
+        fecha: "20 de febrero de 2026",
+        contenido: {
+          es: `Recibí tu consejo sobre los autores, mi querido Séneca, y debo confesarte algo incómodo: no lo estoy siguiendo.
+
+Leo regularmente, pero nunca todo lo que quisiera. Y últimamente leo menos que en los últimos años, seguro por haber decidido dedicarle más tiempo a otras obligaciones y desde hace poco, a actividades realmente importantes, las que te decía que me hacen sentir vivo realmente.
+
+Contrariamente a lo que sugieres, recientemente —diría un poco más de un año— leo con regular variedad. Difícilmente me quedo con un solo libro hasta terminarlo, sino más bien que ahora prefiero leer varios libros a la vez.
+
+No sé si esto ocurre por mera curiosidad o por dármela de generalista, pero lo más probable es que sea porque necesito resolver diversas situaciones en las que los libros me pueden ayudar.
+
+A veces tengo un problema específico para el que sé que algunos textos me pueden proveer ideas o inspirarme. Otras, sin problema en mente encuentro soluciones que sé que algún día pueden servir perfectamente. Pero tal vez lo que más disfruta es cuando tiento mi suerte y encuentro algo verdadero, útil o bello. El que busca, encuentra. El que encuentra, lo cuenta.
+
+Mi ánimo, seguro asociado al calendario semanal, también marca el ritmo de mis lecturas. Quizás este puede ser parte de mi problema a la luz de tu consejo — buscar novedad según mi estado. Pero mira bien: busco novedad según mi necesidad, que es distinto.
+
+Durante los días de trabajo estoy más interesado en los negocios, en el liderazgo, en la contribución social y en todo lo que me haga ser mejor empresario y líder. Los fines de semana mis intereses se inclinan más por la historia, la literatura, la cultura, la salud y la espiritualidad. Sin duda los acontecimientos de la semana también me influyen, pero mi variada curiosidad responde en realidad a diversa necesidad.
+
+Dirás que carezco de disciplina, pero si la emoción es requisito para la acción, aprovecho mejor las lecturas cuando estoy emocionalmente involucrado o racionalmente emocionado.
+
+Si paso un día sin leer empiezo a sentir un vacío, que en alguna medida logro llenar aprendiendo algo valioso por otra vía: una clase, un artículo, un podcast, pero casi todos los días me esfuerzo por haber aprendido algo conscientemente, por cuanto aprendizaje inconsciente no lo puedo registrar.
+
+Si bien leo algo menos, sin duda escribo más, y no me refiero a espacios como este, en donde me estoy aplicando para mantener el ritmo, sino que me refiero a escritos muy cortos.
+
+Estoy siempre al acecho de ideas por su potencial. Cuando las encuentro, hago una nota —al menos del titular— con el propósito de desarrollarla luego. Raramente lo hago.
+
+Lo extraño es que estas notas no desaparecen. Se siguen desarrollando en algún rincón de mi mente, involuntariamente, hasta que un día resurgen o se quedan siendo parte de quién soy.
+
+Sin más, por lo menos sé que necesito masticar por mucho tiempo una idea para realmente digerirla, y es escribiendo algo al respecto que a mí me es posible.
+
+Leyendo es que recargo; escribiendo es que disparo.
+
+Concuerdo Séneca plenamente contigo en la necesidad de tener pocos amigos y muchos conocidos. Ya sabía yo que los autores clásicos son aquellos a quienes debo frecuentar y por allí he venido transitando, pero últimamente he entendido que "clásicos" es una categoría muy grande y que debo hablar de nombres concretos.
+
+Justo no hace mucho definí una lista casi completa de autores de quienes me encantaría volverme su amigo, como Platón, Aristóteles, Marco Aurelio, Hume, Nietzsche, Betrand Rusell, Oscar Wilde, William James, Borges, Peter Singer, Kahneman, Taleb, Sam Harris, Kafka, Richard Bach, Ribeyro, Zweig y por supuesto tú, mi querido amigo. Y si no llegan a ser mis amigos, igual los quiero como mentores.
+
+Si sólo pudiera conocer mucho más de estos gigantes y mucho menos de todos los demás, sé que tendría no sólo lo necesario, sino lo suficiente, de la misma manera que uno cubre primero la renta antes de comprar pasajes.
+
+Pero aquí tengo una pregunta para ti, Séneca: ¿Acaso que alguien no sea mi amigo significa que no pueda tener algo valioso de lo que aprender? ¿No será un encuentro breve la oportunidad de conocer amistades más profundas?
+
+Tal como aconsejas sobre apropiarse de algunos pasajes de autores valiosos, evoqué automáticamente uno de Emerson, que todavía no está en mi lista de queridos amigos porque no lo conozco tanto, pero que recuerdo que decía que no recordaba todos los libros que había leído de la misma manera que no recordaba las comidas que ha ingerido, pero ambos lo habían hecho quién es.
+
+No habiendo manera de que yo recuerde todo lo que he leído, ni todos los autores que he visitado, me basta saber que cada idea es un ladrillo de la mejor construcción que puede forjar, cada día mejor que ayer.`,
+          en: `I received your counsel on authors, my dear Seneca, and I must confess something uncomfortable to you: I am not following it.
+
+I read regularly, but never as much as I would wish. And lately I read less than in recent years, certainly because I decided to dedicate more time to other obligations, and recently, to activities that truly matter—the ones I told you make me feel truly alive.
+
+Contrary to what you suggest, recently—I would say a bit more than a year now—I read with regular variety. I hardly ever finish one book before starting another; rather, I now prefer to read several books at once.
+
+I do not know if this happens because of mere curiosity or because I fancy myself a generalist, but most likely it is because I need to resolve diverse situations in which books can help me.
+
+Sometimes I have a specific problem for which I know certain texts can provide me with ideas or inspire me. Other times, without a problem in mind, I find solutions that I know could serve me perfectly one day. But perhaps what I enjoy most is when I venture my luck and discover something true, useful, or beautiful. He who seeks, finds. He who finds, tells.
+
+My mood, surely associated with the weekly calendar, also marks the rhythm of my reading. Perhaps this could be part of my problem in light of your counsel—seeking novelty according to my state. But look carefully: I seek novelty according to my need, which is different.
+
+During work days I am more interested in business, leadership, social contribution, and everything that makes me a better entrepreneur and leader. On weekends my interests lean more toward history, literature, culture, health, and spirituality. The events of the week also influence me, certainly, but my varied curiosity responds, in fact, to diverse need.
+
+You will say I lack discipline, but if emotion is a requirement for action, I benefit more from reading when I am emotionally engaged or rationally moved.
+
+If I pass a day without reading I begin to feel a void, which to some degree I manage to fill by learning something valuable another way: sometimes a class, an article, a podcast. But almost every day I strive to have learned something consciously, since unconscious learning I cannot register.
+
+Though I read somewhat less, I certainly write more—and I do not mean spaces like this one, where I am applying myself to maintain the pace, but rather very short pieces.
+
+I am always on the lookout for ideas because of their potential. When I find them, I make a note—at least of the title—with the purpose of developing it later. Rarely do I do so.
+
+What is strange is that these notes do not disappear. They continue to develop in some corner of my mind, involuntarily, until one day they resurge or remain becoming part of who I am.
+
+In short, I at least know that I need to chew on an idea for a long time to truly digest it, and it is by writing something about it that this becomes possible for me.
+
+Reading is how I recharge; writing is how I fire.
+
+I agree with you completely, Seneca, on the need to have few friends and many acquaintances. I already knew that classical authors are those I should frequent, and I have been traveling that path. But lately I have understood that "classical" is a very large category, and I must speak of concrete names.
+
+Just recently I defined an almost complete list of authors I would love to become friends with: Plato, Aristotle, Marcus Aurelius, Hume, Nietzsche, Bertrand Russell, Oscar Wilde, William James, Borges, Peter Singer, Kahneman, Taleb, Sam Harris, Kafka, Richard Bach, Ribeyro, Zweig, and of course you, my dear friend. And if they do not become my friends, I still want them as mentors.
+
+If I could only know much more of these giants and much less of everyone else, I know I would have not only what is necessary, but what is sufficient—the same way one covers rent first before buying plane tickets.
+
+But here I have a question for you, Seneca: Does the fact that someone is not my friend mean they cannot have something valuable from which I can learn? Might not a brief encounter be the opportunity to discover deeper friendships?
+
+Just as you counsel about appropriating passages from valuable authors, I automatically recalled one from Emerson, who is still not on my list of dear friends because I do not know him so well, but whom I remember saying that he did not remember all the books he had read the same way he did not remember all the meals he had eaten, yet both had made him who he is.
+
+Having no way to remember everything I have read, nor all the authors I have visited, it suffices for me to know that each idea is a brick in the best construction I can forge, each day better than yesterday.`
+        }
+      },
+      {
+        id: 3,
+        titulo: { es: "Sobre la elección de amigos", en: "On Choosing Friends" },
+        fecha: "10 de marzo de 2026",
+        contenido: {
+          es: `Leí con mucho entusiasmo tus consejos sobre la amistad, mi querido Séneca, pero creo que, aunque hermosas todas las ideas — tal vez justo por eso —, algo están alejadas de la realidad.
+
+Sabiendo que en nadie realmente confío como en mi mismo— no existe persona a la que le puedo decir absolutamente todo lo que pienso —, pero esto no implica no poder tener amigos, me inclino a creer que más que verdadera amistad o simples relaciones, existen los grados de amistad.
+
+Sin duda con quien considero mi mejor amigo puedo hablar casi sin ningún tapujo, pero claramente hay temas u opiniones sobre las que prefiero mantener reserva. Debe ser en parte porque además de ser amigos, hoy en día somos compañeros de trabajo, de la misma manera que lo soy con uno de sus hermanos; debe ser por otra parte, mayor creo, por mi naturaleza generalmente reservada.
+
+Con los que están en mi escala de amistad muy cerca al primero, sucede algo similar: no sólo tampoco podría hablar con ellos como conmigo mismo, sino que hay dimensiones enteras en las que probablemente me cierro más aún.
+
+Si me sigo alejando en mi escala imaginaria, de la amistad perfecta, que en el mejor de los casos, sólo es conmigo mismo, encuentro a casi todas las demás personas que conozco, empezando por amigos con vínculo fuerte pero que frecuento poco, amigos que frecuento regularmente, compañeros de trabajo, amigos de años pero con vínculo ahora débil, amigos de mis amigos y finalmente conocidos. Haciendo el recuento a consciencia, en mi caso, son pocos con los que podría decir que cultivo algún nivel de amistad para llamarla así realmente, usando los estándares que propones, mi querido Séneca.
+
+He aprendido hace mucho tiempo que es mejor confiar y ser decepcionado, que no confiar en nadie y vivir atormentado, aún cuando no siempre haya sido mejor el resultado — aquí me vuelvo a recordar que mal resultado no implica mala decisión, y viceversa.
+
+Si pensara nuevamente en ubicar a las personas en alguna escala, esta vez de confianza, la distribución sería distinta a la de mi escala de amistad; aunque, si la visualizo detenidamente, distingo patrones ligeramente diferentes entre las relaciones profesionales y personales: confío más fácilmente en las primeras.
+
+En relación con esto, justo estoy ante un caso de un compañero de trabajo al que podría haber clasificado como amigo, en un sentido general del término — conozco a su familia, hemos compartido fuera del trabajo y el trato ha sido más coloquial —, quien resultó estar sacando provecho de esta confianza, beneficiándose a sí mismo, en detrimento de la empresa.
+
+Pensaba en el caso anterior como un contraejemplo a tu recomendación de simplemente confiar en un amigo una vez calificado como tal: confié por creerlo amigo, de su traición luego fui testigo.
+
+Pero luego me di cuenta de que estuve errado en la aplicación: nunca hice el esfuerzo necesario para juzgarlo antes de considerarlo mi amigo, que era parte clave de tu consejo, y la verdad es que está tan lejos en mi escala de amistad que no debería haberlo llamado nunca "amigo".
+
+Me pregunto Séneca entonces: ¿realmente todos necesitamos esos verdaderos amigos — "un alma en dos cuerpos" como decía Aristóteles? ¿O basta con la idea de amistad perfecta, como proponía Platón en sus formas, para entender nuestra relación con los demás?
+
+Sea lo uno, sea lo otro, ahora entiendo que la amistad verdadera, como el amor — ¿por qué todavía creo que son distintos?—, comienza con uno mismo. Porque ser amigo de otro por no poder bastarse a sí mismo, no es amistad—es conveniencia.`,
+          en: `I read your counsel on friendship with great enthusiasm, my dear Seneca, but I believe that, though all the ideas are beautiful—perhaps precisely because they are—, they are somewhat removed from reality.
+
+Knowing that I truly trust no one as I trust myself—there is no person to whom I can tell absolutely everything I think—, but this does not mean I cannot have friends, I am inclined to believe that rather than true friendship or mere relationships, there exist degrees of friendship.
+
+Certainly, with whom I consider my best friend, I can speak with little reservation, but clearly there are topics and opinions about which I prefer to maintain reserve. It must be partly because, besides being friends, we are now colleagues at work, the same way I am with one of his brothers; it must be, to a greater degree I believe, due to my generally reserved nature.
+
+With those who are very close to my best friend on my scale of friendship, something similar happens: not only could I not speak with them as I speak with myself, but there are entire dimensions in which I probably close myself off even more.
+
+If I continue moving away on my imaginary scale, from perfect friendship, which at best is only with myself, I find almost everyone else I know—beginning with friends of strong bond but whom I see rarely, friends I see regularly, colleagues at work, friends of years but with now weakened bonds, friends of my friends, and finally acquaintances.
+
+Doing an honest accounting, in my case, there are few with whom I could truly say I cultivate some level of friendship, really calling it that, using the standards you propose, my dear Seneca.
+
+I learned long ago that it is better to trust and be disappointed than to trust no one and live tormented, even though the outcome has not always been better—here I remind myself again that a poor outcome does not imply a poor decision, and vice versa.
+
+If I were to place people on a scale again, this time of trust, the distribution would be different from my scale of friendship; though, if I visualize it carefully, I distinguish slightly different patterns between professional and personal relationships: I trust more easily in the former.
+
+In relation to this, I am just now facing a case of a colleague at work whom I could have classified as a friend, in a general sense of the term—I know his family, we have shared time outside of work, and our dealings have been more casual—turned out to be taking advantage of this trust, benefiting himself, to the detriment of the company.
+
+I was thinking of the previous case as a counterexample to your recommendation of simply trusting a friend once he is classified as such: I trusted because I believed him to be a friend, and later I witnessed his betrayal.
+
+But then I realized that I was wrong in my application: I never made the necessary effort to judge him before considering him my friend, which was a key part of your counsel. The truth is he is so far down on my scale of friendship that I should never have called him "friend" in the first place.
+
+I ask myself then, Seneca: do we really all need those true friends—"one soul in two bodies" as Aristotle said? Or is it enough to have the idea of perfect friendship, as Plato proposed in his forms, to understand our relationship with others?
+
+Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`
+        }
+      }
+    ],
+    emails: [
+      {
+        id: 1,
+        titulo: { es: "Sobre el valor del tiempo", en: "On the Value of Time" },
+        fecha: "16 de enero de 2026",
+        contenido: {
+          es: `¿Qué es el tiempo Lucilio, sino un instante infinito que se esconde entre el pasado y el futuro? Es ese instante, a la vez infinitesimal y por lo tanto imperceptible para nuestras capacidades, lo único que tenemos, pero todo lo que necesitamos.
+
+De la misma manera que no pueden existir monedas de un centavo porque todas las transacciones monetarias las hacemos por montos muchos mayores, es que para valorar el tiempo debemos pensarlo como bloques de muchos instantes, siendo que recién entonces podemos concebirlo, y en consecuencia, valorarlo.
+
+Debe ser por lo mismo que no nos duele que nos arrebaten segundos valiosos en las pantallas, que no nos preocupa perder centavos — aun cuando, acumulados, sean millones o para muchos, toda una vida.
+
+Concebido el tiempo con este artificio de agruparlo en intervalos, encuentro útil la idea de clasificarlo para cada día, en tres grandes bloques: el primero – aunque hoy innegociable en cantidad, perfectible en calidad –, son las ocho horas sagradas de sueño; el segundo, de donde deben venir los ahorros, el tiempo dedicado al trabajo; el tercero – el de las verdaderas oportunidades – el tiempo dedicado a crecer como persona y a buscar contribución.
+
+Es dentro de estos dos segundos bloques – útilmente concebibles como carteras de inversión – donde gestionar prioridades es indispensable: ¿Qué es lo que realmente te importa? ¿Qué es lo que realmente debe importarte? ¿Cuál está siendo una gran pérdida? ¿Cuál podría ser la mejor inversión?
+
+No tengo las respuestas, Lucilio, pues son profundamente personales. Pero sin duda prefiero tener preguntas sin respuestas que respuestas sin preguntas. Y la más importante de todas – saber qué es lo siguiente a lo que te dedicarás – es la primera definición al iniciar cada día, tan crucial como decidir con qué ánimo entrarás en él.
+
+Estoy convencido de que el ser humano no logra entendimiento completo del tiempo ni siquiera agrupándolo en periodos de horas o días, y menos aún en décadas o siglos. Es la semana la unidad que conversa con nuestro cableado cerebral – curiosamente, un invento cultural, como la familia, pero que funciona de manera notable.
+
+La semana no es meramente un horizonte intermedio. Contiene el ciclo completo de los tres bloques de los que hablaba al inicio. Además incluye una continuidad interesante en los bloques de trabajo de lunes a viernes, y en los bloques de tiempo personal los fines de semana – otro invento cultural que como los mejores, termina pareciendo natural.
+
+Hablé de inversiones refiriéndome a la relación entre beneficio y tiempo dedicado. Pero este beneficio no puede ser monopolio tuyo: debe ser compartido. ¿Qué te beneficia a ti a la vez que puede beneficiar al mundo? O al menos: ¿qué te prepara ahora para luego producir beneficios después? La historia nos enseña que el tiempo no es propiedad individual, sino de la humanidad. Nada valioso se hizo en soledad, y ninguna felicidad se alcanza plenamente sólo.
+
+Si has llegado a este entendimiento del tiempo, estás preparado para lo que viene; algo que parece contradictorio pero es en realidad complementario: no es el tiempo lo que debes vigilar, sino la energía.
+
+La física clásica lo muestra: la energía es tiempo multiplicado por potencia. Cuando se trata de vida – siendo la vida fundamentalmente energía – no importa solo el tiempo dedicado, sino la intensidad con que se vive. Por eso los antiguos hablaban de dos tiempos: kronos, cuantitativo, y kairos, cualitativo.
+
+En la vida real, entonces, no importa el cuánto, sino el cómo. Y hoy la intensidad se manifiesta principalmente en atención – elemento que muchos, lamentablemente han convertido en mercancía.
+
+Tu atención, Lucilio, es lo que da valor al tiempo. De ahí que cada momento sea distinto, irrepetible. Pero siendo nuestra energía limitada, solo podemos administrarla – así que basta de escuchar. Todo lo que queda es vivir.`,
+          en: `What is time, Lucilius, but an infinite instant that hides between the past and the future? That instant, at once infinitesimal and therefore imperceptible to our capacities, is the only thing we possess, yet it is all we need.
+
+In the same way that penny coins cannot exist because all monetary transactions are conducted in larger amounts, we must think of time as blocks of many instants in order to value it. Only then can we conceive of it, and consequently, appreciate its worth.
+
+It must be for this very reason that we feel no pain when seconds are stolen from us by screens, just as we scarcely worry about losing pennies—even when accumulated, they become millions or, for many, an entire lifetime.
+
+Having conceived of time through this device of grouping it into intervals, I find it useful to classify it for each day into three great blocks: the first—although today non-negotiable in quantity, perfectible in quality—eight sacred hours of sleep; the second, from which our savings must come, time devoted to work; the third—that of true opportunities—time devoted to growing as a person and seeking contribution.
+
+It is within these two latter blocks—usefully conceived as investment portfolios—where managing priorities becomes indispensable: What is it that truly matters to you? What is it that truly should matter to you? What is becoming a great loss? What could be the best investment?
+
+I do not have the answers, Lucilius, for they are profoundly personal. But without doubt I prefer to have questions without answers than answers without questions. And the most important of all—knowing what comes next in what you will dedicate yourself to—is the first definition upon beginning each day, as crucial as deciding with what spirit you will enter into it.
+
+I am convinced that the human being does not achieve a complete understanding of time even by grouping it into periods of hours or days, and even less when attempting to think in decades or centuries. It is the week that is the unit which converses with our neural wiring—curiously, a cultural invention, like the family, yet one that functions in a remarkable way.
+
+The week is not merely an intermediate horizon. It contains the complete cycle of the three blocks I spoke of at the beginning. Moreover, it includes an interesting continuity in the work blocks from Monday through Friday, and in the personal time blocks of the weekends—another cultural invention that, like the best ones, ends up seeming natural.
+
+I spoke of investments referring to the relationship between benefit and time devoted to it. But this benefit cannot be your monopoly: it must be shared. What benefits you while also benefiting the world? Or at least: what prepares you now to later produce benefits afterward? History teaches us that time is not individual property, but belongs to humanity. Nothing of true value was ever done in solitude, and no happiness is ever fully achieved alone.
+
+If you have arrived at this understanding of time, you are prepared for what comes next; something that seems contradictory but is actually complementary: it is not time that you must watch, but energy.
+
+Classical physics shows us this: energy is time multiplied by power. When it comes to life—being life fundamentally energy—what matters is not only the time devoted but the intensity with which you live. This is why the ancients spoke of two kinds of time: chronos, quantitative, and kairos, qualitative.
+
+In real life, then, what matters is not the how much, but the how. And today intensity manifests itself principally in attention—an element that many, unfortunately, have converted into a commodity.
+
+Your attention, Lucilius, is what gives value to time. From this comes the fact that each moment is distinct, irreplaceable. But being our energy limited, we can only try to manage it—so enough of listening. All that remains is to live.`
+        }
+      },
+      {
+        id: 2,
+        titulo: { es: "Sobre las lecturas", en: "On Reading" },
+        fecha: "21 de febrero de 2026",
+        contenido: {
+          es: `Aquel que pasa de un texto sobre el poder de la respiración, a otro de sesgos cognitivos, a la vez que repasa algo de historia universal buscando aprender de liderazgo, para terminar seguramente con filosofía, no busca respuestas diversas, sino coherencia en la multiplicidad.
+
+La variedad de nuestras lecturas, Lucilio, revela quiénes somos, a la vez que quiénes queremos ser. Porque leer es ser, como aprender es ser y hacer es ser.
+
+No es sólo que la variedad refleje tu propia forma de ser y conocer, sino que son estas elecciones claro reflejo de quién eres y quieres ser. No son la respiración, los sesgos, la historia o el liderazgo lo que importa realmente, sino las conexiones entre estos objetos de pensamiento.
+
+Y es con la filosofía que podemos construir conscientemente estas conexiones, no buscando resolver un problema, sino simplemente entender, y muchas veces encontrando soluciones que algún día encontrarán su problema.
+
+Uno es lo que lee, Lucilio, no sólo en el sentido que son las lecturas lo que a uno lo hacen sino que uno termina leyendo justamente de la manera en que ya es. Aunque claro, siempre existe un espacio para virar hacia mejores formas de ser — espacio que sólo el leer y el pensar en serio te pueden proveer.
+
+Leer es también viajar, y puedes viajar por dos motivos: para aprender algo que necesitas, o para aprender algo que no sabes que necesitas. Por lo primero es que debes recurrir con regularidad a lecturas en las que crees que puedes encontrar ideas para resolver algún problema, porque soluciones son tales cuando probadas e iteradas, se implementan.
+
+Por lo segundo es que debes viajar con los libros a lugares que te den la sensación que pueden ser interesantes o que algún referente de confianza te ha recomendado, y si bien en ambos casos muchas veces puede no funcionar, los costos siempre serán mucho menores a los beneficios.
+
+Tómate en serio las recomendaciones de lecturas, pero sólo las de aquellos que conoces lo suficiente como para confiar en ellas como confías en ellos. Pero tómatelas en serio también para criticarlas, por cuanto de los mejores lugares muchos han salido estafados o asaltados. Lee con preguntas en la cabeza cuando estés buscando soluciones, de la misma manera que debes estar atento a respuestas que hoy pueden no servir para nada, pero que luego notarás que servirán para todo.
+
+Lee Lucilio con fervor, con confianza y con duda, exigiendo claridad pero también belleza, y si alguno de esos libros no te deslumbra, déjalo de inmediato de lado, porque es el siguiente el que podría cambiarte la vida. Pero lee sólo lo necesario para pasar a vivir, porque uno lee para vivir y no vive para leer.
+
+Recuerda Lucilio las cartas que escribimos juntos hace cientos de años. Digo "escribimos" porque creo que nadie escribe sólo, sino que son ideas de muchos las que terminan bajando a tierra por obra de las manos de una sola persona. Lee y relee. Escucha y re-escucha. Volver no es empezar de nuevo. Es empezar distinto.`,
+          en: `One who moves from a text on the power of breathing, to another on cognitive biases, while reviewing something of universal history seeking to learn of leadership, to end surely with philosophy, does not seek diverse answers, but coherence in multiplicity.
+
+The variety of our readings, Lucilius, reveals who we are, at the same time as who we wish to be. Because reading is being, as learning is being and doing is being.
+
+It is not only that variety reflects your own way of being and knowing, but that these choices are a clear reflection of who you are and wish to be. It is not breathing, biases, history, or leadership that truly matters, but the connections between these objects of thought.
+
+And it is through philosophy that we can consciously construct these connections, not seeking to solve a problem, but simply to understand. And many times, finding solutions that someday will find their problem.
+
+One is what one reads, Lucilius, not only in the sense that readings are what make one who one is, but that one ends up reading precisely in the way one already is. Though of course, there always exists a space to turn toward better ways of being—a space that only reading and serious thinking can provide.
+
+Reading is also traveling, and you can travel for two reasons: to learn something you need, or to learn something you don't know you need. For the first, it is that you must turn regularly to readings in which you believe you can find ideas to solve some problem, because solutions are such when tested and iterated, they are implemented.
+
+For the second, it is that you must travel with books to places that give you the feeling they might be interesting or that some trusted reference has recommended to you, and although in both cases many times it may not work, the costs will always be much less than the benefits.
+
+Take reading recommendations seriously, but only those from those you know well enough to trust as you trust them. But take them seriously also to criticize them, for from the best places many have left deceived or assaulted. Read with questions in your head when you are seeking solutions, in the same way that you must be attentive to answers that today may serve nothing, but that later you will notice will serve for everything.
+
+Read, Lucilius, with fervor, with confidence and with doubt, demanding clarity but also beauty, and if any of these books does not dazzle you, set it aside immediately, because it is the next one that could change your life. But read only what is necessary to go on living, because one reads in order to live and does not live in order to read.
+
+Remember, Lucilius, the letters that we wrote together hundreds of years ago. I say "we wrote" because I believe that no one writes alone, but that ideas of many end up coming to earth through the work of a single person's hands. Read and reread. Listen and re-listen. To return is not to begin anew. It is to begin differently.`
+        }
+      },
+      {
+        id: 3,
+        titulo: { es: "Sobre la elección de amigos", en: "On Choosing Friends" },
+        fecha: "11 de marzo de 2026",
+        contenido: {
+          es: `Era este un niño extraterreste que se hace amigo de uno terrícola, cuando este último es llevado a su planeta para ser analizado como espécimen humano. Para el niño de por allá era muy natural ser amigo de alguien de por acá —siendo justamente niño — pero cuando sus padres le dicen que debían llevarlo de regreso a la Tierra, el niño extraterrestre promete visitarlo cada cierto tiempo. Y es así que ambos se encuentran cada cuantos años, esta vez para visitar distintas galaxias, siendo que en cada uno de esos encuentros es como si el tiempo no se hubiera interrumpido, como si nunca se hubieran separado.
+
+Del mismo modo, Lucilio, ocurre con los verdaderos amigos: los puedes ver luego de siete años para continuar la conversación que tuvieron la última vez, o volver a contarse el chiste que sólo ustedes pueden entender. Si te preguntas entonces si, como en el amor a la pareja, la distancia y el tiempo son pruebas de la amistad, yo veo una clara diferencia: el amor parece debilitarse con ellos, mientras la amistad verdadera, se fortalece.
+
+Aristóteles hablaba de la amistad por placer, por utilidad y por amor. Y efectivamente, es placentero tener a alguien con quien compartir intereses. Es útil tener a alguien que nos devuelva algún favor, o mejor, que lo haga sin esperar nada a cambio. Pero es de otro nivel tener a alguien a quien amar, simplemente porque uno tiene esta posibilidad.
+
+El verdadero amigo es entonces ese que nos permite dar y disfrutar de dicha gracia, pero dar como si fuera para nosotros mismos. Pregúntate entonces si estás para tu amigo como lo estás para ti mismo, y si la respuesta es negativa, agradece al menos tener un conocido.
+
+Prefiere los pocos verdaderos amigos, que muchísimos conocidos. Antes que tener la facilidad de poder hablar con cualquiera de lo que sea, prefiere conversar profundamente sobre lo que realmente importa, con una sola persona, además de contigo mismo.
+
+¿Deben los amigos ser similares a nosotros, como sugiere el "alma en dos cuerpos" de Aristóteles, o "un segundo uno mismo" de Cicerón? ¿O deben ser completamente distintos a uno? La respuesta es que necesitamos de ambos: ese que en unas dimensiones nos sea muy parecido, de manera que siempre nos recuerde y ayude a ser lo que quisimos ser; pero también alguno muy distinto, que más bien nos ayude a cambiar por completo.
+
+La amistad puede entonces concentrarse en las coincidencias para aceptar las diferencias, pero también puede buscar las diferencias para encontrar las coincidencias. En la amistad se siente, simplemente, una rara armonía.
+
+Dicen que quien no tiene enemigos no merece tener amigos. Debes tener algunos enemigos por ahí, Lucilio, aunque no te los hayan presentado aún. En todo caso, para ti serán a lo más conocidos, porque tener tu amistad es verdaderamente algo exclusivo, digno de ti mismo, de extraterrestres y de uno que otro terrícola que como yo, te estime demasiado.`,
+          en: `There was once an extraterrestrial child who befriended an earthly child when the latter was taken to his planet to be analyzed as a human specimen. For the child from there, it was quite natural to befriend someone from here—being after all just a child—but when his parents told him they had to take the earthling back to Earth, the extraterrestrial child promised to visit him from time to time. And so both have met every few years, this time to visit different galaxies, and in each of these encounters it is as if time had not been interrupted, as if they had never been separated.
+
+In the same way, Lucilius, it is with true friends: you can see them after seven years to continue the conversation you had the last time, or to tell again the joke that only the two of you understand. If you ask yourself then whether, as in romantic love, distance and time are tests of friendship, I see a clear difference: love seems to weaken with them, while true friendship strengthens.
+
+Aristotle spoke of friendship for pleasure, for utility, and for love. And indeed, it is pleasant to have someone with whom to share interests. It is useful to have someone who returns a favor to you, or better, who does so without expecting anything in return. But it is on another level to have someone to love, simply because one has this possibility.
+
+The true friend, then, is one who allows us to give and to enjoy this grace, but to give as if it were for ourselves. Ask yourself then whether you are for your friend as you are for yourself, and if the answer is no, be grateful at least to have an acquaintance.
+
+Prefer few true friends to many acquaintances. Rather than having the ease of being able to speak with anyone about anything, prefer to converse deeply about what truly matters, with a single person, and with yourself.
+
+Should friends be similar to us, as the "soul in two bodies" of Aristotle suggests, or "a second self" of Cicero? Or should they be completely different from us? The answer is that we need both: that one who in some dimensions is very much like us, in such a way that he always reminds us and helps us to be what we wished to be; but also someone very different, who helps us change completely.
+
+Friendship can then concentrate on coincidences to accept differences, but it can also seek differences to find coincidences. In friendship, one feels, simply, a rare harmony.
+
+They say that he who has no enemies does not deserve to have friends. You must have some enemies out there, Lucilius, even if they have not been introduced to you yet. In any case, for you they will be at most acquaintances, because to have your friendship is truly something exclusive, worthy of yourself, of extraterrestrials, and of the one or two earthlings who, like me, esteem you too much.`
+        }
+      }
+    ]
+  };
+
+  const textos = {
+    es: {
+      home: {
+        titulo: "SenecAI",
+        subtitulo: "Continuando la conversación con Séneca",
+        introduccion: "Mientras escuchaba una clase sobre una de las Cartas de Séneca a Lucilio, me pregunté: ¿existirán esas cartas que enviaba Lucilio o todo era parte del arsenal literario de Séneca? Luego entendí que esto no importaba. Lo que importaba eran las enormes lecciones de vida que hay en estos textos. Sin embargo, no se me ocurrió mejor forma para aprender sobre esto que continuar la conversación con Séneca, porque todos somos Lucilio, pero también podemos ser de vez en cuando, Séneca.",
+        botones: { cartas: "Cartas", emails: "Emails", buzon: "Buzón" }
+      },
+      about: {
+        titulo: "Sobre Luis",
+        contenido: "Filósofo sin academia, empresario sin ambiciones, mente con cuerpo. Empecé escribiendo en mi blog Diestro de Oído, pero necesitaba un carril para avanzar derecho, y lo encontré en las cartas de Séneca que escribió para mi, pero también para ti.",
+        parrafo2: "Como cuando se aprende a tocar música, SénecAI es mi cover personal sobre uno de los discos que marcaron mi vida."
+      },
+      nav: { cartas: "Cartas", emails: "Emails", buzon: "Buzón", about: "Sobre mí" },
+      sections: { cartas: "Cartas a Séneca", emails: "Emails a Lucilio", buzon: "Buzón de SénecAI" },
+      footer: { derechos: "© 2026 SenecAI. Todos los derechos reservados." },
+      buzon: { 
+        titulo: "Escribe tu pregunta a Séneca",
+        descripcion: "Comparte tu pregunta o situación. Séneca te responderá con la sabiduría de sus cartas aplicada a tu vida.",
+        placeholder: "¿Qué te inquieta? ¿Qué pregunta llevas contigo?",
+        enviar: "Enviar pregunta",
+        esperando: "Séneca está reflexionando...",
+        respuestaDe: "Respuesta de Séneca:"
+      }
+    },
+    en: {
+      home: {
+        titulo: "SenecAI",
+        subtitulo: "Continuing the Conversation with Seneca",
+        introduccion: "While listening to a lecture on one of Seneca's Letters to Lucilius, I wondered: did Lucilius's letters even exist, or was it all part of Seneca's literary arsenal? Then I understood that it didn't matter. What did matter were the enormous life lessons in these texts. However, I found no better way to learn about this than to continue the conversation with Seneca, because we are all Lucilius, but we can also be a Seneca from time to time.",
+        botones: { cartas: "Letters", emails: "Emails", buzon: "Mailbox" }
+      },
+      about: {
+        titulo: "About Luis",
+        contenido: "Philosopher without academy, entrepreneur without ambitions, mind with body. I started writing on my blog Diestro de Oído, but I needed a path to move straight ahead, and I found it in Seneca's letters that he wrote for me, but also for you.",
+        parrafo2: "Just as when learning to play music, SenecAI is my personal cover of one of the records that marked my life."
+      },
+      nav: { cartas: "Letters", emails: "Emails", buzon: "Mailbox", about: "About me" },
+      sections: { cartas: "Letters to Seneca", emails: "Emails to Lucilius", buzon: "Seneca's Mailbox" },
+      footer: { derechos: "© 2026 SenecAI. All rights reserved." },
+      buzon: {
+        titulo: "Ask Seneca a question",
+        descripcion: "Share your question or situation. Seneca will respond with the wisdom of his letters applied to your life.",
+        placeholder: "What troubles you? What question do you carry?",
+        enviar: "Send question",
+        esperando: "Seneca is reflecting...",
+        respuestaDe: "Seneca's response:"
+      }
+    }
+  };
+
+  const t = textos[idioma];
+
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-3xl font-bold">
-            <div>SENEC<span className="text-yellow-600">AI</span></div>
-          </h1>
+    <div className="bg-white min-h-screen flex flex-col" style={{fontFamily: 'system-ui, sans-serif'}}>
+      {/* NAV */}
+      <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+          <button
+            onClick={() => { setSeccionActiva('home'); setPiezaSeleccionada(null); }}
+            style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.15em', fontWeight: '300', fontSize: '1.4rem' }}
+            className="text-gray-900 hover:text-yellow-600 transition"
+          >
+            &lt;SENEC<span className="text-yellow-600">AI</span>&gt;
+          </button>
 
-          <nav className="flex items-center gap-8">
-            <div className="hidden sm:flex gap-8">
-              <button
-                onClick={() => { setSeccionActual('cartas'); setPiezaSeleccionada(null); }}
-                className={`text-sm font-medium transition-colors ${
-                  seccionActual === 'cartas' ? 'text-yellow-600' : 'text-gray-700 hover:text-gray-900'
-                }`}
-              >
-                {t.sections.cartas}
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-8">
+            {['cartas','emails','buzon','about'].map(s => (
+              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); }}
+                className={`text-sm font-medium transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600 hover:text-gray-900'}`}>
+                {t.nav[s]}
               </button>
-              <button
-                onClick={() => { setSeccionActual('emails'); setPiezaSeleccionada(null); }}
-                className={`text-sm font-medium transition-colors ${
-                  seccionActual === 'emails' ? 'text-yellow-600' : 'text-gray-700 hover:text-gray-900'
-                }`}
-              >
-                {t.sections.emails}
-              </button>
-              <button
-                onClick={() => { setSeccionActual('buzon'); setPiezaSeleccionada(null); }}
-                className={`text-sm font-medium transition-colors ${
-                  seccionActual === 'buzon' ? 'text-yellow-600' : 'text-gray-700 hover:text-gray-900'
-                }`}
-              >
-                {t.sections.buzon}
-              </button>
-              <button
-                onClick={() => { setSeccionActual('about'); setPiezaSeleccionada(null); }}
-                className={`text-sm font-medium transition-colors ${
-                  seccionActual === 'about' ? 'text-yellow-600' : 'text-gray-700 hover:text-gray-900'
-                }`}
-              >
-                {idioma === 'es' ? 'Acerca de' : 'About'}
-              </button>
+            ))}
+            <div className="flex gap-2 pl-4 border-l border-gray-200">
+              {['es','en'].map(l => (
+                <button key={l} onClick={() => setIdioma(l)}
+                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600 hover:text-gray-900'}`}>
+                  {l.toUpperCase()}
+                </button>
+              ))}
             </div>
+          </div>
 
-            <button
-              onClick={() => setIdioma(idioma === 'es' ? 'en' : 'es')}
-              className="px-3 py-1 text-sm font-medium bg-gray-100 rounded hover:bg-gray-200 transition-colors"
-            >
-              {idioma === 'es' ? 'EN' : 'ES'}
-            </button>
-          </nav>
+          {/* Mobile hamburger */}
+          <button onClick={() => setMenuAbierto(!menuAbierto)} className="md:hidden text-gray-600 text-xl">
+            {menuAbierto ? '✕' : '☰'}
+          </button>
         </div>
-      </header>
 
-      {/* Home */}
-      {seccionActual === 'home' && (
-        <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-5xl font-bold mb-4">{t.home.titulo}</h1>
-          <p className="text-xl text-gray-600 mb-8">{t.home.subtitulo}</p>
-          <p className="text-lg text-gray-700 mb-12 leading-relaxed">{t.home.descripcion}</p>
-
-          <div className="flex justify-center gap-4">
-            <button
-              onClick={() => { setSeccionActual('cartas'); setPiezaSeleccionada(null); }}
-              className="px-8 py-3 bg-yellow-600 text-white rounded font-medium hover:bg-yellow-700 transition-colors"
-            >
-              {idioma === 'es' ? 'Leer Cartas' : 'Read Letters'}
-            </button>
-            <button
-              onClick={() => { setSeccionActual('emails'); setPiezaSeleccionada(null); }}
-              className="px-8 py-3 border border-yellow-600 text-yellow-600 rounded font-medium hover:bg-yellow-50 transition-colors"
-            >
-              {idioma === 'es' ? 'Leer Emails' : 'Read Emails'}
-            </button>
-          </div>
-
-          {/* Substack embed */}
-          <div className="mt-20 pt-12 border-t border-gray-200">
-            <iframe src="https://diestrodeoido.substack.com/embed" width="100%" height="320" frameBorder="0" scrolling="no" />
-          </div>
-        </section>
-      )}
-
-      {/* Cartas */}
-      {seccionActual === 'cartas' && !piezaSeleccionada && (
-        <section className="bg-yellow-50 min-h-screen">
-          <div className="max-w-4xl mx-auto px-6 py-12">
-            <h2 className="text-4xl font-bold mb-12">{t.sections.cartas}</h2>
-            <div className="grid gap-6">
-              {cartasData[idioma].map((carta) => (
-                <button
-                  key={carta.numero}
-                  onClick={() => setPiezaSeleccionada({ tipo: 'carta', indice: carta.numero - 1 })}
-                  className="p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow text-left border-l-4 border-yellow-600"
-                >
-                  <h3 className="text-xl font-bold mb-2">{carta.numero}. {carta.titulo}</h3>
-                  <p className="text-gray-600">{carta.contenido.split('\n')[0]}</p>
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Emails */}
-      {seccionActual === 'emails' && !piezaSeleccionada && (
-        <section className="bg-white min-h-screen">
-          <div className="max-w-4xl mx-auto px-6 py-12">
-            <h2 className="text-4xl font-bold mb-12">{t.sections.emails}</h2>
-            <div className="grid gap-6">
-              {emailsData[idioma].map((email) => (
-                <button
-                  key={email.numero}
-                  onClick={() => setPiezaSeleccionada({ tipo: 'email', indice: email.numero - 1 })}
-                  className="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-shadow text-left border-l-4 border-gray-400"
-                >
-                  <h3 className="text-xl font-bold mb-2">{email.numero}. {email.titulo}</h3>
-                  <p className="text-gray-600">{email.contenido.split('\n')[0]}</p>
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* Pieza Seleccionada */}
-      {piezaSeleccionada && (
-        <section className={piezaSeleccionada.tipo === 'carta' ? 'bg-yellow-50' : 'bg-white'}>
-          <div className="max-w-3xl mx-auto px-6 py-12">
-            <button
-              onClick={() => setPiezaSeleccionada(null)}
-              className="mb-6 text-yellow-600 font-medium hover:text-yellow-700"
-            >
-              ← {idioma === 'es' ? 'Volver' : 'Back'}
-            </button>
-
-            {piezaSeleccionada.tipo === 'carta' ? (
-              <article className="prose prose-lg max-w-none font-caveat text-xl leading-relaxed">
-                <h1 className="font-caveat text-4xl text-gray-900 mb-8">
-                  {cartasData[idioma][piezaSeleccionada.indice].titulo}
-                </h1>
-                <div className="whitespace-pre-wrap text-gray-800">
-                  {cartasData[idioma][piezaSeleccionada.indice].contenido}
-                </div>
-              </article>
-            ) : (
-              <article className="bg-white p-8 rounded-lg shadow">
-                <div className="mb-6 border-b border-gray-200 pb-6">
-                  <p className="text-gray-600 mb-2">
-                    <strong>{idioma === 'es' ? 'De:' : 'From:'}</strong> Séneca
-                  </p>
-                  <p className="text-gray-600">
-                    <strong>{idioma === 'es' ? 'Para:' : 'To:'}</strong> Lucilio
-                  </p>
-                </div>
-                <h1 className="text-3xl font-bold mb-8 text-gray-900">
-                  {emailsData[idioma][piezaSeleccionada.indice].titulo}
-                </h1>
-                <div className="prose prose-lg max-w-none">
-                  <div className="whitespace-pre-wrap text-gray-800 leading-relaxed">
-                    {emailsData[idioma][piezaSeleccionada.indice].contenido}
-                  </div>
-                </div>
-              </article>
-            )}
-          </div>
-        </section>
-      )}
-
-      {/* Buzón */}
-      {seccionActual === 'buzon' && (
-        <section className="bg-gray-50 min-h-screen">
-          <div className="max-w-3xl mx-auto px-6 py-12">
-            <h2 className="text-4xl font-bold mb-6">{t.buzon.titulo}</h2>
-            <p className="text-lg text-gray-600 mb-10">{t.buzon.descripcion}</p>
-
-            <form onSubmit={handleEnviarPregunta} className="bg-white p-8 rounded-lg shadow-lg mb-8">
-              <textarea
-                value={pregunta}
-                onChange={(e) => setPregunta(e.target.value)}
-                placeholder={t.buzon.placeholder}
-                className="w-full h-40 p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600 resize-none"
-              />
-              <button
-                type="submit"
-                disabled={cargando || !pregunta.trim()}
-                className="mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 bg-yellow-600 text-white rounded-lg font-medium hover:bg-yellow-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {cargando ? (
-                  <>
-                    <Loader className="w-5 h-5 animate-spin" />
-                    {t.buzon.esperando}
-                  </>
-                ) : (
-                  <>
-                    <Send className="w-5 h-5" />
-                    {t.buzon.enviar}
-                  </>
-                )}
+        {/* Mobile menu */}
+        {menuAbierto && (
+          <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+            {['cartas','emails','buzon','about'].map(s => (
+              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); setMenuAbierto(false); }}
+                className={`text-sm font-medium text-left transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600'}`}>
+                {t.nav[s]}
               </button>
-            </form>
+            ))}
+            <div className="flex gap-2 pt-2 border-t border-gray-100">
+              {['es','en'].map(l => (
+                <button key={l} onClick={() => { setIdioma(l); setMenuAbierto(false); }}
+                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600'}`}>
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </nav>
 
-            {respuesta && (
-              <div className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-yellow-600">
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{t.buzon.respuestaDe}</h3>
-                <div className="prose prose-lg max-w-none">
-                  <p className="text-gray-800 leading-relaxed whitespace-pre-wrap">{respuesta}</p>
-                </div>
+      <div className="flex-grow">
+
+        {/* HOME */}
+        {seccionActiva === 'home' && (
+          <section className="min-h-screen bg-white flex flex-col justify-center">
+            <div className="max-w-2xl mx-auto px-6 py-16 text-center">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">{t.home.titulo}</h1>
+              <p className="text-xl text-yellow-600 mb-8 font-light">{t.home.subtitulo}</p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-12 font-light">{t.home.introduccion}</p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                {['cartas','emails','buzon'].map(s => (
+                  <button key={s} onClick={() => setSeccionActiva(s)}
+                    className="bg-yellow-600 text-white px-8 py-3 rounded hover:bg-yellow-700 transition font-medium">
+                    {t.home.botones[s]}
+                  </button>
+                ))}
               </div>
-            )}
-          </div>
-        </section>
-      )}
+            </div>
+          </section>
+        )}
 
-      {/* About */}
-      {seccionActual === 'about' && (
-        <section className="bg-gray-50 min-h-screen">
-          <div className="max-w-3xl mx-auto px-6 py-20 text-center">
-            <h2 className="text-4xl font-bold mb-12">{t.about.titulo}</h2>
-            <p className="text-xl text-gray-700 leading-relaxed">{t.about.bio}</p>
-          </div>
-        </section>
-      )}
+        {/* CARTAS */}
+        {seccionActiva === 'cartas' && (
+          <section className="min-h-screen bg-yellow-50 py-16">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.cartas}</h2>
+              {piezaSeleccionada && piezaSeleccionada.tipo === 'carta' ? (
+                <article>
+                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-700 hover:text-yellow-900 font-medium text-sm mb-8 block">
+                    ← {idioma === 'es' ? 'Volver' : 'Back'}
+                  </button>
+                  <div className="bg-yellow-100 border-2 border-yellow-800 rounded-lg p-8 shadow-md max-w-3xl">
+                    <h3 className="text-3xl font-bold text-yellow-900 mb-6" style={{fontFamily: 'Georgia, serif'}}>{piezaSeleccionada.pieza.titulo[idioma]}</h3>
+                    <div className="text-yellow-900 leading-relaxed whitespace-pre-wrap mb-8"
+                      style={{ fontFamily: "'Caveat', cursive", fontSize: '1.3rem', lineHeight: '1.7' }}>
+                      {piezaSeleccionada.pieza.contenido[idioma]}
+                    </div>
+                    <div className="text-sm text-yellow-800 italic border-t-2 border-yellow-800 pt-4">{piezaSeleccionada.pieza.fecha}</div>
+                  </div>
+                  <SubstackEmbed idioma={idioma} />
+                </article>
+              ) : (
+                <div className="grid gap-6">
+                  {piezas.cartas.slice().reverse().map(carta => (
+                    <div key={carta.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
+                      onClick={() => setPiezaSeleccionada({ tipo: 'carta', pieza: carta })}>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{carta.titulo[idioma]}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{carta.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
+                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 text-center">
-        <p>© 2025 SenecAI. {idioma === 'es' ? 'Un proyecto de reflexión y divulgación filosófica.' : 'A project of philosophical reflection and outreach.'}</p>
+        {/* EMAILS */}
+        {seccionActiva === 'emails' && (
+          <section className="min-h-screen bg-white py-16">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.emails}</h2>
+              {piezaSeleccionada && piezaSeleccionada.tipo === 'email' ? (
+                <article>
+                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-600 hover:text-yellow-700 font-medium text-sm mb-8 block">
+                    ← {idioma === 'es' ? 'Volver' : 'Back'}
+                  </button>
+                  <div className="bg-white border border-gray-300 rounded-lg shadow-sm max-w-3xl">
+                    <div className="border-b border-gray-200 p-6 bg-gray-50">
+                      <p className="text-sm text-gray-600 font-mono"><span className="font-semibold">{idioma === 'es' ? 'Asunto' : 'Subject'}:</span> {piezaSeleccionada.pieza.titulo[idioma]}</p>
+                      <p className="text-sm text-gray-600 font-mono mt-1"><span className="font-semibold">{idioma === 'es' ? 'Fecha' : 'Date'}:</span> {piezaSeleccionada.pieza.fecha}</p>
+                    </div>
+                    <div className="p-8 text-gray-800 leading-relaxed whitespace-pre-wrap text-base" style={{fontFamily: 'Georgia, serif'}}>
+                      {piezaSeleccionada.pieza.contenido[idioma]}
+                    </div>
+                  </div>
+                  <SubstackEmbed idioma={idioma} />
+                </article>
+              ) : (
+                <div className="grid gap-6">
+                  {piezas.emails.slice().reverse().map(emailItem => (
+                    <div key={emailItem.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
+                      onClick={() => setPiezaSeleccionada({ tipo: 'email', pieza: emailItem })}>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{emailItem.titulo[idioma]}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{emailItem.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
+                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* BUZÓN */}
+        {seccionActiva === 'buzon' && (
+          <section className="min-h-screen bg-gray-50 py-16">
+            <div className="max-w-2xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.sections.buzon}</h2>
+              <p className="text-lg text-gray-600 mb-8">{t.buzon.descripcion}</p>
+
+              <form onSubmit={handleEnviarPregunta} className="bg-white p-8 rounded border border-gray-200 mb-8">
+                <textarea
+                  value={pregunta}
+                  onChange={(e) => setPregunta(e.target.value)}
+                  placeholder={t.buzon.placeholder}
+                  className="w-full h-40 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-600 resize-none"
+                />
+                <button
+                  type="submit"
+                  disabled={cargando || !pregunta.trim()}
+                  className="mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 bg-yellow-600 text-white rounded font-medium hover:bg-yellow-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {cargando ? (
+                    <>
+                      <Loader className="w-5 h-5 animate-spin" />
+                      {t.buzon.esperando}
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5" />
+                      {t.buzon.enviar}
+                    </>
+                  )}
+                </button>
+              </form>
+
+              {respuesta && (
+                <div className="bg-white p-8 rounded border border-yellow-200 mb-8">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">{t.buzon.respuestaDe}</h3>
+                  <p className="text-gray-800 leading-relaxed whitespace-pre-wrap" style={{fontFamily: 'Georgia, serif'}}>{respuesta}</p>
+                </div>
+              )}
+
+              <SubstackEmbed idioma={idioma} />
+            </div>
+          </section>
+        )}
+
+        {/* ABOUT */}
+        {seccionActiva === 'about' && (
+          <section className="min-h-screen bg-gray-50 py-16">
+            <div className="max-w-2xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.about.titulo}</h2>
+              <div className="bg-white p-8 rounded border border-gray-200">
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">{t.about.contenido}</p>
+                <p className="text-lg text-gray-700 leading-relaxed">{t.about.parrafo2}</p>
+              </div>
+            </div>
+          </section>
+        )}
+
+      </div>
+
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800 mt-16">
+        <p>{t.footer.derechos}</p>
       </footer>
     </div>
   );
