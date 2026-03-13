@@ -3,7 +3,7 @@ import { Anthropic } from '@anthropic-ai/sdk';
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
-
+console.log('API Key:', process.env.ANTHROPIC_API_KEY ? 'SET' : 'NOT SET');
 // Ideas Database
 const ideasDatabase = [
   {
