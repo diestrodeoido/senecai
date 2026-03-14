@@ -32,7 +32,7 @@ export default function SenecAI() {
   const [respuesta, setRespuesta] = useState('');
   const [cargando, setCargando] = useState(false);
 
-  const handleEnviarPregunta = async (e) => {
+  const handleEnviarPregunta = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!pregunta.trim()) return;
 
