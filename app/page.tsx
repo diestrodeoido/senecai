@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Send, Loader } from "lucide-react";
 
-const SubstackEmbed = ({ idioma }) => (
+const SubstackEmbed = ({ idioma }: { idioma: string }) => (
   <div className="mt-12 flex justify-center">
     <div className="border border-gray-200 rounded-lg p-6 bg-white text-center" style={{maxWidth: '480px', width: '100%'}}>
       <p className="text-gray-700 font-medium mb-1" style={{fontFamily: 'Georgia, serif'}}>
