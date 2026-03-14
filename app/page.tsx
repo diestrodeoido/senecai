@@ -1,8 +1,9 @@
 'use client';
+
 import { useState } from "react";
 import { Send, Loader } from "lucide-react";
 
-const SubstackEmbed = ({ idioma }: { idioma: string }) => (
+const SubstackEmbed = ({ idioma }: { idioma: 'es' | 'en' }) => (
   <div className="mt-12 flex justify-center">
     <div className="border border-gray-200 rounded-lg p-6 bg-white text-center" style={{maxWidth: '480px', width: '100%'}}>
       <p className="text-gray-700 font-medium mb-1" style={{fontFamily: 'Georgia, serif'}}>
@@ -24,10 +25,10 @@ const SubstackEmbed = ({ idioma }: { idioma: string }) => (
 );
 
 export default function SenecAI() {
-  const [idioma, setIdioma] = useState('es');
+  const [idioma, setIdioma] = useState<'es' | 'en'>('es');
   const [seccionActiva, setSeccionActiva] = useState('home');
   const [menuAbierto, setMenuAbierto] = useState(false);
-  const [piezaSeleccionada, setPiezaSeleccionada] = useState(null);
+  const [piezaSeleccionada, setPiezaSeleccionada] = useState<{ tipo: 'carta' | 'email'; pieza: any } | null>(null);
   const [pregunta, setPregunta] = useState('');
   const [respuesta, setRespuesta] = useState('');
   const [cargando, setCargando] = useState(false);
@@ -471,14 +472,14 @@ They say that he who has no enemies does not deserve to have friends. You must h
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {['cartas','emails','buzon','about'].map(s => (
+            {(['cartas','emails','buzon','about'] as const).map(s => (
               <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); }}
                 className={`text-sm font-medium transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600 hover:text-gray-900'}`}>
                 {t.nav[s]}
               </button>
             ))}
             <div className="flex gap-2 pl-4 border-l border-gray-200">
-              {['es','en'].map(l => (
+              {(['es','en'] as const).map(l => (
                 <button key={l} onClick={() => setIdioma(l)}
                   className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600 hover:text-gray-900'}`}>
                   {l.toUpperCase()}
@@ -496,14 +497,14 @@ They say that he who has no enemies does not deserve to have friends. You must h
         {/* Mobile menu */}
         {menuAbierto && (
           <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-            {['cartas','emails','buzon','about'].map(s => (
+            {(['cartas','emails','buzon','about'] as const).map(s => (
               <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); setMenuAbierto(false); }}
                 className={`text-sm font-medium text-left transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600'}`}>
                 {t.nav[s]}
               </button>
             ))}
             <div className="flex gap-2 pt-2 border-t border-gray-100">
-              {['es','en'].map(l => (
+              {(['es','en'] as const).map(l => (
                 <button key={l} onClick={() => { setIdioma(l); setMenuAbierto(false); }}
                   className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600'}`}>
                   {l.toUpperCase()}
@@ -524,7 +525,7 @@ They say that he who has no enemies does not deserve to have friends. You must h
               <p className="text-xl text-yellow-600 mb-8 font-light">{t.home.subtitulo}</p>
               <p className="text-lg text-gray-700 leading-relaxed mb-12 font-light">{t.home.introduccion}</p>
               <div className="flex gap-4 justify-center flex-wrap">
-                {['cartas','emails','buzon'].map(s => (
+                {(['cartas','emails','buzon'] as const).map(s => (
                   <button key={s} onClick={() => setSeccionActiva(s)}
                     className="bg-yellow-600 text-white px-8 py-3 rounded hover:bg-yellow-700 transition font-medium">
                     {t.home.botones[s]}
