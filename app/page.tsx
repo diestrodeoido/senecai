@@ -125,13 +125,13 @@ I bid you farewell, friend, having wished to tell you much more, but aware that 
         titulo: { es: "Sobre la diversidad de las lecturas", en: "On Reading Diversity" },
         fecha: "20 de febrero de 2026",
         contenido: {
-          es: `Recibí tu consejo  sobre los autores, mi querido Séneca, y debo confesarte algo incómodo: no lo estoy siguiendo.
+          es: `Recibí tu consejo sobre los autores, mi querido Séneca, y debo confesarte algo incómodo: no lo estoy siguiendo.
 
 Leo regularmente, pero nunca todo lo que quisiera. Y últimamente leo menos que en los últimos años, seguro por haber decidido dedicarle más tiempo a otras obligaciones y desde hace poco, a actividades realmente importantes, las que te decía que me hacen sentir vivo realmente.
 
-Contrariamente a lo que sugieres, recientemente —diría un poco más de un año—  leo con regular variedad. Difícilmente me quedo con un solo libro hasta terminarlo, sino más bien que ahora prefiero leer varios libros a la vez. 
+Contrariamente a lo que sugieres, recientemente —diría un poco más de un año— leo con regular variedad. Difícilmente me quedo con un solo libro hasta terminarlo, sino más bien que ahora prefiero leer varios libros a la vez.
 
-No sé si esto ocurre por mera curiosidad o por dármela de generalista, pero lo más probable es que sea porque necesito resolver diversas situaciones en las que los libros me pueden ayudar.   
+No sé si esto ocurre por mera curiosidad o por dármela de generalista, pero lo más probable es que sea porque necesito resolver diversas situaciones en las que los libros me pueden ayudar.
 
 A veces tengo un problema específico para el que sé que algunos textos me pueden proveer ideas o inspirarme. Otras, sin problema en mente encuentro soluciones que sé que algún día pueden servir perfectamente. Pero tal vez lo que más disfruta es cuando tiento mi suerte y encuentro algo verdadero, útil o bello. El que busca, encuentra. El que encuentra, lo cuenta.
 
@@ -153,7 +153,7 @@ Sin más, por lo menos sé que necesito masticar por mucho tiempo una idea para 
 
 Leyendo es que recargo; escribiendo es que disparo.
 
-Concuerdo Séneca plenamente contigo en la necesidad de tener pocos amigos y muchos conocidos. Ya sabía yo que los autores clásicos son aquellos a quienes debo frecuentar y por allí he venido transitando, pero últimamente he entendido que "clásicos" es una categoría muy grande y que debo hablar de nombres concretos. 
+Concuerdo Séneca plenamente contigo en la necesidad de tener pocos amigos y muchos conocidos. Ya sabía yo que los autores clásicos son aquellos a quienes debo frecuentar y por allí he venido transitando, pero últimamente he entendido que "clásicos" es una categoría muy grande y que debo hablar de nombres concretos.
 
 Justo no hace mucho definí una lista casi completa de autores de quienes me encantaría volverme su amigo, como Platón, Aristóteles, Marco Aurelio, Hume, Nietzsche, Betrand Rusell, Oscar Wilde, William James, Borges, Peter Singer, Kahneman, Taleb, Sam Harris, Kafka, Richard Bach, Ribeyro, Zweig y por supuesto tú, mi querido amigo. Y si no llegan a ser mis amigos, igual los quiero como mentores.
 
@@ -230,7 +230,7 @@ Pensaba en el caso anterior como un contraejemplo a tu recomendación de simplem
 
 Pero luego me di cuenta de que estuve errado en la aplicación: nunca hice el esfuerzo necesario para juzgarlo antes de considerarlo mi amigo, que era parte clave de tu consejo, y la verdad es que está tan lejos en mi escala de amistad que no debería haberlo llamado nunca "amigo".
 
-Me pregunto Séneca entonces:  ¿realmente todos necesitamos esos verdaderos amigos — "un alma en dos cuerpos" como decía Aristóteles? ¿O basta con la idea de amistad perfecta, como proponía Platón en sus formas, para entender nuestra relación con los demás?
+Me pregunto Séneca entonces: ¿realmente todos necesitamos esos verdaderos amigos — "un alma en dos cuerpos" como decía Aristóteles? ¿O basta con la idea de amistad perfecta, como proponía Platón en sus formas, para entender nuestra relación con los demás?
 
 Sea lo uno, sea lo otro, ahora entiendo que la amistad verdadera, como el amor — ¿por qué todavía creo que son distintos?—, comienza con uno mismo. Porque ser amigo de otro por no poder bastarse a sí mismo, no es amistad—es conveniencia.`,
           en: `I read your counsel on friendship with great enthusiasm, my dear Seneca, but I believe that, though all the ideas are beautiful—perhaps precisely because they are—, they are somewhat removed from reality.
@@ -257,8 +257,9 @@ But then I realized that I was wrong in my application: I never made the necessa
 
 I ask myself then, Seneca: do we really all need those true friends—"one soul in two bodies" as Aristotle said? Or is it enough to have the idea of perfect friendship, as Plato proposed in his forms, to understand our relationship with others?
 
-Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`,
+Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`
         }
+      }
       },
       {
         id: 4,
@@ -304,7 +305,7 @@ Until before this I do not remember having real fear of death, at least of my ow
 
 I remember having cried before him weeks earlier, knowing that if we did not do something radical for his health, we would lose him. I was there explaining to him about an alternative treatment to save his kidneys when I understood that we had little time left with him, and I broke down.
 
-The days that followed I watched my father slowly fade away, not only in physical strength but in his will to live. It was so evident to me that the day we had to take him to the clinic because of an alert with his vital signs, I knew that day would probably be his last. I wanted to stay with him to keep him company through that night, during his final hours.
+The days that followed I watched my father slowly fade away, not only in physical strength but in his will to live. It was so evident to me that the day we had to take him to the clinic because of an alert with his vital signals, I knew that day would probably be his last. I wanted to stay with him to keep him company through that night, during his final hours.
 
 My father was also afraid of death, but the suffering from his illness was so harsh that I am certain he no longer wanted to go on living and therefore chose to let himself go.
 
@@ -365,8 +366,7 @@ I am going to reduce my expectations, Seneca. Not because I will stop being posi
 
 I want to be a philosopher, Seneca, at least for today, and so for every day I have left.`
         }
-      }
-    ],
+      }    ],
     emails: [
       {
         id: 1,
@@ -430,7 +430,7 @@ Your attention, Lucilius, is what gives value to time. From this comes the fact 
         titulo: { es: "Sobre las lecturas", en: "On Reading" },
         fecha: "21 de febrero de 2026",
         contenido: {
-          es: `Aquel que pasa de un texto sobre el poder de la respiración, a otro de sesgos cognitivos, a la vez que repasa algo de historia universal buscando aprender de liderazgo, para terminar seguramente con filosofía, no busca respuestas diversas, sino coherencia en la multiplicidad. 
+          es: `Aquel que pasa de un texto sobre el poder de la respiración, a otro de sesgos cognitivos, a la vez que repasa algo de historia universal buscando aprender de liderazgo, para terminar seguramente con filosofía, no busca respuestas diversas, sino coherencia en la multiplicidad.
 
 La variedad de nuestras lecturas, Lucilio, revela quiénes somos, a la vez que quiénes queremos ser. Porque leer es ser, como aprender es ser y hacer es ser.
 
@@ -485,7 +485,7 @@ El verdadero amigo es entonces ese que nos permite dar y disfrutar de dicha grac
 
 Prefiere los pocos verdaderos amigos, que muchísimos conocidos. Antes que tener la facilidad de poder hablar con cualquiera de lo que sea, prefiere conversar profundamente sobre lo que realmente importa, con una sola persona, además de contigo mismo.
 
-¿Deben los amigos ser similares a nosotros, como sugiere el "alma en dos cuerpos" de Aristóteles, o "un segundo uno mismo" de Cicerón? ¿O deben ser completamente distintos a uno? La respuesta es que necesitamos de ambos: ese que en unas dimensiones nos sea muy parecido, de manera que siempre nos recuerde y ayude a ser lo que quisimos ser; pero también alguno muy distinto, que más bien nos ayude a cambiar por completo. 
+¿Deben los amigos ser similares a nosotros, como sugiere el "alma en dos cuerpos" de Aristóteles, o "un segundo uno mismo" de Cicerón? ¿O deben ser completamente distintos a uno? La respuesta es que necesitamos de ambos: ese que en unas dimensiones nos sea muy parecido, de manera que siempre nos recuerde y ayude a ser lo que quisimos ser; pero también alguno muy distinto, que más bien nos ayude a cambiar por completo.
 
 La amistad puede entonces concentrarse en las coincidencias para aceptar las diferencias, pero también puede buscar las diferencias para encontrar las coincidencias. En la amistad se siente, simplemente, una rara armonía.
 
@@ -506,6 +506,7 @@ Friendship can then concentrate on coincidences to accept differences, but it ca
 
 They say that he who has no enemies does not deserve to have friends. You must have some enemies out there, Lucilius, even if they have not been introduced to you yet. In any case, for you they will be at most acquaintances, because to have your friendship is truly something exclusive, worthy of yourself, of extraterrestrials, and of the one or two earthlings who, like me, esteem you too much.`
         }
+      }
       },
       {
         id: 4,
@@ -596,8 +597,7 @@ Remember, Lucilius, but do not suffer nor boast because of it; plan, but not wit
 
 All that matters and indeed the only thing that exists, Lucilius, is here inside and here now.`
         }
-      }
-    ]
+      }    ]
   };
 
   const textos = {
@@ -646,294 +646,227 @@ All that matters and indeed the only thing that exists, Lucilius, is here inside
         placeholder: "What troubles you? What question do you carry?",
         enviar: "Send question",
         esperando: "Seneca is reflecting...",
-        respuestaDe: "Seneca's Response:"
+        respuestaDe: "Seneca's response:"
       }
     }
   };
 
+  const t = textos[idioma as keyof typeof textos];
+
   return (
-    <div className="min-h-screen bg-white" style={{fontFamily: 'Georgia, serif'}}>
-      {/* Header */}
-      <header className="border-b border-gray-200 sticky top-0 bg-white z-50">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="bg-white min-h-screen flex flex-col" style={{fontFamily: 'system-ui, sans-serif'}}>
+      {/* NAV */}
+      <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
           <button
-            onClick={() => setSeccionActiva('home')}
-            className="text-2xl font-bold hover:opacity-70 transition"
-            style={{fontFamily: 'Georgia, serif', letterSpacing: '0.1em'}}
+            onClick={() => { setSeccionActiva('home'); setPiezaSeleccionada(null); }}
+            style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.15em', fontWeight: '300', fontSize: '1.4rem' }}
+            className="text-gray-900 hover:text-yellow-600 transition"
           >
             &lt;SENEC<span className="text-yellow-600">AI</span>&gt;
           </button>
-          
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-6 items-center">
-            <button
-              onClick={() => setSeccionActiva('cartas')}
-              className={`text-sm transition ${seccionActiva === 'cartas' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
-            >
-              {textos[idioma].nav.cartas}
-            </button>
-            <button
-              onClick={() => setSeccionActiva('emails')}
-              className={`text-sm transition ${seccionActiva === 'emails' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
-            >
-              {textos[idioma].nav.emails}
-            </button>
-            <button
-              onClick={() => setSeccionActiva('buzon')}
-              className={`text-sm transition ${seccionActiva === 'buzon' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
-            >
-              {textos[idioma].nav.buzon}
-            </button>
-            <button
-              onClick={() => setSeccionActiva('about')}
-              className={`text-sm transition ${seccionActiva === 'about' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
-            >
-              {textos[idioma].nav.about}
-            </button>
-            <button
-              onClick={() => setIdioma(idioma === 'es' ? 'en' : 'es')}
-              className="px-3 py-1 border border-yellow-600 text-yellow-600 rounded hover:bg-yellow-50 transition text-sm"
-            >
-              {idioma === 'es' ? 'EN' : 'ES'}
-            </button>
-          </nav>
 
-          {/* Mobile Hamburger */}
-          <div className="md:hidden flex gap-3">
-            <button
-              onClick={() => setIdioma(idioma === 'es' ? 'en' : 'es')}
-              className="px-2 py-1 text-xs border border-yellow-600 text-yellow-600 rounded"
-            >
-              {idioma === 'es' ? 'EN' : 'ES'}
-            </button>
-            <button
-              onClick={() => setMenuAbierto(!menuAbierto)}
-              className="text-xl"
-            >
-              ☰
-            </button>
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-8">
+            {(['cartas','emails','buzon','about'] as const).map(s => (
+              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); }}
+                className={`text-sm font-medium transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600 hover:text-gray-900'}`}>
+                {t.nav[s]}
+              </button>
+            ))}
+            <div className="flex gap-2 pl-4 border-l border-gray-200">
+              {(['es','en'] as const).map(l => (
+                <button key={l} onClick={() => setIdioma(l)}
+                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600 hover:text-gray-900'}`}>
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
           </div>
+
+          {/* Mobile hamburger */}
+          <button onClick={() => setMenuAbierto(!menuAbierto)} className="md:hidden text-gray-600 text-xl">
+            {menuAbierto ? '✕' : '☰'}
+          </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile menu */}
         {menuAbierto && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
-            <button
-              onClick={() => { setSeccionActiva('cartas'); setMenuAbierto(false); }}
-              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
-            >
-              {textos[idioma].nav.cartas}
-            </button>
-            <button
-              onClick={() => { setSeccionActiva('emails'); setMenuAbierto(false); }}
-              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
-            >
-              {textos[idioma].nav.emails}
-            </button>
-            <button
-              onClick={() => { setSeccionActiva('buzon'); setMenuAbierto(false); }}
-              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
-            >
-              {textos[idioma].nav.buzon}
-            </button>
-            <button
-              onClick={() => { setSeccionActiva('about'); setMenuAbierto(false); }}
-              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
-            >
-              {textos[idioma].nav.about}
-            </button>
+          <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+            {(['cartas','emails','buzon','about'] as const).map(s => (
+              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); setMenuAbierto(false); }}
+                className={`text-sm font-medium text-left transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600'}`}>
+                {t.nav[s]}
+              </button>
+            ))}
+            <div className="flex gap-2 pt-2 border-t border-gray-100">
+              {(['es','en'] as const).map(l => (
+                <button key={l} onClick={() => { setIdioma(l); setMenuAbierto(false); }}
+                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600'}`}>
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
           </div>
         )}
-      </header>
+      </nav>
 
-      {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 py-12">
+      <div className="flex-grow">
+
+        {/* HOME */}
         {seccionActiva === 'home' && (
-          <div className="text-center space-y-8">
-            <h1 className="text-5xl font-bold" style={{fontFamily: 'Georgia, serif'}}>
-              {textos[idioma].home.titulo}
-            </h1>
-            <p className="text-xl text-gray-600" style={{fontFamily: 'Georgia, serif'}}>
-              {textos[idioma].home.subtitulo}
-            </p>
-            <div className="max-w-2xl mx-auto">
-              <p className="text-base leading-relaxed text-gray-700 mb-8">
-                {textos[idioma].home.introduccion}
-              </p>
+          <section className="min-h-screen bg-white flex flex-col justify-center">
+            <div className="max-w-2xl mx-auto px-6 py-16 text-center">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">{t.home.titulo}</h1>
+              <p className="text-xl text-yellow-600 mb-8 font-light">{t.home.subtitulo}</p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-12 font-light">{t.home.introduccion}</p>
+              <div className="flex gap-4 justify-center flex-wrap">
+                {(['cartas','emails','buzon'] as const).map(s => (
+                  <button key={s} onClick={() => setSeccionActiva(s)}
+                    className="bg-yellow-600 text-white px-8 py-3 rounded hover:bg-yellow-700 transition font-medium">
+                    {t.home.botones[s]}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <button
-                onClick={() => setSeccionActiva('cartas')}
-                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
-              >
-                {textos[idioma].home.botones.cartas}
-              </button>
-              <button
-                onClick={() => setSeccionActiva('emails')}
-                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
-              >
-                {textos[idioma].home.botones.emails}
-              </button>
-              <button
-                onClick={() => setSeccionActiva('buzon')}
-                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
-              >
-                {textos[idioma].home.botones.buzon}
-              </button>
-            </div>
-            <SubstackEmbed idioma={idioma} />
-          </div>
+          </section>
         )}
 
+        {/* CARTAS */}
         {seccionActiva === 'cartas' && (
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.cartas}</h2>
-            
-            {!piezaSeleccionada ? (
-              <div className="grid gap-4">
-                {piezas.cartas.map((carta) => (
-                  <div
-                    key={carta.id}
-                    onClick={() => setPiezaSeleccionada({ tipo: 'carta', pieza: carta })}
-                    className="p-6 bg-yellow-100 border-2 border-yellow-800 rounded cursor-pointer hover:shadow-lg transition"
-                  >
-                    <h3 className="text-xl font-bold text-yellow-900 mb-2">
-                      {idioma === 'es' ? carta.titulo.es : carta.titulo.en}
-                    </h3>
-                    <p className="text-sm text-yellow-700">{carta.fecha}</p>
+          <section className="min-h-screen bg-yellow-50 py-16">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.cartas}</h2>
+              {piezaSeleccionada && piezaSeleccionada.tipo === 'carta' ? (
+                <article>
+                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-700 hover:text-yellow-900 font-medium text-sm mb-8 block">
+                    ← {idioma === 'es' ? 'Volver' : 'Back'}
+                  </button>
+                  <div className="bg-yellow-100 border-2 border-yellow-800 rounded-lg p-8 shadow-md max-w-3xl">
+                    <h3 className="text-3xl font-bold text-yellow-900 mb-6" style={{fontFamily: 'Georgia, serif'}}>{piezaSeleccionada.pieza.titulo[idioma]}</h3>
+                    <div className="text-yellow-900 leading-relaxed whitespace-pre-wrap mb-8"
+                      style={{ fontFamily: "'Caveat', cursive", fontSize: '1.3rem', lineHeight: '1.7' }}>
+                      {piezaSeleccionada.pieza.contenido[idioma]}
+                    </div>
+                    <div className="text-sm text-yellow-800 italic border-t-2 border-yellow-800 pt-4">{piezaSeleccionada.pieza.fecha}</div>
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-6">
-                <button
-                  onClick={() => setPiezaSeleccionada(null)}
-                  className="text-yellow-600 hover:text-yellow-700 font-medium mb-4"
-                >
-                  ← {idioma === 'es' ? 'Volver' : 'Back'}
-                </button>
-                <h3 className="text-2xl font-bold text-yellow-900">
-                  {idioma === 'es' ? piezaSeleccionada.pieza.titulo.es : piezaSeleccionada.pieza.titulo.en}
-                </h3>
-                <p className="text-sm text-yellow-700 font-medium">{piezaSeleccionada.pieza.fecha}</p>
-                <div
-                  className="p-6 bg-yellow-50 rounded leading-relaxed whitespace-pre-wrap text-gray-700"
-                  style={{fontFamily: 'Caveat, cursive', fontSize: '1.3rem'}}
-                >
-                  {idioma === 'es' ? piezaSeleccionada.pieza.contenido.es : piezaSeleccionada.pieza.contenido.en}
+                  <SubstackEmbed idioma={idioma} />
+                </article>
+              ) : (
+                <div className="grid gap-6">
+                  {piezas.cartas.slice().reverse().map(carta => (
+                    <div key={carta.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
+                      onClick={() => setPiezaSeleccionada({ tipo: 'carta', pieza: carta })}>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{carta.titulo[idioma]}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{carta.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
+                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
+                    </div>
+                  ))}
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          </section>
         )}
 
+        {/* EMAILS */}
         {seccionActiva === 'emails' && (
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.emails}</h2>
-            
-            {!piezaSeleccionada ? (
-              <div className="grid gap-4">
-                {piezas.emails.map((email) => (
-                  <div
-                    key={email.id}
-                    onClick={() => setPiezaSeleccionada({ tipo: 'email', pieza: email })}
-                    className="p-6 bg-white border border-gray-200 rounded cursor-pointer hover:shadow-lg transition"
-                  >
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      {idioma === 'es' ? email.titulo.es : email.titulo.en}
-                    </h3>
-                    <p className="text-sm text-gray-600">{email.fecha}</p>
+          <section className="min-h-screen bg-white py-16">
+            <div className="max-w-4xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.emails}</h2>
+              {piezaSeleccionada && piezaSeleccionada.tipo === 'email' ? (
+                <article>
+                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-600 hover:text-yellow-700 font-medium text-sm mb-8 block">
+                    ← {idioma === 'es' ? 'Volver' : 'Back'}
+                  </button>
+                  <div className="bg-white border border-gray-300 rounded-lg shadow-sm max-w-3xl">
+                    <div className="border-b border-gray-200 p-6 bg-gray-50">
+                      <p className="text-sm text-gray-600 font-mono"><span className="font-semibold">{idioma === 'es' ? 'Asunto' : 'Subject'}:</span> {piezaSeleccionada.pieza.titulo[idioma]}</p>
+                      <p className="text-sm text-gray-600 font-mono mt-1"><span className="font-semibold">{idioma === 'es' ? 'Fecha' : 'Date'}:</span> {piezaSeleccionada.pieza.fecha}</p>
+                    </div>
+                    <div className="p-8 text-gray-800 leading-relaxed whitespace-pre-wrap text-base" style={{fontFamily: 'Georgia, serif'}}>
+                      {piezaSeleccionada.pieza.contenido[idioma]}
+                    </div>
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div className="space-y-6">
-                <button
-                  onClick={() => setPiezaSeleccionada(null)}
-                  className="text-gray-600 hover:text-gray-900 font-medium mb-4"
-                >
-                  ← {idioma === 'es' ? 'Volver' : 'Back'}
-                </button>
-                <div className="border-b-2 border-gray-200 pb-4">
-                  <p className="text-sm text-gray-600 mb-2">
-                    {idioma === 'es' ? 'Asunto' : 'Subject'}:
-                  </p>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {idioma === 'es' ? piezaSeleccionada.pieza.titulo.es : piezaSeleccionada.pieza.titulo.en}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {idioma === 'es' ? 'Fecha' : 'Date'}: {piezaSeleccionada.pieza.fecha}
-                  </p>
+                  <SubstackEmbed idioma={idioma} />
+                </article>
+              ) : (
+                <div className="grid gap-6">
+                  {piezas.emails.slice().reverse().map(emailItem => (
+                    <div key={emailItem.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
+                      onClick={() => setPiezaSeleccionada({ tipo: 'email', pieza: emailItem })}>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{emailItem.titulo[idioma]}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{emailItem.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
+                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
+                    </div>
+                  ))}
                 </div>
-                <div className="prose prose-sm max-w-none leading-relaxed whitespace-pre-wrap text-gray-700">
-                  {idioma === 'es' ? piezaSeleccionada.pieza.contenido.es : piezaSeleccionada.pieza.contenido.en}
-                </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
+          </section>
         )}
 
+        {/* BUZÓN */}
         {seccionActiva === 'buzon' && (
-          <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.buzon}</h2>
-            <div className="max-w-2xl mx-auto">
-              <p className="text-center text-gray-600 mb-6">{textos[idioma].buzon.descripcion}</p>
-              
-              <form onSubmit={handleEnviarPregunta} className="space-y-4 mb-8">
+          <section className="min-h-screen bg-gray-50 py-16">
+            <div className="max-w-2xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.sections.buzon}</h2>
+              <p className="text-lg text-gray-600 mb-8">{t.buzon.descripcion}</p>
+
+              <form onSubmit={handleEnviarPregunta} className="bg-white p-8 rounded border border-gray-200 mb-8">
                 <textarea
                   value={pregunta}
                   onChange={(e) => setPregunta(e.target.value)}
-                  placeholder={textos[idioma].buzon.placeholder}
-                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
-                  rows={5}
+                  placeholder={t.buzon.placeholder}
+                  className="w-full h-40 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-600 resize-none"
                 />
                 <button
                   type="submit"
-                  disabled={cargando}
-                  className="w-full bg-yellow-600 text-white py-3 rounded-lg hover:bg-yellow-700 disabled:bg-gray-400 transition flex items-center justify-center gap-2 font-medium"
+                  disabled={cargando || !pregunta.trim()}
+                  className="mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 bg-yellow-600 text-white rounded font-medium hover:bg-yellow-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {cargando ? (
                     <>
-                      <Loader className="w-4 h-4 animate-spin" />
-                      {textos[idioma].buzon.esperando}
+                      <Loader className="w-5 h-5 animate-spin" />
+                      {t.buzon.esperando}
                     </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4" />
-                      {textos[idioma].buzon.enviar}
+                      <Send className="w-5 h-5" />
+                      {t.buzon.enviar}
                     </>
                   )}
                 </button>
               </form>
 
               {respuesta && (
-                <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded">
-                  <h3 className="font-bold text-yellow-900 mb-4">{textos[idioma].buzon.respuestaDe}</h3>
-                  <div className="text-gray-700 leading-relaxed whitespace-pre-wrap">
-                    {respuesta}
-                  </div>
+                <div className="bg-white p-8 rounded border border-yellow-200 mb-8">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">{t.buzon.respuestaDe}</h3>
+                  <p className="text-gray-800 leading-relaxed whitespace-pre-wrap" style={{fontFamily: 'Georgia, serif'}}>{respuesta}</p>
                 </div>
               )}
+
+              <SubstackEmbed idioma={idioma} />
             </div>
-          </div>
+          </section>
         )}
 
+        {/* ABOUT */}
         {seccionActiva === 'about' && (
-          <div className="max-w-2xl mx-auto space-y-6">
-            <h2 className="text-3xl font-bold text-center">{textos[idioma].about.titulo}</h2>
-            <p className="text-lg leading-relaxed text-gray-700">
-              {textos[idioma].about.contenido}
-            </p>
-            <p className="text-lg leading-relaxed text-gray-700">
-              {textos[idioma].about.parrafo2}
-            </p>
-          </div>
+          <section className="min-h-screen bg-gray-50 py-16">
+            <div className="max-w-2xl mx-auto px-6">
+              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.about.titulo}</h2>
+              <div className="bg-white p-8 rounded border border-gray-200">
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">{t.about.contenido}</p>
+                <p className="text-lg text-gray-700 leading-relaxed">{t.about.parrafo2}</p>
+              </div>
+            </div>
+          </section>
         )}
-      </main>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-600">
-        {textos[idioma].footer.derechos}
+      </div>
+
+      <footer className="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800 mt-16">
+        <p>{t.footer.derechos}</p>
       </footer>
     </div>
   );
