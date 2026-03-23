@@ -125,13 +125,13 @@ I bid you farewell, friend, having wished to tell you much more, but aware that 
         titulo: { es: "Sobre la diversidad de las lecturas", en: "On Reading Diversity" },
         fecha: "20 de febrero de 2026",
         contenido: {
-          es: `Recibí tu consejo sobre los autores, mi querido Séneca, y debo confesarte algo incómodo: no lo estoy siguiendo.
+          es: `Recibí tu consejo  sobre los autores, mi querido Séneca, y debo confesarte algo incómodo: no lo estoy siguiendo.
 
 Leo regularmente, pero nunca todo lo que quisiera. Y últimamente leo menos que en los últimos años, seguro por haber decidido dedicarle más tiempo a otras obligaciones y desde hace poco, a actividades realmente importantes, las que te decía que me hacen sentir vivo realmente.
 
-Contrariamente a lo que sugieres, recientemente —diría un poco más de un año— leo con regular variedad. Difícilmente me quedo con un solo libro hasta terminarlo, sino más bien que ahora prefiero leer varios libros a la vez.
+Contrariamente a lo que sugieres, recientemente —diría un poco más de un año—  leo con regular variedad. Difícilmente me quedo con un solo libro hasta terminarlo, sino más bien que ahora prefiero leer varios libros a la vez. 
 
-No sé si esto ocurre por mera curiosidad o por dármela de generalista, pero lo más probable es que sea porque necesito resolver diversas situaciones en las que los libros me pueden ayudar.
+No sé si esto ocurre por mera curiosidad o por dármela de generalista, pero lo más probable es que sea porque necesito resolver diversas situaciones en las que los libros me pueden ayudar.   
 
 A veces tengo un problema específico para el que sé que algunos textos me pueden proveer ideas o inspirarme. Otras, sin problema en mente encuentro soluciones que sé que algún día pueden servir perfectamente. Pero tal vez lo que más disfruta es cuando tiento mi suerte y encuentro algo verdadero, útil o bello. El que busca, encuentra. El que encuentra, lo cuenta.
 
@@ -153,7 +153,7 @@ Sin más, por lo menos sé que necesito masticar por mucho tiempo una idea para 
 
 Leyendo es que recargo; escribiendo es que disparo.
 
-Concuerdo Séneca plenamente contigo en la necesidad de tener pocos amigos y muchos conocidos. Ya sabía yo que los autores clásicos son aquellos a quienes debo frecuentar y por allí he venido transitando, pero últimamente he entendido que "clásicos" es una categoría muy grande y que debo hablar de nombres concretos.
+Concuerdo Séneca plenamente contigo en la necesidad de tener pocos amigos y muchos conocidos. Ya sabía yo que los autores clásicos son aquellos a quienes debo frecuentar y por allí he venido transitando, pero últimamente he entendido que "clásicos" es una categoría muy grande y que debo hablar de nombres concretos. 
 
 Justo no hace mucho definí una lista casi completa de autores de quienes me encantaría volverme su amigo, como Platón, Aristóteles, Marco Aurelio, Hume, Nietzsche, Betrand Rusell, Oscar Wilde, William James, Borges, Peter Singer, Kahneman, Taleb, Sam Harris, Kafka, Richard Bach, Ribeyro, Zweig y por supuesto tú, mi querido amigo. Y si no llegan a ser mis amigos, igual los quiero como mentores.
 
@@ -230,7 +230,7 @@ Pensaba en el caso anterior como un contraejemplo a tu recomendación de simplem
 
 Pero luego me di cuenta de que estuve errado en la aplicación: nunca hice el esfuerzo necesario para juzgarlo antes de considerarlo mi amigo, que era parte clave de tu consejo, y la verdad es que está tan lejos en mi escala de amistad que no debería haberlo llamado nunca "amigo".
 
-Me pregunto Séneca entonces: ¿realmente todos necesitamos esos verdaderos amigos — "un alma en dos cuerpos" como decía Aristóteles? ¿O basta con la idea de amistad perfecta, como proponía Platón en sus formas, para entender nuestra relación con los demás?
+Me pregunto Séneca entonces:  ¿realmente todos necesitamos esos verdaderos amigos — "un alma en dos cuerpos" como decía Aristóteles? ¿O basta con la idea de amistad perfecta, como proponía Platón en sus formas, para entender nuestra relación con los demás?
 
 Sea lo uno, sea lo otro, ahora entiendo que la amistad verdadera, como el amor — ¿por qué todavía creo que son distintos?—, comienza con uno mismo. Porque ser amigo de otro por no poder bastarse a sí mismo, no es amistad—es conveniencia.`,
           en: `I read your counsel on friendship with great enthusiasm, my dear Seneca, but I believe that, though all the ideas are beautiful—perhaps precisely because they are—, they are somewhat removed from reality.
@@ -257,7 +257,113 @@ But then I realized that I was wrong in my application: I never made the necessa
 
 I ask myself then, Seneca: do we really all need those true friends—"one soul in two bodies" as Aristotle said? Or is it enough to have the idea of perfect friendship, as Plato proposed in his forms, to understand our relationship with others?
 
-Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`
+Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`,
+        }
+      },
+      {
+        id: 4,
+        titulo: { es: "Sobre el miedo a la muerte", en: "On the Fear of Death" },
+        fecha: "17 de marzo de 2026",
+        contenido: {
+          es: `Hace unos cinco años, cuando mi esposa estaba embarazada de mi segunda hija, viví un episodio en el que estuve cerca a la muerte. Recién en ese momento entendí que desde que nací estoy siendo conducido a la muerte, como me explicabas en tu carta, mi querido Séneca.
+
+Intentábamos con unos amigos ingresar por una playa con olas grandes para iniciar una travesía de varios kilómetros de nado. La distancia no era problema alguno, por cuanto ya había nadado similares y además estaba bien entrenado — pero las olas que impedían el ingreso, sí que eran de temer.
+
+Si de mi solamente hubiera dependido, no habría intentado atravesar esas olas, pero mis dos amigos ya las habían cruzado y un tablista que parecía dominarlas me animó a seguir. Me aventuré entonces, pero luego de atravesar algunas cuantas vino el momento que temía: una de las grandes olas reventó antes de que la pudiera cruzar, empujándome hacia el fondo del mar.
+
+Recuerdo haber visualizado varios momentos de mi vida en segundos, a la vez que me desesperaba por no tener aire suficiente para salir a flote. Pude salir finalmente, respirar profundo, sentir un éxtasis enorme por seguir vivo e iniciar la travesía, sabiendo que me podría haber muerto — aunque no queriendo aceptarlo por completo.
+
+Hasta antes de esto no recuerdo haber tenido miedo real a la muerte, al menos de la mía. El único contacto que había tenido con ella era cuando alguien cercano se moría, siendo la experiencia de ver morir a mi padre, sin duda la más fuerte.
+
+Recuerdo haber llorado delante de él semanas antes, sabiendo que si no hacíamos algo radical por su salud, lo íbamos a perder. Esta yo allí explicándole sobre un tratamiento alternativo para salvar sus riñones cuando entendí que ya nos quedaba poco tiempo con él, y me quebré.
+
+Los días siguientes vi cómo mi padre se iba apagando lentamente, no sólo en fortaleza física sino en sus ganas de vivir. Tan evidente era para mí, que el día que tuvimos que llevarlo a la clínica por una alerta con sus signos vitales, yo sabía que ese día probablemente sería su último, al punto que quise yo quedarme con él para acompañarlo en la noche, durante sus últimas horas.
+
+Mi padre también tenía miedo a la muerte, pero el sufrimiento por su enfermedad era tan duro que estoy seguro que él ya no quería seguir viviendo y por lo tanto eligió dejarse llevar.
+
+Creo que tuve mucho miedo a la muerte cuando casi me ahogo porque todavía no conocía a mi segunda hija, porque habría dejado sin padre a mi primera hija y por dejar sola a mi esposa estando recién casados, en ese mismo orden. No recuerdo haber tenido miedo por mí — aunque reconozco que la idea de ahogarme me aterraba. El miedo era por ellas.
+
+Si hoy algo temo respecto a la muerte, estoy logrando no pensar en mí, pero inevitablemente pienso en todos aquellos en los que algún efecto podría tener que yo no esté.
+
+Desde entonces no he vivido algo similar, pero estoy preparándome para enfrentar estos miedos, sin duda gracias al estoicismo. He llegado a entender, al menos, no sólo que estoy muriendo todos los días, sino que mi vida se puede terminar en cualquier momento. Y no pudiendo hacer nada al respecto, he decidido aprovechar al máximo el tiempo que por aquí me queda.
+
+Justo hace poco que asistí a la celebración de los cincuenta años de un amigo y se me pidió dar unas palabras, insistí en recordar que era ese preciso instante lo único que tenemos — no importa si es cumplir una década, un año, un día, o en realidad, solamente un segundo más de vida.
+
+Me quedo, Séneca, con la imagen del agua del río, que simplemente fluye con el canal que la naturaleza le ha cedido, y aunque piedras y escombros se cruzarán en el camino, sólo tiene permitido fluir entre ellos y llegar al mismo destino que todos.
+
+No sólo de agua estamos hechos, sino que agua somos en este hermoso río que es la vida y que sin duda tiene un destino final en el que simplemente —felizmente prefiero decir — pasaremos a ser parte del todo.`,
+          en: `About five years ago, when my wife was pregnant with our second daughter, I lived through an episode where I came close to death. Only then did I understand what you were telling me in your letter, my dear Seneca—that from the moment I was born, I have been led toward death.
+
+We were trying with some friends to enter through a beach with large waves to begin a journey of several kilometers of swimming. The distance was not a problem, as I had already swum similar distances and was well trained—but the waves that prevented entry were indeed fearsome.
+
+If it had depended only on me, I would not have attempted to cross those waves, but my two friends had already crossed them and a surfer who seemed to master them encouraged me to follow. I ventured then, but after crossing several came the moment I feared: one of the large waves broke before I could cross it, pushing me toward the ocean floor.
+
+I remember visualizing several moments of my life in seconds, while I desperately needed air to resurface. I was finally able to get out, breathe deeply, feel an enormous ecstasy at being alive and beginning the journey, knowing I could have died—though not wanting to fully accept it.
+
+Until before this I do not remember having real fear of death, at least of my own. The only contact I had had with it was when someone close to me died, the experience of watching my father die being, without question, the most powerful.
+
+I remember having cried before him weeks earlier, knowing that if we did not do something radical for his health, we would lose him. I was there explaining to him about an alternative treatment to save his kidneys when I understood that we had little time left with him, and I broke down.
+
+The days that followed I watched my father slowly fade away, not only in physical strength but in his will to live. It was so evident to me that the day we had to take him to the clinic because of an alert with his vital signs, I knew that day would probably be his last. I wanted to stay with him to keep him company through that night, during his final hours.
+
+My father was also afraid of death, but the suffering from his illness was so harsh that I am certain he no longer wanted to go on living and therefore chose to let himself go.
+
+I believe I had much fear of death when I nearly drowned because I still had not met my second daughter, because I would have left my first daughter without a father, and because I would have left my wife alone after we had barely begun our marriage—in that very order. I do not remember having fear for myself—though I recognize that the idea of drowning terrified me. The fear was for them.
+
+If there is anything I fear about death today, I am managing not to think about myself, but I inevitably think of all those who would be affected by my not being here.
+
+Since then I have not lived through anything similar, but I am preparing myself to face these fears, undoubtedly thanks to Stoicism. I have come to understand, at least, not only that I am dying every day, but that my life can end at any moment. And since I can do nothing about it, I have decided to make the most of the time I have left here.
+
+Just recently I attended the celebration of a friend's fiftieth birthday and was asked to say a few words. I insisted on reminding everyone that this precise moment was the only thing we have—whether it is completing a decade, a year, a day, or truly just one more second of life.
+
+I remain, Seneca, with the image of the water of the river, which simply flows with the channel that nature has given it, and though stones and debris will cross its path, it is only permitted to flow among them and reach the same destination as all things.
+
+We are not only made of water, but we are water in this beautiful river that is life, and which undoubtedly has a final destination where we will simply—happily I prefer to say—become part of the whole.`
+        }
+      },
+      {
+        id: 5,
+        titulo: { es: "Sobre el filósofo igual y presente", en: "On the Philosopher as Peer and Present" },
+        fecha: "20 de marzo de 2026",
+        contenido: {
+          es: `Me hablas primero, Séneca, de los problemas de la singularidad: ser muy distinto me alejaría de quienes quiero cambiar. Y tienes razón. He tratado de ser muy distinto, en parte naturalmente y en parte a propósito.
+
+Llevo un arete y tatuajes visibles — adornos que muy pocos en mi entorno osarían llevar. Soy vegano, practico el ayuno y cuido mi sueño. Además abrazo ideas radicales, en las que realmente creo que casi todos están equivocados, como creer que el capitalismo es el único camino, o que el consumismo nos hará felices, o que alguna religión tenga realmente las respuestas—sólo paliativos. En resumen, he construido una vida deliberadamente diferente.
+
+Durante estos años en que mis cambios se han acentuado, realmente los he disfrutado. Creo no ser uno más del montón sino que creo que todos estos cambios me han estado haciendo bien y mejor persona. Sí he sentido el rechazo —o al menos el alejamiento de algunos cuantos por mis particularidades — pero mi lectura es siempre positiva: no eran para mí.
+
+Pero ahora entiendo que pude haber exagerado, porque la soledad extrema no es filosofía, sino aislamiento. Y ningún hombre puede vivir así, tan sólo sobrevivir. Yo pretendo mucho más que esto.
+
+Es curioso: ya aplicaba esta lección a mi veganismo, donde soy más comprensivo que agresivo, pero no lo había extendido a otras dimensiones de mi vida. ¿Cómo no intentar entender por qué no pueden cambiar los demás, cuando yo estuve la mayor parte de mi vida en esa misma vereda?
+
+Luego me hablas sobre la dificultad de concentrarse en el presente. Esto ya lo sabía, pero como dicen de los buenos libros: los mejores son aquellos que saben decir lo que ya sabes. Y aunque la meditación un poco me ha ayudado, me sigue costando enormemente vivir aquí y ahora.
+
+No es tanto el pasado el que me atormenta, sino el futuro el que ocupa mucho más de mis pensamientos que lo que debería. Creí que tenía miedos y esperanzas, pero ahora entiendo que sólo eran esperanzas, y que los miedos se generan a partir de la posibilidad de que no se cumplan mis previsiones.
+
+El hecho de que me esté tomando estos minutos para leer tu carta y responderté—a pesar de tener otros asuntos importantes—es una señal de que sí es posible vivir a nuestro modo, al menos por algunos instantes. Quizás esto sea todo lo que tenemos.
+
+Voy a reducir mis esperanzas, Séneca. No porque deje de ser positivo, sino porque casi nada depende de mí. Ahora sé que todo depende del azar—el más justo de los dioses — así que lo único que me queda es vivir absolutamente en el presente, flexible ante lo que venga.
+
+Quiero ser filósofo, Séneca, al menos por hoy, y así por cada día que me quede.`,
+          en: `You speak to me first, Seneca, of the problems of singularity: being very different would alienate those I wish to change. And you are right. I have tried to be very different, partly naturally and partly on purpose.
+
+I wear a visible earring and tattoos—adornments that very few in my professional circle would dare to wear. I am vegan, I practice fasting, and I care for my sleep. I also embrace radical ideas, in which I truly believe almost everyone is mistaken—like believing that capitalism is the only path, or that consumerism will make us happy, or that any religion truly has the answers—only palliatives. In short, I have built a deliberately different life.
+
+During these years as my changes have deepened, I have truly enjoyed them. I believe I am not one of the masses, and I think all these changes have been making me a better person. I have felt rejection—or at least the distancing of some because of my peculiarities—but my interpretation is always positive: they were not meant for me.
+
+But now I understand that I may have exaggerated, because extreme solitude is not philosophy—it is isolation. And no man can live like that; he only survives. I aspire to much more than survival.
+
+It is curious: I was already applying this lesson to my veganism, where I am more understanding than aggressive, yet I had not extended it to other dimensions of my life. How could I not try to understand why others cannot change, when I spent most of my life on that same path?
+
+You then speak to me about the difficulty of concentrating on the present. I already knew this, but as they say of good books: the best are those that know how to say what you already know. And though meditation has helped me somewhat, it still costs me enormously to live here and now.
+
+It is not so much the past that torments me, but the future that occupies far more of my thoughts than it should. I believed I had fears and hopes, but now I understand that they were only hopes, and that fears are generated from the possibility that my expectations will not be fulfilled.
+
+The fact that I am taking these minutes to read your letter and respond to you—despite having other important matters—is a sign that it is indeed possible to live in our own way, at least for some moments. Perhaps this is all we have.
+
+I am going to reduce my expectations, Seneca. Not because I will stop being positive, but because almost nothing depends on me. Now I know that everything depends on chance—the most just of the gods—so all that remains for me is to live absolutely in the present, flexible before whatever comes.
+
+I want to be a philosopher, Seneca, at least for today, and so for every day I have left.`
         }
       }
     ],
@@ -324,7 +430,7 @@ Your attention, Lucilius, is what gives value to time. From this comes the fact 
         titulo: { es: "Sobre las lecturas", en: "On Reading" },
         fecha: "21 de febrero de 2026",
         contenido: {
-          es: `Aquel que pasa de un texto sobre el poder de la respiración, a otro de sesgos cognitivos, a la vez que repasa algo de historia universal buscando aprender de liderazgo, para terminar seguramente con filosofía, no busca respuestas diversas, sino coherencia en la multiplicidad.
+          es: `Aquel que pasa de un texto sobre el poder de la respiración, a otro de sesgos cognitivos, a la vez que repasa algo de historia universal buscando aprender de liderazgo, para terminar seguramente con filosofía, no busca respuestas diversas, sino coherencia en la multiplicidad. 
 
 La variedad de nuestras lecturas, Lucilio, revela quiénes somos, a la vez que quiénes queremos ser. Porque leer es ser, como aprender es ser y hacer es ser.
 
@@ -379,7 +485,7 @@ El verdadero amigo es entonces ese que nos permite dar y disfrutar de dicha grac
 
 Prefiere los pocos verdaderos amigos, que muchísimos conocidos. Antes que tener la facilidad de poder hablar con cualquiera de lo que sea, prefiere conversar profundamente sobre lo que realmente importa, con una sola persona, además de contigo mismo.
 
-¿Deben los amigos ser similares a nosotros, como sugiere el "alma en dos cuerpos" de Aristóteles, o "un segundo uno mismo" de Cicerón? ¿O deben ser completamente distintos a uno? La respuesta es que necesitamos de ambos: ese que en unas dimensiones nos sea muy parecido, de manera que siempre nos recuerde y ayude a ser lo que quisimos ser; pero también alguno muy distinto, que más bien nos ayude a cambiar por completo.
+¿Deben los amigos ser similares a nosotros, como sugiere el "alma en dos cuerpos" de Aristóteles, o "un segundo uno mismo" de Cicerón? ¿O deben ser completamente distintos a uno? La respuesta es que necesitamos de ambos: ese que en unas dimensiones nos sea muy parecido, de manera que siempre nos recuerde y ayude a ser lo que quisimos ser; pero también alguno muy distinto, que más bien nos ayude a cambiar por completo. 
 
 La amistad puede entonces concentrarse en las coincidencias para aceptar las diferencias, pero también puede buscar las diferencias para encontrar las coincidencias. En la amistad se siente, simplemente, una rara armonía.
 
@@ -399,6 +505,96 @@ Should friends be similar to us, as the "soul in two bodies" of Aristotle sugges
 Friendship can then concentrate on coincidences to accept differences, but it can also seek differences to find coincidences. In friendship, one feels, simply, a rare harmony.
 
 They say that he who has no enemies does not deserve to have friends. You must have some enemies out there, Lucilius, even if they have not been introduced to you yet. In any case, for you they will be at most acquaintances, because to have your friendship is truly something exclusive, worthy of yourself, of extraterrestrials, and of the one or two earthlings who, like me, esteem you too much.`
+        }
+      },
+      {
+        id: 4,
+        titulo: { es: "Sobre el miedo a la muerte", en: "On the Fear of Death" },
+        fecha: "18 de marzo de 2026",
+        contenido: {
+          es: `Tengo tatuado en un brazo el _memento mori_, pero ahora quiero agregar —tal vez en el otro — el _sine timore,_ porque no sólo tengo claro que, como todos, me voy a morir, sino que ya no le tengo miedo.
+
+Es razonable temer lo desconocido. De la muerte—específicamente de lo que ocurre realmente cuando viene—nadie ha podido contarnos. Pero observa bien Lucilio: no tememos a la muerte misma, sino a perder lo que sí tenemos y por lo tanto conocemos. Morir es perder tu vida actual, eso que valoras enormemente.
+
+Es otro el tipo de miedo que aparece cuando piensas en lo que podría pasar con aquellos que amas: tus hijos, tu esposa, aquellos que dependen de ti. Pero este miedo no te pertenece realmente—solo puede serles suyo. Lo natural es que te importe.
+
+Está bien temerle al dolor, a la tristeza, a la bancarrota o a algún asesino, porque aun sin haberlos enfrentado, seguro tienes una buena idea de lo que implican. Pero si tiene sentido temerle a lo conocido, ¿por qué temerle automáticamente a lo desconocido?
+
+Nada es más desconocido que la muerte, sobretodo en la actualidad. Las guerras ya no son tan frecuentes ni tan cercanas para muchos. Las más letales enfermedades tienen cura. Algunos aún conviven con la muerte diariamente, pero verla pasar no implica entenderla. No sólo nadie entiende el por qué o el para qué, sino mucho menos el qué es realmente la muerte. 
+
+La muerte no es solo desconocida, sino es un evento instantáneo. Cuando realmente ocurra, no podremos tener consciencia de ella — no solo porque no podríamos recordarla, sino porque no tenemos capacidad de concebir algo de duración infinitesimal.
+
+No tienes que conocer cuándo vas a morir, ni cómo, para saber que lo único que tienes es la vida, que podríamos definirla como aquello que existe entre el nacimiento y la defunción. Algunos parecen tener la suerte de la vida extensa, pero pocos tienen la verdadera dicha de gozar la vida en profundidad, sin preocuparse por la extensión.
+
+Si no puedes controlar cuánto vivirás ni cuándo acabará, claramente sólo te queda el cómo. Y la mejor imagen para entenderlo es la del agua de un río que fluye por su canal naturalmente, sin que le molesten las piedras ni los escombros,  destinada a reunirse en el gran mar en donde todo converge —de lo que por algún capricho nos desprendimos temporalmente.
+
+Deberías querer morirte, Lucilio, porque si te va a ocurrir —y vaya que sí—, quieres quererlo. No hay peor sufrimiento que el que ocurre innecesariamente ante algo inevitable. Y no sólo deberías querer morirte, sino que no encontrarás razón alguna para tenerle miedo. 
+
+Y por todo esto, hoy vas a tener el mejor día de tu vida, y si te es permitido, mañana también.`,
+          en: `I have tattooed on my arm the _memento mori_, but now I want to add—perhaps on the other—the _sine timore,_ because not only am I clear that, like all, I will die, but I no longer fear it.
+
+It is reasonable to fear the unknown. Of death—specifically of what really happens when it comes—no one has been able to tell us. But observe well, Lucilius: we do not fear death itself, but losing what we do have and therefore know. To die is to lose your present life, that which you value enormously.
+
+It is another kind of fear that appears when you think about what could happen to those you love: your children, your spouse, those who depend on you. But this fear does not truly belong to you—it can only be theirs. What is natural is that it matters to you.
+
+It is good to fear pain, sadness, ruin, or some assassin, because even without having faced them, you surely have a good idea of what they entail. But if it makes sense to fear what is known, why fear automatically what is unknown?
+
+Nothing is more unknown than death, especially in our time. Wars are no longer so frequent or so near to many of us. The most lethal diseases have cures. Some still live with death daily, but seeing it pass does not mean understanding it. Not only does no one understand the why or the wherefore, but much less what death really is.
+
+Death is not only unknown, but it is an instantaneous event. When it really occurs, we will not be able to have consciousness of it—not only because we could not remember it, but because we do not have the capacity to conceive of something of infinitesimal duration.
+
+You do not need to know when you will die, nor how, to know that the only thing you have is life, which we might define as that which exists between birth and death. Some seem to have the fortune of a long life, but few have the true joy of enjoying life in depth, without worrying about its length.
+
+If you cannot control how long you will live or when it will end, clearly all that remains to you is the how. And the best image for understanding this is that of water flowing through a river's channel naturally, unbothered by stones or debris, destined to reunite in the great sea where everything converges—from which for some caprice we have temporarily separated ourselves.
+
+You should want to die, Lucilius, because if it will happen to you—and surely it will—you want to want it. There is no worse suffering than that which occurs unnecessarily before something inevitable. And not only should you want to die, but you will find no reason whatsoever to fear it.
+
+And because of all this, today you will have the best day of your life, and if it is permitted, tomorrow as well.`
+        }
+      },
+      {
+        id: 5,
+        titulo: { es: "Sobre el filósofo igual y presente", en: "On the Philosopher as Peer and Present" },
+        fecha: "23 de marzo de 2026",
+        contenido: {
+          es: `Ser diferente, Lucilio, está muy bien, pero en el sentido de saberse diferente. Lo digo de otra manera: quien realmente importa que sepa que eres diferente, eres tú mismo. Por supuesto que los demás notarán, con el tiempo, que eres una persona distinta, para bien. Uno cambia cuando cambia el espíritu, no la ropa, que es lo que los demás suelen ver.
+
+Quien se empeña por distinguirse, ya sea por opulencia o por frugalidad, gasta la mayor parte de su energía tratando de convencer a los demás — pobre inversión pues no tienes control sobre la percepción ajena. Esforzarse en comportarse distinto al vulgo, corrigiendo los propios vicios y reforzando virtudes, tiene mucho mejor retorno.
+
+Evitamos al escandaloso, al derrochador, al intenso. También rechazamos al extremadamente tímido, al pobre en extremo, al muerto en vida. No es asunto de preferencia—es que tales extremos se contagian.
+
+Pero tú no quieres ser distinto en extremo y en externo por otra razón más profunda: tú los necesitas a ellos y ellos te necesitan a ti.
+
+A estas alturas sabes que no es posible una vida plena sin la compañía de otras personas —¿ sino con quién compartir tus alegrías y soportar tus penas? Ellos necesitan lo mismo de ti, pero también necesitan ver y entender que vale la pena el esfuerzo por ser mejor persona cada día. Es la única manera de lograr que cambien también, con tu vivo ejemplo. Los promedios necesitan de la varianza para entenderse.
+
+Lo anterior no es suficiente, Lucilio. Debes además enfocarte en el presente. Tu yo anterior solo puede servir como punto de referencia, como línea de base; tu yo futuro solo para definir objetivos, tal vez destinos. Ni el pasado es tuyo ya, ni nadie puede asegurarte que tendrás futuro.
+
+Es natural que sufras por lo que hiciste mal, consolándote con lo que hiciste bien, a la vez que imaginas un futuro mejor pero te aterras de que no ocurra. Siendo todo esto natural, lo único que te queda para experimentar lo que realmente existe es ser consciente del ahora—con todas tus fuerzas—de cada instante que no es más que imagen del continuo de nuestra percepción.
+
+La vida es una experiencia a ser gozada, de manera que vivir bien requiere presencia, dándole completa atención a cada segundo para el que tengamos capacidad de hacerlo.
+
+Recuerda Lucilio, pero no sufras ni te jactes por ello; planifica, pero no con esperanza, porque la esperanza es pasiva y engendra miedo. Sé el fotógrafo, no el protagonista de la película.
+
+Todo lo que importa y de hecho lo único que existe, Lucilio, es aquí adentro y aquí ahora.`,
+          en: `To be different, Lucilius, is quite fine, but in the sense of knowing yourself to be different. Let me put it another way: the one who truly needs to know you are different is yourself. Of course the others will notice, in time, that you are a distinct person, for the better. One changes when the spirit changes, not the clothes—which is what others tend to see.
+
+Whoever strives to distinguish himself, whether through opulence or frugality, spends most of his energy trying to convince others—a poor investment, for you have no control over the perception of others. To strive to behave differently from the common herd, correcting your own vices and strengthening virtues, has a much better return.
+
+We avoid the scandalous, the wasteful, the intense. We also reject the extremely timid, the poor to extremity, the dead in life. It is not a matter of preference—it is that such extremes are contagious.
+
+But you do not wish to be different in extreme and in external form for another, deeper reason: you need them and they need you.
+
+By this point you know that a full life is not possible without the company of other people—without whom would you share your joys and bear your sorrows? They need the same from you, but they also need to see and understand that it is worth the effort to be a better person each day. It is the only way to make them change as well, through your living example. The average needs the variance to know itself.
+
+What came before is not sufficient, Lucilius. You must also focus on the present. Your former self can only serve as a point of reference, as a baseline; your future self only to define objectives, perhaps destinies. Neither is the past yours anymore, nor can anyone assure you that you will have a future.
+
+It is natural that you suffer for what you did wrong, consoling yourself with what you did right, while imagining a better future yet terrifying yourself if it does not occur. Since all this is natural, the only thing that remains for you to experience what truly exists is to be conscious of the now—with all your strength—of each instant that is nothing more than an image of the continuum of our perception.
+
+Life is an experience to be savored, so living well requires presence, giving complete attention to each second for which you have the capacity to do so.
+
+Remember, Lucilius, but do not suffer nor boast because of it; plan, but not with hope, because hope is passive and begets fear. Be the cameraman, not the actor in the film.
+
+All that matters and indeed the only thing that exists, Lucilius, is here inside and here now.`
         }
       }
     ]
@@ -450,227 +646,294 @@ They say that he who has no enemies does not deserve to have friends. You must h
         placeholder: "What troubles you? What question do you carry?",
         enviar: "Send question",
         esperando: "Seneca is reflecting...",
-        respuestaDe: "Seneca's response:"
+        respuestaDe: "Seneca's Response:"
       }
     }
   };
 
-  const t = textos[idioma as keyof typeof textos];
-
   return (
-    <div className="bg-white min-h-screen flex flex-col" style={{fontFamily: 'system-ui, sans-serif'}}>
-      {/* NAV */}
-      <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div className="min-h-screen bg-white" style={{fontFamily: 'Georgia, serif'}}>
+      {/* Header */}
+      <header className="border-b border-gray-200 sticky top-0 bg-white z-50">
+        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <button
-            onClick={() => { setSeccionActiva('home'); setPiezaSeleccionada(null); }}
-            style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.15em', fontWeight: '300', fontSize: '1.4rem' }}
-            className="text-gray-900 hover:text-yellow-600 transition"
+            onClick={() => setSeccionActiva('home')}
+            className="text-2xl font-bold hover:opacity-70 transition"
+            style={{fontFamily: 'Georgia, serif', letterSpacing: '0.1em'}}
           >
             &lt;SENEC<span className="text-yellow-600">AI</span>&gt;
           </button>
+          
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex gap-6 items-center">
+            <button
+              onClick={() => setSeccionActiva('cartas')}
+              className={`text-sm transition ${seccionActiva === 'cartas' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              {textos[idioma].nav.cartas}
+            </button>
+            <button
+              onClick={() => setSeccionActiva('emails')}
+              className={`text-sm transition ${seccionActiva === 'emails' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              {textos[idioma].nav.emails}
+            </button>
+            <button
+              onClick={() => setSeccionActiva('buzon')}
+              className={`text-sm transition ${seccionActiva === 'buzon' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              {textos[idioma].nav.buzon}
+            </button>
+            <button
+              onClick={() => setSeccionActiva('about')}
+              className={`text-sm transition ${seccionActiva === 'about' ? 'text-yellow-600 font-bold' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              {textos[idioma].nav.about}
+            </button>
+            <button
+              onClick={() => setIdioma(idioma === 'es' ? 'en' : 'es')}
+              className="px-3 py-1 border border-yellow-600 text-yellow-600 rounded hover:bg-yellow-50 transition text-sm"
+            >
+              {idioma === 'es' ? 'EN' : 'ES'}
+            </button>
+          </nav>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-8">
-            {(['cartas','emails','buzon','about'] as const).map(s => (
-              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); }}
-                className={`text-sm font-medium transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600 hover:text-gray-900'}`}>
-                {t.nav[s]}
-              </button>
-            ))}
-            <div className="flex gap-2 pl-4 border-l border-gray-200">
-              {(['es','en'] as const).map(l => (
-                <button key={l} onClick={() => setIdioma(l)}
-                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600 hover:text-gray-900'}`}>
-                  {l.toUpperCase()}
-                </button>
-              ))}
-            </div>
+          {/* Mobile Hamburger */}
+          <div className="md:hidden flex gap-3">
+            <button
+              onClick={() => setIdioma(idioma === 'es' ? 'en' : 'es')}
+              className="px-2 py-1 text-xs border border-yellow-600 text-yellow-600 rounded"
+            >
+              {idioma === 'es' ? 'EN' : 'ES'}
+            </button>
+            <button
+              onClick={() => setMenuAbierto(!menuAbierto)}
+              className="text-xl"
+            >
+              ☰
+            </button>
           </div>
-
-          {/* Mobile hamburger */}
-          <button onClick={() => setMenuAbierto(!menuAbierto)} className="md:hidden text-gray-600 text-xl">
-            {menuAbierto ? '✕' : '☰'}
-          </button>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile Menu */}
         {menuAbierto && (
-          <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
-            {(['cartas','emails','buzon','about'] as const).map(s => (
-              <button key={s} onClick={() => { setSeccionActiva(s); setPiezaSeleccionada(null); setMenuAbierto(false); }}
-                className={`text-sm font-medium text-left transition ${seccionActiva === s ? 'text-yellow-600' : 'text-gray-600'}`}>
-                {t.nav[s]}
-              </button>
-            ))}
-            <div className="flex gap-2 pt-2 border-t border-gray-100">
-              {(['es','en'] as const).map(l => (
-                <button key={l} onClick={() => { setIdioma(l); setMenuAbierto(false); }}
-                  className={`px-3 py-1 text-xs font-medium rounded transition ${idioma === l ? 'bg-yellow-100 text-yellow-900' : 'text-gray-600'}`}>
-                  {l.toUpperCase()}
-                </button>
-              ))}
-            </div>
+          <div className="md:hidden border-t border-gray-200 bg-white">
+            <button
+              onClick={() => { setSeccionActiva('cartas'); setMenuAbierto(false); }}
+              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
+            >
+              {textos[idioma].nav.cartas}
+            </button>
+            <button
+              onClick={() => { setSeccionActiva('emails'); setMenuAbierto(false); }}
+              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
+            >
+              {textos[idioma].nav.emails}
+            </button>
+            <button
+              onClick={() => { setSeccionActiva('buzon'); setMenuAbierto(false); }}
+              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
+            >
+              {textos[idioma].nav.buzon}
+            </button>
+            <button
+              onClick={() => { setSeccionActiva('about'); setMenuAbierto(false); }}
+              className="block w-full text-left px-4 py-2 text-sm hover:bg-yellow-50"
+            >
+              {textos[idioma].nav.about}
+            </button>
           </div>
         )}
-      </nav>
+      </header>
 
-      <div className="flex-grow">
-
-        {/* HOME */}
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-12">
         {seccionActiva === 'home' && (
-          <section className="min-h-screen bg-white flex flex-col justify-center">
-            <div className="max-w-2xl mx-auto px-6 py-16 text-center">
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">{t.home.titulo}</h1>
-              <p className="text-xl text-yellow-600 mb-8 font-light">{t.home.subtitulo}</p>
-              <p className="text-lg text-gray-700 leading-relaxed mb-12 font-light">{t.home.introduccion}</p>
-              <div className="flex gap-4 justify-center flex-wrap">
-                {(['cartas','emails','buzon'] as const).map(s => (
-                  <button key={s} onClick={() => setSeccionActiva(s)}
-                    className="bg-yellow-600 text-white px-8 py-3 rounded hover:bg-yellow-700 transition font-medium">
-                    {t.home.botones[s]}
-                  </button>
+          <div className="text-center space-y-8">
+            <h1 className="text-5xl font-bold" style={{fontFamily: 'Georgia, serif'}}>
+              {textos[idioma].home.titulo}
+            </h1>
+            <p className="text-xl text-gray-600" style={{fontFamily: 'Georgia, serif'}}>
+              {textos[idioma].home.subtitulo}
+            </p>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-base leading-relaxed text-gray-700 mb-8">
+                {textos[idioma].home.introduccion}
+              </p>
+            </div>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <button
+                onClick={() => setSeccionActiva('cartas')}
+                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
+              >
+                {textos[idioma].home.botones.cartas}
+              </button>
+              <button
+                onClick={() => setSeccionActiva('emails')}
+                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
+              >
+                {textos[idioma].home.botones.emails}
+              </button>
+              <button
+                onClick={() => setSeccionActiva('buzon')}
+                className="px-8 py-3 bg-yellow-600 text-white rounded hover:bg-yellow-700 transition font-medium"
+              >
+                {textos[idioma].home.botones.buzon}
+              </button>
+            </div>
+            <SubstackEmbed idioma={idioma} />
+          </div>
+        )}
+
+        {seccionActiva === 'cartas' && (
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.cartas}</h2>
+            
+            {!piezaSeleccionada ? (
+              <div className="grid gap-4">
+                {piezas.cartas.map((carta) => (
+                  <div
+                    key={carta.id}
+                    onClick={() => setPiezaSeleccionada({ tipo: 'carta', pieza: carta })}
+                    className="p-6 bg-yellow-100 border-2 border-yellow-800 rounded cursor-pointer hover:shadow-lg transition"
+                  >
+                    <h3 className="text-xl font-bold text-yellow-900 mb-2">
+                      {idioma === 'es' ? carta.titulo.es : carta.titulo.en}
+                    </h3>
+                    <p className="text-sm text-yellow-700">{carta.fecha}</p>
+                  </div>
                 ))}
               </div>
-            </div>
-          </section>
-        )}
-
-        {/* CARTAS */}
-        {seccionActiva === 'cartas' && (
-          <section className="min-h-screen bg-yellow-50 py-16">
-            <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.cartas}</h2>
-              {piezaSeleccionada && piezaSeleccionada.tipo === 'carta' ? (
-                <article>
-                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-700 hover:text-yellow-900 font-medium text-sm mb-8 block">
-                    ← {idioma === 'es' ? 'Volver' : 'Back'}
-                  </button>
-                  <div className="bg-yellow-100 border-2 border-yellow-800 rounded-lg p-8 shadow-md max-w-3xl">
-                    <h3 className="text-3xl font-bold text-yellow-900 mb-6" style={{fontFamily: 'Georgia, serif'}}>{piezaSeleccionada.pieza.titulo[idioma]}</h3>
-                    <div className="text-yellow-900 leading-relaxed whitespace-pre-wrap mb-8"
-                      style={{ fontFamily: "'Caveat', cursive", fontSize: '1.3rem', lineHeight: '1.7' }}>
-                      {piezaSeleccionada.pieza.contenido[idioma]}
-                    </div>
-                    <div className="text-sm text-yellow-800 italic border-t-2 border-yellow-800 pt-4">{piezaSeleccionada.pieza.fecha}</div>
-                  </div>
-                  <SubstackEmbed idioma={idioma} />
-                </article>
-              ) : (
-                <div className="grid gap-6">
-                  {piezas.cartas.slice().reverse().map(carta => (
-                    <div key={carta.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
-                      onClick={() => setPiezaSeleccionada({ tipo: 'carta', pieza: carta })}>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{carta.titulo[idioma]}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{carta.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
-                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
-                    </div>
-                  ))}
+            ) : (
+              <div className="space-y-6">
+                <button
+                  onClick={() => setPiezaSeleccionada(null)}
+                  className="text-yellow-600 hover:text-yellow-700 font-medium mb-4"
+                >
+                  ← {idioma === 'es' ? 'Volver' : 'Back'}
+                </button>
+                <h3 className="text-2xl font-bold text-yellow-900">
+                  {idioma === 'es' ? piezaSeleccionada.pieza.titulo.es : piezaSeleccionada.pieza.titulo.en}
+                </h3>
+                <p className="text-sm text-yellow-700 font-medium">{piezaSeleccionada.pieza.fecha}</p>
+                <div
+                  className="p-6 bg-yellow-50 rounded leading-relaxed whitespace-pre-wrap text-gray-700"
+                  style={{fontFamily: 'Caveat, cursive', fontSize: '1.3rem'}}
+                >
+                  {idioma === 'es' ? piezaSeleccionada.pieza.contenido.es : piezaSeleccionada.pieza.contenido.en}
                 </div>
-              )}
-            </div>
-          </section>
+              </div>
+            )}
+          </div>
         )}
 
-        {/* EMAILS */}
         {seccionActiva === 'emails' && (
-          <section className="min-h-screen bg-white py-16">
-            <div className="max-w-4xl mx-auto px-6">
-              <h2 className="text-4xl font-bold text-gray-900 mb-12">{t.sections.emails}</h2>
-              {piezaSeleccionada && piezaSeleccionada.tipo === 'email' ? (
-                <article>
-                  <button onClick={() => setPiezaSeleccionada(null)} className="text-yellow-600 hover:text-yellow-700 font-medium text-sm mb-8 block">
-                    ← {idioma === 'es' ? 'Volver' : 'Back'}
-                  </button>
-                  <div className="bg-white border border-gray-300 rounded-lg shadow-sm max-w-3xl">
-                    <div className="border-b border-gray-200 p-6 bg-gray-50">
-                      <p className="text-sm text-gray-600 font-mono"><span className="font-semibold">{idioma === 'es' ? 'Asunto' : 'Subject'}:</span> {piezaSeleccionada.pieza.titulo[idioma]}</p>
-                      <p className="text-sm text-gray-600 font-mono mt-1"><span className="font-semibold">{idioma === 'es' ? 'Fecha' : 'Date'}:</span> {piezaSeleccionada.pieza.fecha}</p>
-                    </div>
-                    <div className="p-8 text-gray-800 leading-relaxed whitespace-pre-wrap text-base" style={{fontFamily: 'Georgia, serif'}}>
-                      {piezaSeleccionada.pieza.contenido[idioma]}
-                    </div>
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.emails}</h2>
+            
+            {!piezaSeleccionada ? (
+              <div className="grid gap-4">
+                {piezas.emails.map((email) => (
+                  <div
+                    key={email.id}
+                    onClick={() => setPiezaSeleccionada({ tipo: 'email', pieza: email })}
+                    className="p-6 bg-white border border-gray-200 rounded cursor-pointer hover:shadow-lg transition"
+                  >
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {idioma === 'es' ? email.titulo.es : email.titulo.en}
+                    </h3>
+                    <p className="text-sm text-gray-600">{email.fecha}</p>
                   </div>
-                  <SubstackEmbed idioma={idioma} />
-                </article>
-              ) : (
-                <div className="grid gap-6">
-                  {piezas.emails.slice().reverse().map(emailItem => (
-                    <div key={emailItem.id} className="bg-white p-6 rounded border border-gray-200 hover:border-yellow-400 transition cursor-pointer"
-                      onClick={() => setPiezaSeleccionada({ tipo: 'email', pieza: emailItem })}>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">{emailItem.titulo[idioma]}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">{emailItem.contenido[idioma].split('\n\n')[0].substring(0, 150)}...</p>
-                      <span className="text-yellow-600 font-medium text-sm">{idioma === 'es' ? 'Leer más →' : 'Read more →'}</span>
-                    </div>
-                  ))}
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-6">
+                <button
+                  onClick={() => setPiezaSeleccionada(null)}
+                  className="text-gray-600 hover:text-gray-900 font-medium mb-4"
+                >
+                  ← {idioma === 'es' ? 'Volver' : 'Back'}
+                </button>
+                <div className="border-b-2 border-gray-200 pb-4">
+                  <p className="text-sm text-gray-600 mb-2">
+                    {idioma === 'es' ? 'Asunto' : 'Subject'}:
+                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    {idioma === 'es' ? piezaSeleccionada.pieza.titulo.es : piezaSeleccionada.pieza.titulo.en}
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    {idioma === 'es' ? 'Fecha' : 'Date'}: {piezaSeleccionada.pieza.fecha}
+                  </p>
                 </div>
-              )}
-            </div>
-          </section>
+                <div className="prose prose-sm max-w-none leading-relaxed whitespace-pre-wrap text-gray-700">
+                  {idioma === 'es' ? piezaSeleccionada.pieza.contenido.es : piezaSeleccionada.pieza.contenido.en}
+                </div>
+              </div>
+            )}
+          </div>
         )}
 
-        {/* BUZÓN */}
         {seccionActiva === 'buzon' && (
-          <section className="min-h-screen bg-gray-50 py-16">
-            <div className="max-w-2xl mx-auto px-6">
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.sections.buzon}</h2>
-              <p className="text-lg text-gray-600 mb-8">{t.buzon.descripcion}</p>
-
-              <form onSubmit={handleEnviarPregunta} className="bg-white p-8 rounded border border-gray-200 mb-8">
+          <div className="space-y-8">
+            <h2 className="text-3xl font-bold text-center">{textos[idioma].sections.buzon}</h2>
+            <div className="max-w-2xl mx-auto">
+              <p className="text-center text-gray-600 mb-6">{textos[idioma].buzon.descripcion}</p>
+              
+              <form onSubmit={handleEnviarPregunta} className="space-y-4 mb-8">
                 <textarea
                   value={pregunta}
                   onChange={(e) => setPregunta(e.target.value)}
-                  placeholder={t.buzon.placeholder}
-                  className="w-full h-40 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-yellow-600 resize-none"
+                  placeholder={textos[idioma].buzon.placeholder}
+                  className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
+                  rows={5}
                 />
                 <button
                   type="submit"
-                  disabled={cargando || !pregunta.trim()}
-                  className="mt-6 w-full flex items-center justify-center gap-2 px-6 py-3 bg-yellow-600 text-white rounded font-medium hover:bg-yellow-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  disabled={cargando}
+                  className="w-full bg-yellow-600 text-white py-3 rounded-lg hover:bg-yellow-700 disabled:bg-gray-400 transition flex items-center justify-center gap-2 font-medium"
                 >
                   {cargando ? (
                     <>
-                      <Loader className="w-5 h-5 animate-spin" />
-                      {t.buzon.esperando}
+                      <Loader className="w-4 h-4 animate-spin" />
+                      {textos[idioma].buzon.esperando}
                     </>
                   ) : (
                     <>
-                      <Send className="w-5 h-5" />
-                      {t.buzon.enviar}
+                      <Send className="w-4 h-4" />
+                      {textos[idioma].buzon.enviar}
                     </>
                   )}
                 </button>
               </form>
 
               {respuesta && (
-                <div className="bg-white p-8 rounded border border-yellow-200 mb-8">
-                  <h3 className="text-xl font-bold mb-4 text-gray-900">{t.buzon.respuestaDe}</h3>
-                  <p className="text-gray-800 leading-relaxed whitespace-pre-wrap" style={{fontFamily: 'Georgia, serif'}}>{respuesta}</p>
+                <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded">
+                  <h3 className="font-bold text-yellow-900 mb-4">{textos[idioma].buzon.respuestaDe}</h3>
+                  <div className="text-gray-700 leading-relaxed whitespace-pre-wrap">
+                    {respuesta}
+                  </div>
                 </div>
               )}
-
-              <SubstackEmbed idioma={idioma} />
             </div>
-          </section>
+          </div>
         )}
 
-        {/* ABOUT */}
         {seccionActiva === 'about' && (
-          <section className="min-h-screen bg-gray-50 py-16">
-            <div className="max-w-2xl mx-auto px-6">
-              <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.about.titulo}</h2>
-              <div className="bg-white p-8 rounded border border-gray-200">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">{t.about.contenido}</p>
-                <p className="text-lg text-gray-700 leading-relaxed">{t.about.parrafo2}</p>
-              </div>
-            </div>
-          </section>
+          <div className="max-w-2xl mx-auto space-y-6">
+            <h2 className="text-3xl font-bold text-center">{textos[idioma].about.titulo}</h2>
+            <p className="text-lg leading-relaxed text-gray-700">
+              {textos[idioma].about.contenido}
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              {textos[idioma].about.parrafo2}
+            </p>
+          </div>
         )}
+      </main>
 
-      </div>
-
-      <footer className="bg-gray-900 text-gray-400 py-8 text-center text-sm border-t border-gray-800 mt-16">
-        <p>{t.footer.derechos}</p>
+      {/* Footer */}
+      <footer className="border-t border-gray-200 mt-12 py-6 text-center text-sm text-gray-600">
+        {textos[idioma].footer.derechos}
       </footer>
     </div>
   );
