@@ -366,6 +366,43 @@ I am going to reduce my expectations, Seneca. Not because I will stop being posi
 
 I want to be a philosopher, Seneca, at least for today, and so for every day I have left.`
         }
+      },
+      {
+        id: 6,
+        titulo: { es: "Sobre compartir conocimiento", en: "On Sharing Knowledge" },
+        fecha: "24 de marzo de 2026",
+        contenido: {
+          es: `He cambiado muchísimo, querido Séneca, pero ahora entiendo que no demasiado. Como el barco de Teseo, quiero ser en algunos años el mismo a la vez que completamente distinto —tanto que sólo mi esencia permanecerá reconocible — subjetiva como sea.
+
+Algunos dirán que cambiar tanto es como vivir en distintas moradas sin poder asentarse —con el riesgo de haber perdido tiempo y descubrir que necesitaba un hogar. Yo creo que de esto trata justamente el cambio: de vivir varias vidas para quedarse con la mejor, o de simplemente vivir varias vidas dentro de la misma.
+
+Aprecio enormemente cada una de las ideas que compartes conmigo, pero es invalorable que me permitas estar a tu lado para verte vivir. De un apreciado maestro escuché decir que tus cartas eran como verte jugar el partido. Y aunque las atesoro profundamente, ninguna podría compararse a jugar al lado tuyo, o por lo menos verte en vivo.
+
+De la misma manera que creo que una persona no puede amar sino empieza por sí mismo, coincido contigo en que es imposible ser amigo de nadie más si no eres amigo del que tienes más cerca: ese que te susurra cada vez que detecta posibles cursos de acción distintos al que crees que has elegido.
+
+Es a este primer amigo a quien le quiero decir lo que pienso con total franqueza – hablándole como me hablo a mí mismo. Es con este amigo íntimo – tan cercano que somos el mismo — con quien quiero compartir las ideas que me tienen, sea que las repase mentalmente, las recite o las escriba, como hago en este momento.
+
+Aunque habiendo compartido todas mis ideas con este mi íntimo amigo, no me sentiría completo. Porque de la misma manera que una vela multiplica la iluminación al encender a muchas otras, el conocimiento es importante cuando se comparte, momento en el cual se convierte automáticamente en sabiduría.
+
+No quiero muchos amigos, Séneca, pues no me alcanzaría la energía para mantenerlos como se debe. Pienso que es mejor tener amigos con los que pueda compartir todo lo que tengo, y que espero les alcance para ellos también sigan compartiendo.
+
+Cuando lo analizo más a fondo, lo que tengo debe ser muy poco, y aunque poco como es, no tendría sentido que lo guardara solo para mí, sea porque permanece incorrecto por no haber sido contrastado, sea porque se vuelve inútil al haberse quedado guardado. Y nada menos valioso que moneda que nadie conoce o que simplemente se mantiene por el gusto del ahorro.`,
+          en: `I have changed enormously, my dear Seneca, but now I understand not too much. Like the Ship of Theseus, I want to be in some years the same as I am now, yet completely different—so much so that only my essence will remain recognizable—subjective as it may be.
+
+Some will say that changing so much is like living in different dwellings without being able to settle—with the risk of wasting time only to discover that I needed a home. But I believe that is precisely what change is about: living several lives in order to keep the best, or simply living several lives within the same one.
+
+I appreciate enormously each of the ideas you share with me, but it is invaluable that you allow me to stand beside you to see you live. A respected teacher once told me that your letters were like watching you play the game. And though I treasure them deeply, none could compare to playing beside you, or at the very least seeing you live.
+
+In the same way that I believe a person cannot love unless he begins with himself, I agree with you that it is impossible to be a friend to anyone else if you are not a friend to the one closest to you: that inner voice that whispers to you each time it detects possible courses of action different from the one you believe you have chosen.
+
+It is to this first friend that I want to tell what I think with total honesty—speaking to him as I speak to myself. It is with this intimate friend—so close that we are the same—that I want to share the ideas that possess me, whether I rehearse them mentally, recite them, or write them, as I am doing now.
+
+Although I had shared all my ideas with this intimate friend, I would not feel complete. Because in the same way that a candle multiplies illumination by lighting many others, knowledge is important when it is shared—the moment it is shared, it automatically becomes wisdom.
+
+I do not want many friends, Seneca, for I would not have the energy to maintain them as they deserve. I think it is better to have friends with whom I can share all that I have, and I hope it is enough for them to also keep sharing.
+
+When I analyze it more deeply, what I have must be very little. And though little as it is, it would make no sense to keep it only for myself, whether because it remains incorrect without having been tested, or because it becomes useless once it has been locked away. And nothing is less valuable than coin that no one knows exists, or that is simply kept for the pleasure of hoarding.`
+        }
       }    ],
     emails: [
       {
@@ -596,6 +633,61 @@ Life is an experience to be savored, so living well requires presence, giving co
 Remember, Lucilius, but do not suffer nor boast because of it; plan, but not with hope, because hope is passive and begets fear. Be the cameraman, not the actor in the film.
 
 All that matters and indeed the only thing that exists, Lucilius, is here inside and here now.`
+        }
+      },
+      {
+        id: 6,
+        titulo: { es: "Sobre compartir conocimiento", en: "On Sharing Knowledge" },
+        fecha: "26 de marzo de 2026",
+        contenido: {
+          es: `Conversaban un historiador, un abogado y un ingeniero sobre el modelo económico que rige las sociedades de estos tiempos. Siendo además ellos investigador, músico y empresario, respectivamente, sus puntos de vista eran distantes.
+
+Cada uno defendía su posición con argumentos propios de sus formaciones y experiencias —no necesariamente comprensibles a fondo por los demás. Distintas referencias hacían difícil llegar a acuerdos concretos, pero la posición de cada uno se vio ligeramente modificada a partir del conocimiento de los otros.
+
+Cambiar la mente no es algo que necesite 180 grados. A veces basta un ligero giro para terminar en un lugar completamente distinto.
+
+Todo lo que sabemos, Lucilio, es producto de la exposición a diversas ideas, personas y ambientes. Pero esto no es sólo un resultado inevitable — es también influible. Debes exponerte activamente a esta diversidad para que tu conocimiento sea lo más amplio y menos alejado de la realidad. La verdad es, simplemente, una mejor vista al jardín.
+
+Sin embargo, somos mucho más influidos por las acciones de las personas que por sus decires. Recuerda: el camino del ejemplo es más corto y efectivo que el camino del precepto. Las personas hablan realmente con sus cuerpos, no con sus bocas —las palabras son más baratas que los movimientos.
+
+No mires siquiera los movimientos del cuerpo, sino el resultado de ellos —el que se mueve no necesariamente avanza. Es solo cuando ves resultados consistentes que tiene sentido descubrir el método.
+
+Y la mayor influencia de las acciones son las propias. Una idea se convierte en acción y es con la acción y posterior reflexión que se genera conocimiento —para los demás, por supuesto — pero en primer lugar para uno mismo.
+
+Es estando en la vereda que uno sabe realmente lo que significa caminar —nunca desde la carpeta. Aprender de los errores y aciertos es sumamente eficiente, pero nunca tan efectivo como empezar a moverse.
+
+La motivación tiene asistencia perfecta, pero es el profesor el que debe iniciar la clase. Es solo luego de empezar que tienes la única posibilidad de enfrentar el conocimiento con la realidad, para afinarlo — o cambiarlo completamente.
+
+Así como el profesor aprende mucho más al enseñar que cuando fue alumno, el que pasa a la acción puede ser el mejor profesor. Pasar a la acción implica interactuar con la realidad y con la interpretación de esta a cargo de otros — situación que hace todo sumamente más complejo, y justo por esto enormemente más rico.
+
+Es entonces, Lucilio: acción con reflexión. La acción puede empezar por una gran idea o simplemente por la valentía de probar algo, valentía que no sólo generará retornos para ti, sino para todos los que te rodean.
+
+Esos tres conocidos que citaba al inicio se fueron con mejores ideas, pero lo que realmente quedó fue lo que provocaron esas ideas en sus posteriores comportamientos.
+
+Las conversaciones pueden ser profundas. Pero es lo que haces luego de ellas lo que marca la nueva dirección — y por eso debemos llamarlo "conversacción".`,
+          en: `Three people conversed about the economic model that governs the societies of our time: a historian, a lawyer, and an engineer. Being also a researcher, musician, and entrepreneur respectively, their points of view were distant.
+
+Each one defended his position with arguments from his own formations and experiences—not necessarily comprehensible in depth to the others. Different references made it difficult to reach concrete agreements, but each one's position was slightly modified by the knowledge of the others.
+
+Changing the mind does not require 180 degrees. Sometimes a slight turn is enough to end up in a completely different place.
+
+All that we know, Lucilius, is the product of exposure to diverse ideas, people, and environments. But this is not only an inevitable result—it is also influenceable. You must expose yourself actively to this diversity so that your knowledge is as broad and as close to reality as possible. Truth is, simply, a better view of the garden.
+
+However, we are much more influenced by the actions of people than by their words. Remember: the path of example is shorter and more effective than the path of precept. People speak truly with their bodies, not with their mouths—words are cheaper than movements.
+
+Do not even look at the movements of the body, but at the result of them—the one who moves does not necessarily advance. It is only when you see consistent results that it makes sense to discover the method.
+
+And the greatest influence of actions are one's own. An idea becomes action, and it is through action and subsequent reflection that knowledge is generated—for others, of course—but first of all for oneself.
+
+It is standing on the sidewalk that one truly knows what it means to walk—never from an armchair. Learning from mistakes and successes is extremely efficient, but never as effective as beginning to move. Motivation has perfect attendance, but it is the teacher who must initiate the class. It is only after beginning that you have the sole possibility of confronting knowledge with reality, to refine it—or change it completely.
+
+Just as the teacher learns much more by teaching than when he was a student, the one who takes action can be the best teacher. To take action implies interacting with reality and with the interpretation of it by others—a situation that makes everything far more complex, and for this very reason enormously richer.
+
+It is then, Lucilius: action with reflection. Action can begin with a great idea or simply with the courage to try something, a courage that will generate returns not only for you, but for all those around you.
+
+Those three acquaintances I mentioned at the beginning left with better ideas, but what truly remained was what those ideas provoked in their subsequent behaviors.
+
+Conversations can be deep. But it is what you do after them that marks the new direction—and that is why we must call it "conversaction".`
         }
       }    ]
   };
