@@ -98,7 +98,7 @@ export async function POST(request: Request) {
     const ideasRelevantes = ideasDatabase
       .map(idea => ({
         ...idea,
-        relevance: palabrasClave.filter(p => 
+        relevance: palabrasClave.filter((p: string) => 
           idea.quote.toLowerCase().includes(p) || 
           idea.primaryTag.toLowerCase().includes(p)
         ).length
@@ -112,7 +112,7 @@ export async function POST(request: Request) {
     const cartasRelevantes = cartasEmailsFragments
       .map(item => ({
         ...item,
-        relevance: palabrasClave.filter(p => item.excerpt.toLowerCase().includes(p) || item.tags.toLowerCase().includes(p)).length
+        relevance: palabrasClave.filter((p: string) => item.excerpt.toLowerCase().includes(p) || item.tags.toLowerCase().includes(p)).length
       }))
       .filter(item => item.relevance > 0)
       .sort((a, b) => b.relevance - a.relevance)
