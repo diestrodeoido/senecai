@@ -695,12 +695,12 @@ Conversations can be deep. But it is what you do after them that marks the new d
       home: {
         titulo: "SenecAI",
         subtitulo: "Continuando la conversación con Séneca",
-        introduccion: "Mientras escuchaba una clase sobre una de las Cartas de Séneca a Lucilio, me pregunté: ¿existirán esas cartas que enviaba Lucilio o todo era parte del arsenal literario de Séneca? Luego entendí que esto no importaba. Lo que importaba eran las enormes lecciones de vida que hay en estos textos. Sin embargo, no se me ocurrió mejor forma para aprender sobre esto que continuar la conversación con Séneca, porque todos somos Lucilio, pero también podemos ser de vez en cuando, Séneca.",
+        introduccion: "Mientras escuchaba una clase sobre una de las Cartas de Séneca a Lucilio, me pregunté: ¿existirán esas cartas que enviaba Lucilio o todo era parte del arsenal literario de Séneca? Luego entendí que esto no importaba. Lo que importaba eran las enormes lecciones de vida que hay en estos textos. Y no se me ocurrió mejor forma para aprender sobre esto que continuar la conversación con Séneca, porque todos somos Lucilio, pero también podemos ser de vez en cuando, Séneca.",
         botones: { cartas: "Cartas", emails: "Emails", buzon: "Buzón" }
       },
       about: {
-        titulo: "Sobre Luis",
-        contenido: "Filósofo sin academia, empresario sin ambiciones, mente con cuerpo. Empecé escribiendo en mi blog Diestro de Oído, pero necesitaba un carril para avanzar derecho, y lo encontré en las cartas de Séneca que escribió para mi, pero también para ti.",
+        titulo: "Sobre Luisilio",
+        contenido: "Filósofo sin academia, empresario sin ambiciones, mente con cuerpo. Empecé escribiendo en mi blog <a href=\"https://diestrodeoido.substack.com\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #ca8a04; text-decoration: underline; font-weight: 500;\">Diestro de Oído</a>, pero necesitaba un carril para avanzar derecho, y lo encontré en las cartas de Séneca que escribió para mi, pero también para ti.",
         parrafo2: "Como cuando se aprende a tocar música, SénecAI es mi cover personal sobre uno de los discos que marcaron mi vida."
       },
       nav: { cartas: "Cartas", emails: "Emails", buzon: "Buzón", about: "Sobre mí" },
