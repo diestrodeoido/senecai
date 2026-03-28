@@ -259,7 +259,6 @@ I ask myself then, Seneca: do we really all need those true friends—"one soul 
 
 Be that as it may, I now understand that true friendship, like love—why do I still think they are different?—, begins with oneself. Because being a friend to another out of inability to be sufficient unto oneself is not friendship—it is convenience.`
         }
-      }
       },
       {
         id: 4,
