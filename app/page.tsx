@@ -542,7 +542,6 @@ Friendship can then concentrate on coincidences to accept differences, but it ca
 
 They say that he who has no enemies does not deserve to have friends. You must have some enemies out there, Lucilius, even if they have not been introduced to you yet. In any case, for you they will be at most acquaintances, because to have your friendship is truly something exclusive, worthy of yourself, of extraterrestrials, and of the one or two earthlings who, like me, esteem you too much.`
         }
-      }
       },
       {
         id: 4,
