@@ -92,7 +92,7 @@ export async function POST(request: Request) {
 
     // Búsqueda mejorada de relevancia
     const preguntaLower = pregunta.toLowerCase();
-    const palabrasClave = preguntaLower.split(/\s+/).filter(p => p.length > 3);
+    const palabrasClave = preguntaLower.split(/\s+/).filter((p: string) => p.length > 3);
 
     // Buscar en Ideas Database
     const ideasRelevantes = ideasDatabase
