@@ -946,7 +946,7 @@ Conversations can be deep. But it is what you do after them that marks the new d
             <div className="max-w-2xl mx-auto px-6">
               <h2 className="text-4xl font-bold text-gray-900 mb-8">{t.about.titulo}</h2>
               <div className="bg-white p-8 rounded border border-gray-200">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">{t.about.contenido}</p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: t.about.contenido }} />
                 <p className="text-lg text-gray-700 leading-relaxed">{t.about.parrafo2}</p>
               </div>
             </div>
