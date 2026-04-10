@@ -64,6 +64,16 @@ const ideasDatabase = [
   { author: "Seneca", quote: "I am being not only reformed but transformed. I do not yet, however, assure myself, or indulge the hope, that there are no elements left in me which need to be changed", primaryTag: "VIRTUE & CHARACTER", secondaryTag: "learning" },
   { author: "Robert Greene", quote: "'The truth is generally seen, rarely heard.' - The Moral Effect. Quite simply, you teach others a lesson by giving them a taste of their own medicine", primaryTag: "FOCUS & LEARNING", secondaryTag: "example" },
   { author: "Harari", quote: "Words are cheaper than actions", primaryTag: "FOCUS & LEARNING", secondaryTag: "example" },
+  { author: "Seneca", quote: "Debe ser apartada de la multitud, el alma débil aún y poco firme en la virtud: fácilmente comparte el sentir de la mayoría.", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "solitude" },
+  { author: "Seneca", quote: "Se impone que imites al vulgo o que lo odies. Más debes evitar lo uno y lo otro: no hacerte semejante a los malos, porque son muchos, ni enemigo de muchos porque son diferentes de ti.", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "contrarian" },
+  { author: "Seneca", quote: "Recógete en tu interior cuando te sea posible; trata con los que han de hacerte mejor; acoge a aquellos que tú puedes mejorar.", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "company" },
+  { author: "Seneca", quote: "Para mí son suficientes unos pocos, es suficiente uno solo y suficiente ninguno.", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "solitude" },
+  { author: "Democrito", quote: "One man means as much to me as a multitude, and a multitude only as much as one man.", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "solitude" },
+  { author: "Ming-Dao Deng", quote: "... those who follow Tao are neither too solitary nor too gregarious. They have regular times of privacy. And they equally enjoy being with others", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "company" },
+  { author: "Leo Tolstoy", quote: "A balance must be struck between meditating in solitude and then applying this to your everyday life", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "company" },
+  { author: "Cal Newport", quote: "Conversation enriches the understanding, but solitude is the school of genius", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "solitude" },
+  { author: "Pascal", quote: "All of humanity's problems stem from man's inability to sit quietly in a room alone", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "solitude" },
+  { author: "G. K. Chesterton", quote: "A dead thing can go with the stream, but only a living thing can go against it", primaryTag: "RELATIONSHIPS & SOLITUDE", secondaryTag: "contrarian" },
 ];
 
 // Fragmentos de Cartas/Emails 1-6 como fuentes adicionales
@@ -80,6 +90,8 @@ const cartasEmailsFragments = [
   { source: "Email 5", excerpt: "Sé el fotógrafo, no el protagonista de la película. Todo lo que importa es aquí adentro y aquí ahora", tags: "FOCUS & LEARNING" },
   { source: "Carta 6", excerpt: "El conocimiento sin compartir permanece incorrecto. Se convierte en sabiduría cuando se comparte con otros", tags: "RELATIONSHIPS & SOLITUDE" },
   { source: "Email 6", excerpt: "Acción con reflexión. Es la acción la que marca la nueva dirección, no la conversación", tags: "FOCUS & LEARNING" },
+  { source: "Carta 7", excerpt: "Es como si existiera alguna cantidad de personas a partir de la cual aquello pierde casi todo su interés para mí. La dosis ideal depende del mal a curar: el de uno o el de varios", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Email 7", excerpt: "Solo quien se ha encontrado consigo mismo puede realmente encontrarse con los demás. Pues al final, somos el mismo", tags: "RELATIONSHIPS & SOLITUDE" },
 ];
 
 export async function POST(request: Request) {
