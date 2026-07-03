@@ -92,6 +92,18 @@ const cartasEmailsFragments = [
   { source: "Email 6", excerpt: "Acción con reflexión. Es la acción la que marca la nueva dirección, no la conversación", tags: "FOCUS & LEARNING" },
   { source: "Carta 7", excerpt: "Es como si existiera alguna cantidad de personas a partir de la cual aquello pierde casi todo su interés para mí. La dosis ideal depende del mal a curar: el de uno o el de varios", tags: "RELATIONSHIPS & SOLITUDE" },
   { source: "Email 7", excerpt: "Solo quien se ha encontrado consigo mismo puede realmente encontrarse con los demás. Pues al final, somos el mismo", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Carta 8", excerpt: "El ciclo — leer para pensar, escribir para digerir, aplicar para aprender, y volver a escribir para contar — podría ser la fórmula perfecta para mí", tags: "FOCUS & LEARNING" },
+  { source: "Email 8", excerpt: "Son cinco los niveles de comunión: multitudes, grupos, uno a uno, solitud reflexiva, y la unidad más profunda. Todos son necesarios", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Carta 9", excerpt: "No necesito tener amigos, pero sí quiero tenerlos. La verdadera amistad no es algo que se busca, sino se fabrica, se cultiva, se invierte en ella", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Email 9", excerpt: "Practicar la amistad con uno mismo es la mejor manera de ejercitar los músculos que permitirán practicarla con otros", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Carta 10", excerpt: "Mi creencia en el todo no tiene probabilidades despreciables de ser cierta. He decidido vivir de manera que no necesito creer en un dios para conducirme bien", tags: "VIRTUE & CHARACTER" },
+  { source: "Email 10", excerpt: "La soledad es la base; la interacción el exponente. Sólo quien ha estado solo puede verdaderamente estar con otros", tags: "RELATIONSHIPS & SOLITUDE" },
+  { source: "Carta 11", excerpt: "Los defectos no se pueden eliminar, solo moderar. Gestiono, pero no elimino", tags: "VIRTUE & CHARACTER" },
+  { source: "Email 11", excerpt: "Construye un gran referente a partir de las virtudes de muchos. Cultiva el gusto particular por los extremos cuando de ideas se trata", tags: "VIRTUE & CHARACTER" },
+  { source: "Carta 12", excerpt: "Aunque la semana es mi unidad de medida preferida, intentaré aprovechar cada día al máximo. ¡Qué bien que he vivido!", tags: "TIME & MORTALITY" },
+  { source: "Email 12", excerpt: "La vejez es como una biblioteca. El kairos sobre el kronos: no son los años transcurridos, sino los días realmente vividos", tags: "TIME & MORTALITY" },
+  { source: "Carta 13", excerpt: "He sufrido antes de lo necesario, o más de lo necesario. La mente predice futuros; sufrir por lo que no ha llegado es estupidez de la imaginación", tags: "SUFFERING & MENTAL STATES" },
+  { source: "Email 13", excerpt: "Si algún sufrimiento necesario existe, debe ser aquel que elegiste padecer. Y lo realmente importante nunca puede ser sólo para uno mismo", tags: "SUFFERING & MENTAL STATES" },
 ];
 
 export async function POST(request: Request) {
