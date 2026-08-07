@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Send, Loader } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import { useLanguage } from './LanguageProvider';
 import { SubstackEmbed } from './SubstackEmbed';
 import { textos } from '@/lib/i18n';
@@ -76,7 +77,17 @@ export function BuzonForm() {
         {respuesta && (
           <div className="bg-white p-8 rounded border border-yellow-200 mb-8">
             <h3 className="text-xl font-bold mb-4 text-gray-900">{t.buzon.respuestaDe}</h3>
-            <p className="text-gray-800 leading-relaxed whitespace-pre-wrap" style={{ fontFamily: 'Georgia, serif' }}>{respuesta}</p>
+            <div className="text-gray-800 leading-relaxed space-y-4" style={{ fontFamily: 'Georgia, serif' }}>
+              <ReactMarkdown
+                components={{
+                  p: ({ children }) => <p className="leading-relaxed">{children}</p>,
+                  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
+                  em: ({ children }) => <em className="italic">{children}</em>,
+                }}
+              >
+                {respuesta}
+              </ReactMarkdown>
+            </div>
           </div>
         )}
 
