@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "source": "Carta 1",
+    "excerpt": "El tiempo es lo único que tenemos, pero lo desperdiciamos en distracciones y reuniones innecesarias. Mi tiempo real de vida ha sido no más de 5 años de los 45 que tengo.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 2,
+    "source": "Email 1",
+    "excerpt": "Tu atención, Lucilio, es lo que da valor al tiempo. De ahí que cada momento sea distinto, irrepetible. El tiempo es lo único que tenemos, pero lo desperdiciamos constantemente.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 3,
+    "source": "Carta 2",
+    "excerpt": "Leer es ser. Cada idea es un ladrillo de la mejor construcción. Leo con regular variedad según mis necesidades, no por disciplina, sino porque necesito resolver situaciones distintas.",
+    "tags": "FOCUS & LEARNING"
+  },
+  {
+    "id": 4,
+    "source": "Email 2",
+    "excerpt": "Coherencia en la multiplicidad: las conexiones entre ideas es lo que importa realmente. Un libro, una conversación, una experiencia vivida, todo es alimento para el espíritu atento.",
+    "tags": "FOCUS & LEARNING"
+  },
+  {
+    "id": 5,
+    "source": "Carta 3",
+    "excerpt": "La amistad verdadera, como el amor, comienza con uno mismo. Ser amigo de otro por no poder bastarse a sí mismo no es amistad, es conveniencia. Necesitamos amigos similares y completamente distintos.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 6,
+    "source": "Email 3",
+    "excerpt": "En la amistad se siente una rara armonía. Elegimos amigos no por conveniencia, sino porque verdaderamente queremos serlo. La reciprocidad es bienvenida, pero no es lo importante.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 7,
+    "source": "Carta 4",
+    "excerpt": "Estoy muriendo todos los días. Mi vida puede terminar en cualquier momento. He decidido aprovechar al máximo cada momento que me queda, sin esperar al futuro.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 8,
+    "source": "Email 4",
+    "excerpt": "No debes temer a la muerte misma, sino a perder lo que tienes: tu capacidad de atención, de vivir plenamente. Los que posponen vivir hasta que la muerte los alcance son los verdaderos muertos en vida.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 9,
+    "source": "Carta 5",
+    "excerpt": "Ser diferente no significa vivir en extremos. La soledad extrema es aislamiento, no filosofía. Reconozco que puedo estar completamente equivocado en mis creencias sobre lo divino.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 10,
+    "source": "Email 5",
+    "excerpt": "Sé el fotógrafo, no el protagonista de la película. Observa tu vida como si fuera la de otro, pero vívela como si fuera la tuya. La filosofía no es teoría; es práctica.",
+    "tags": "FOCUS & LEARNING"
+  },
+  {
+    "id": 11,
+    "source": "Carta 6",
+    "excerpt": "El conocimiento sin compartir permanece incorrecto. Se convierte en sabiduría cuando se comparte con otros. Estoy empezando a conocer otras grandes mentes que me quiero guiar: Singer, Russell, Voltaire.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 12,
+    "source": "Email 6",
+    "excerpt": "Acción con reflexión. Es la acción la que marca la nueva dirección, no la conversación. El verdadero maestro no es quien más sabe, sino quien mejor comunica lo que sabe.",
+    "tags": "FOCUS & LEARNING"
+  },
+  {
+    "id": 13,
+    "source": "Carta 7",
+    "excerpt": "Es como si existiera alguna cantidad de personas a partir de la cual aquello pierde casi todo su interés para mí. La dosis ideal depende del mal a curar: el de uno o el de varios.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 14,
+    "source": "Email 7",
+    "excerpt": "Solo quien se ha encontrado consigo mismo puede realmente encontrarse con los demás. Pues al final, somos el mismo. Estar solo por convicción debería ser tan importante como el sueño.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 15,
+    "source": "Carta 8",
+    "excerpt": "No es que simplemente me retire del trabajo actual, sino que me quiero dedicar a otros trabajos mejores para mí, para nosotros, para ellos, para todos. El ciclo de leer-escribir-aplicar-compartir podría ser la fórmula perfecta.",
+    "tags": "FOCUS & LEARNING"
+  },
+  {
+    "id": 16,
+    "source": "Email 8",
+    "excerpt": "Son cinco los niveles de comunión: multitudes, reuniones grupales, conversaciones uno a uno, solitud reflexiva, y el nivel más profundo de unidad. Todos son necesarios, y el sabio guarda tiempo apropiado para cada nivel.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 17,
+    "source": "Carta 9",
+    "excerpt": "No necesito tener amigos, pero sí quiero tenerlos. La verdadera amistad no es algo que se busca, sino se fabrica, se cultiva, se invierte en ella. Practicar amistad con uno mismo es el mejor ejercicio para practicarla con otros.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 18,
+    "source": "Email 9",
+    "excerpt": "Del amigo, mucho está dicho, pero muy poco del lazo que los conecta. La amistad exige disposición real y voluntad de practicar la virtud en su forma más pura. Debes ser amigo de quienes necesitan crecer.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 19,
+    "source": "Carta 10",
+    "excerpt": "Mi creencia en el todo no tiene probabilidades despreciables de ser cierta. He decidido vivir de manera que no necesito creer en un dios para conducirme bien. Para mí, vivir con amor, buscar conocimiento y aliviar sufrimiento define una buena vida.",
+    "tags": "VIRTUE & CHARACTER"
+  },
+  {
+    "id": 20,
+    "source": "Email 10",
+    "excerpt": "La soledad y la compañía no son opuestas, sino complementarias. La soledad es la base; la interacción el exponente. Si comparto lo que tengo y otros lo suyo, juntos podemos producir lo que un Dios podría producir.",
+    "tags": "RELATIONSHIPS & SOLITUDE"
+  },
+  {
+    "id": 21,
+    "source": "Carta 11",
+    "excerpt": "Los defectos no se pueden eliminar, solo moderar. La verdadera sabiduría no se trata de eliminar nada, sino de gestionarlo. Mis hijas siempre están viendo aunque no estén mirando todo lo que hago, y eso me hace mejor.",
+    "tags": "VIRTUE & CHARACTER"
+  },
+  {
+    "id": 22,
+    "source": "Email 11",
+    "excerpt": "La moderación debe ser siempre un referente, no porque te represente, sino porque contiene lo esencial de una vida bien vivida. Construye un gran referente a partir de las virtudes de muchos. Cultiva el gusto por los extremos cuando de ideas se trata.",
+    "tags": "VIRTUE & CHARACTER"
+  },
+  {
+    "id": 23,
+    "source": "Carta 12",
+    "excerpt": "Estoy realmente viviendo. Me siento más productivo, más tranquilo, más motivado. Tan completo me parece este día que contiene casi todo lo que pediría si fueran mis últimas horas. Aunque sigue siendo la semana mi unidad preferida, intento aprovechar cada día al máximo.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 24,
+    "source": "Email 12",
+    "excerpt": "La vejez es como una biblioteca. El kairos sobre el kronos: no son los años transcurridos los que generan sabiduría, sino los días realmente vividos. De joven la mente sirve al cuerpo; de viejo es el cuerpo quien debe aprender a servir a la mente.",
+    "tags": "TIME & MORTALITY"
+  },
+  {
+    "id": 25,
+    "source": "Carta 13",
+    "excerpt": "He sufrido antes de lo necesario, o más de lo necesario, sin saber si era necesario. La mente está programada para predecir futuros. Pero para situaciones nuevas no tenemos capacidad de predicción. Sufrir por lo que no ha llegado es estupidez de la imaginación.",
+    "tags": "SUFFERING & MENTAL STATES"
+  },
+  {
+    "id": 26,
+    "source": "Email 13",
+    "excerpt": "Si algún sufrimiento necesario existe, debe ser aquel que elegiste padecer voluntariamente. En este caso no lo padecerás sino agradecerás, porque habrá sido para conseguir algo más importante. Lo realmente importante nunca puede ser sólo para uno mismo.",
+    "tags": "SUFFERING & MENTAL STATES"
+  }
+]

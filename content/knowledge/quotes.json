@@ -1,0 +1,541 @@
+[
+  {
+    "id": 1,
+    "author": "Seneca",
+    "quote": "Unos tiempos se nos arrebatan, otros se nos sustraen y otros se nos escapan. Sin embargo, la más reprensible es la pérdida, que se produce por la negligencia",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 2,
+    "author": "Seneca",
+    "quote": "Gran parte de la existencia se nos escapa obrando mal, la mayor parte estando inactivos, toda ella obrando cosas distintas de las que debemos",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 3,
+    "author": "Seneca",
+    "quote": "Realmente nos engañamos en esto: que consideramos lejana la muerte, siendo así que gran parte de ella ya ha pasado. Todo cuanto de nuestra vida queda atrás, la muerte lo posee.",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 4,
+    "author": "Seneca",
+    "quote": "Acapara todas las horas. Así sucederá que estés menos pendiente del mañana, si te has aplicado al día de hoy",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 5,
+    "author": "Seneca",
+    "quote": "Nadie que dispone del tiempo se considera deudor de nada, siendo así que éste es el único crédito que ni siquiera el más agradecido puede restituir",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 6,
+    "author": "Seneca",
+    "quote": "Es ahorro demasiado tardío el que se consigue en el fondo del vaso: en el sedimento no sólo queda una parte insignificante, sino la peor",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 7,
+    "author": "Timothy Ferriss",
+    "quote": "Lack of time is actually lack of priorities",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 8,
+    "author": "Alan Weiss",
+    "quote": "Managing time is about priorities, not resources",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 9,
+    "author": "Andrew S. Grove",
+    "quote": "How you handle your own time is, in my view, the single most important aspect of being a role model and leader",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 10,
+    "author": "Timothy Ferriss",
+    "quote": "Time without attention is worthless, so value attention over time",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "attention"
+  },
+  {
+    "id": 11,
+    "author": "Robert Greene",
+    "quote": "Take one thing off your plate today to make more time for your Life's Task",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "time"
+  },
+  {
+    "id": 12,
+    "author": "Seneca",
+    "quote": "No está en ningún lugar quien está en todas partes",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "focus"
+  },
+  {
+    "id": 13,
+    "author": "Seneca",
+    "quote": "¿Preguntas cuál es el límite conveniente de las riquezas? Primero tener lo necesario, luego lo suficiente",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "wealth"
+  },
+  {
+    "id": 14,
+    "author": "Seneca",
+    "quote": "A well ordered mind is reflected in the man's ability to remain in one place and linger in his company",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 15,
+    "author": "Seneca",
+    "quote": "After you have run over many thoughts, select the one to be thoroughly digested that day",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "thinking"
+  },
+  {
+    "id": 16,
+    "author": "James Clear",
+    "quote": "What matters is not simply reading more books, but getting more out of each book you read",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "reading"
+  },
+  {
+    "id": 17,
+    "author": "Shane Parrish",
+    "quote": "You have to have some idea of what you want to get from the book. If you don't read with intention, what you read will never stick",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "reading"
+  },
+  {
+    "id": 18,
+    "author": "Harold Bloom",
+    "quote": "The ultimate answer to the question 'Why read?' is that only deep, constant reading fully establishes and augments an autonomous self. Until you become yourself, what benefit can you be to others?",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "reading"
+  },
+  {
+    "id": 19,
+    "author": "Shane Parrish",
+    "quote": "The opportunity cost of reading something new is re-reading the best book you've ever read",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "reading"
+  },
+  {
+    "id": 20,
+    "author": "Taleb",
+    "quote": "Drink old wine. Read old books. Keep old friends",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "reading"
+  },
+  {
+    "id": 21,
+    "author": "Seneca",
+    "quote": "When friendship is settled, you must trust; before friendship is formed, you must pass judgment",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "friendship"
+  },
+  {
+    "id": 22,
+    "author": "Seneca",
+    "quote": "But if you consider any man a friend whom you do not trust as you trust yourself, you are mightily mistaken and you do not sufficiently understand what true friendship means",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "friendship"
+  },
+  {
+    "id": 23,
+    "author": "Seneca",
+    "quote": "Ponder for a long time whether you shall admit a given person to your friendship; but when you have decided to admit him, welcome him with all your heart and soul. Speak as boldly with him as with yourself",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "friendship"
+  },
+  {
+    "id": 24,
+    "author": "Ming-Dao Deng",
+    "quote": "With my friend gone from the world, who will I play my music for? True friendship is a rare harmony",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "friendship"
+  },
+  {
+    "id": 25,
+    "author": "Seneca",
+    "quote": "Pues hasta ahora no perdura en nosotros la infancia, sino un defecto mayor: la mentalidad infantil.",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "aging"
+  },
+  {
+    "id": 26,
+    "author": "Seneca",
+    "quote": "Ningún mal es tan grande, si es el último. Llega a ti la muerte. Deberías temerle, solo si pudiera quedarse junto a ti.",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 27,
+    "author": "Seneca",
+    "quote": "La mayoría fluctúa miserablemente entre las penas de la vida y el miedo a morir, y no quiere vivir, pero no sabe morir.",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 28,
+    "author": "Seneca",
+    "quote": "¿Qué te importa cuán poderoso sea aquel que entiendes? Si lo que causa tu temor lo podrían provocar todos",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "suffering"
+  },
+  {
+    "id": 29,
+    "author": "Seneca",
+    "quote": "Lo superfluo nos hace sudar; lo suficiente, está alcance de la mano. Quien de buen grado se acomoda con la pobreza es rico",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "possessions"
+  },
+  {
+    "id": 30,
+    "author": "Seneca",
+    "quote": "No man can have a peaceful life who thinks too much in a lengthening it",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 31,
+    "author": "Robert Greene",
+    "quote": "By becoming deeply aware of our mortality, we intensify our experience of every aspect of life",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 32,
+    "author": "Epicuro",
+    "quote": "De la muerte no tenemos nada que temer, porque cuando la muerte existe, nosotros no existimos, y mientras nosotros existimos, la muerte no existe",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 33,
+    "author": "Ming-Dao Deng",
+    "quote": "Death is not an ending. It is a transformation. What dies is only our sense of identity, which was false to begin with. Death is the threshold of this life.",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 34,
+    "author": "William Woollard",
+    "quote": "By grappling with the Buddhist ideas on the eternity of life, it becomes possible to see death not as a thing apart, a vast and fearful emptiness, but as a continuity, as a natural part of the cycle that underpins all things",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 35,
+    "author": "Leo Tolstoy",
+    "quote": "You should live your life so that you are not afraid of death, and at the same time do not wish to die",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 36,
+    "author": "Anthony De Mello",
+    "quote": "The first reaction is one of fear. It's not that we fear the unknown. You cannot fear something that you do not know. Nobody is afraid of the unknown. What you really fear is the loss of the known",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 37,
+    "author": "Gordon Livingston",
+    "quote": "The great paradox of life: It is possible to be happy in the face of our mortality",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 38,
+    "author": "Leo Tolstoy",
+    "quote": "Perhaps you fear the changes that death will bring? But a similar great change already happened at the time of your birth, and nothing bad came out of it",
+    "primaryTag": "TIME & MORTALITY",
+    "secondaryTag": "death"
+  },
+  {
+    "id": 39,
+    "author": "Seneca",
+    "quote": "Sigamos una vida mejor que la del vulgo, no la contraria; de otra suerte a quienes deseamos corregir los ayentamos de nosotros",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "contrarian"
+  },
+  {
+    "id": 40,
+    "author": "Seneca",
+    "quote": "Filosofía exige frugalidad, no castigo. Puede existir una frugalidad sin desalino",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "moderation"
+  },
+  {
+    "id": 41,
+    "author": "Seneca",
+    "quote": "¿No habrá diferencia entre nosotros y ellos? Muchísima: sepa que somos diferentes de las gentes que nos examine más de cerca. El que entre en nuestra casa admire más nuestra persona que nuestro ajuar.",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "contrarian"
+  },
+  {
+    "id": 42,
+    "author": "Seneca",
+    "quote": "Propio de un espíritu pusilánime es no poder soportar las riquezas",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "possessions"
+  },
+  {
+    "id": 43,
+    "author": "Seneca",
+    "quote": "Si dejas de esperar, dejas de temer",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "hope-fear"
+  },
+  {
+    "id": 44,
+    "author": "Seneca",
+    "quote": "Las fieras huyen de los peligros que ven; una vez los han evitado, están seguras: nosotros nos atormentamos por el porvenir y el pasado.",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "attention"
+  },
+  {
+    "id": 45,
+    "author": "Seneca",
+    "quote": "Inwardly, we ought to be different in all respects, but our exterior should conform to society.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "contrarian"
+  },
+  {
+    "id": 46,
+    "author": "Seneca",
+    "quote": "We should not believe that the lack of silver and gold to be proof of the simple life",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "wealth"
+  },
+  {
+    "id": 47,
+    "author": "Seneca",
+    "quote": "Live according to nature, but remember it is quite contrary to nature to torture the body",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "needs"
+  },
+  {
+    "id": 48,
+    "author": "Sam Harris",
+    "quote": "How we pay attention to the present moment largely determines the character of our experience and, therefore, the quality of our lives",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "attention"
+  },
+  {
+    "id": 49,
+    "author": "Ryan Holiday",
+    "quote": "Focus on what is in front of you, right now. Ignore what it 'represents' or it 'means' or 'why it happened to you'",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "attention"
+  },
+  {
+    "id": 50,
+    "author": "Goethe",
+    "quote": "We suffer from the past, and we spoil our future because we neglect the present. The best the future can offer is dreams. There is only one thing which really exists: the present.",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "attention"
+  },
+  {
+    "id": 51,
+    "author": "Harari",
+    "quote": "Family and community seem to have more impact on our happiness than money and health",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "company"
+  },
+  {
+    "id": 52,
+    "author": "Seneca",
+    "quote": "Esta es la prueba cabal de un alma perfeccionada: el que descubre los propios defectos que todavía ignoraba; a ciertos enfermos se les felicita cuando advierten que lo están.",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "wisdom"
+  },
+  {
+    "id": 53,
+    "author": "Seneca",
+    "quote": "Si la sabiduría se me otorgase bajo esta condición, de mantenerla ocultra y no divulgarla, la rechazaría: sin compañía no es grata la posesión de bien alguno.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "wealth"
+  },
+  {
+    "id": 54,
+    "author": "Seneca",
+    "quote": "Los hombres se fían más de la vista que del oído; luego, porque el camino es largo a través de los preceptos, breve y eficaz a través de los ejemplos.",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "example"
+  },
+  {
+    "id": 55,
+    "author": "Seneca",
+    "quote": "¿Me preguntas en qué he aprovechado? He empezado a ser mi propio amigo... Ten presente que un tal amigo es posible a todos.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "friendship"
+  },
+  {
+    "id": 56,
+    "author": "Seneca",
+    "quote": "I am being not only reformed but transformed. I do not yet, however, assure myself, or indulge the hope, that there are no elements left in me which need to be changed",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "learning"
+  },
+  {
+    "id": 57,
+    "author": "Robert Greene",
+    "quote": "'The truth is generally seen, rarely heard.' - The Moral Effect. Quite simply, you teach others a lesson by giving them a taste of their own medicine",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "example"
+  },
+  {
+    "id": 58,
+    "author": "Harari",
+    "quote": "Words are cheaper than actions",
+    "primaryTag": "FOCUS & LEARNING",
+    "secondaryTag": "example"
+  },
+  {
+    "id": 59,
+    "author": "Seneca",
+    "quote": "Debe ser apartada de la multitud, el alma débil aún y poco firme en la virtud: fácilmente comparte el sentir de la mayoría.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 60,
+    "author": "Seneca",
+    "quote": "Se impone que imites al vulgo o que lo odies. Más debes evitar lo uno y lo otro: no hacerte semejante a los malos, porque son muchos, ni enemigo de muchos porque son diferentes de ti.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "contrarian"
+  },
+  {
+    "id": 61,
+    "author": "Seneca",
+    "quote": "Recógete en tu interior cuando te sea posible; trata con los que han de hacerte mejor; acoge a aquellos que tú puedes mejorar.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "company"
+  },
+  {
+    "id": 62,
+    "author": "Seneca",
+    "quote": "Para mí son suficientes unos pocos, es suficiente uno solo y suficiente ninguno.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 63,
+    "author": "Democrito",
+    "quote": "One man means as much to me as a multitude, and a multitude only as much as one man.",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 64,
+    "author": "Ming-Dao Deng",
+    "quote": "... those who follow Tao are neither too solitary nor too gregarious. They have regular times of privacy. And they equally enjoy being with others",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "company"
+  },
+  {
+    "id": 65,
+    "author": "Leo Tolstoy",
+    "quote": "A balance must be struck between meditating in solitude and then applying this to your everyday life",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "company"
+  },
+  {
+    "id": 66,
+    "author": "Cal Newport",
+    "quote": "Conversation enriches the understanding, but solitude is the school of genius",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 67,
+    "author": "Pascal",
+    "quote": "All of humanity's problems stem from man's inability to sit quietly in a room alone",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "solitude"
+  },
+  {
+    "id": 68,
+    "author": "G. K. Chesterton",
+    "quote": "A dead thing can go with the stream, but only a living thing can go against it",
+    "primaryTag": "RELATIONSHIPS & SOLITUDE",
+    "secondaryTag": "contrarian"
+  },
+  {
+    "id": 69,
+    "author": "Bertrand Russell",
+    "quote": "The good life is inspired by love and guided by knowledge",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "wisdom"
+  },
+  {
+    "id": 70,
+    "author": "Bertrand Russell",
+    "quote": "Three passions have ruled my life: the desire to love, the search for knowledge, and unbearable pity for the suffering of mankind",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "wisdom"
+  },
+  {
+    "id": 71,
+    "author": "Peter Singer",
+    "quote": "The capacity for suffering is a prerequisite for having interests. If a being suffers, there can be no moral justification for disregarding that suffering",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "ethics"
+  },
+  {
+    "id": 72,
+    "author": "Voltaire",
+    "quote": "Perfect is the enemy of good",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "wisdom"
+  },
+  {
+    "id": 73,
+    "author": "Aristotle",
+    "quote": "Virtue is a habit, a settled disposition to act in certain ways",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "example"
+  },
+  {
+    "id": 74,
+    "author": "Aristotle",
+    "quote": "The golden mean lies between extremes",
+    "primaryTag": "VIRTUE & CHARACTER",
+    "secondaryTag": "moderation"
+  },
+  {
+    "id": 75,
+    "author": "Marcus Aurelius",
+    "quote": "You have power over your mind - not outside events. Realize this, and you will find strength",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "control"
+  },
+  {
+    "id": 76,
+    "author": "Epictetus",
+    "quote": "Some things are in your control, and some things are not in your control",
+    "primaryTag": "SUFFERING & MENTAL STATES",
+    "secondaryTag": "control"
+  },
+  {
+    "id": 77,
+    "author": "Zhuangzi",
+    "quote": "When you have nothing left to desire, everything becomes possible",
+    "primaryTag": "MATERIAL LIFE & NEEDS",
+    "secondaryTag": "simplicity"
+  }
+]
