@@ -3,7 +3,7 @@ id: 13
 slug: sobre-el-sufrimiento-innecesario
 titleEs: "Sobre el sufrimiento innecesario"
 titleEn: "On Unnecessary Suffering"
-date: "2026-05-21"
+date: "2026-05-28"
 ---
 ¿Qué sabes sobre el sufrimiento? Todo y nada. De la misma manera que la buena literatura puede crear universos más interesantes que la realidad, con seguridad te has inventado sufrimientos que nunca existieron, o por lo menos fueron de la dimensión que los imaginaste.
 

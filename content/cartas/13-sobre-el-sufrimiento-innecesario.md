@@ -3,7 +3,7 @@ id: 13
 slug: sobre-el-sufrimiento-innecesario
 titleEs: "Sobre el sufrimiento innecesario"
 titleEn: "On Unnecessary Suffering"
-date: "2026-05-19"
+date: "2026-05-26"
 ---
 Me ha ocurrido miles de veces, querido Séneca, pero particularmente hace tres semanas, tres días y tres minutos.
 
