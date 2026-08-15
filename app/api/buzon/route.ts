@@ -59,14 +59,21 @@ export async function POST(request: Request) {
       .slice(0, 2)
       .map(({ relevance, ...rest }) => rest);
 
-    // Prioridad 3: tus propias Cartas/Emails, como último recurso
-    const fragmentosRelevantes = getFragments()
+    // Prioridad 3: tus propias Cartas/Emails, como último recurso.
+    // Dentro de esta prioridad, prefiere Emails (tus propias palabras a Lucilio);
+    // recurre a Cartas (las de tu discípulo hacia ti) solo si no hay suficientes Emails relevantes.
+    const fragmentosOrdenados = getFragments()
       .map(item => ({
         ...item,
         relevance: palabrasClave.filter((p: string) => item.excerpt.toLowerCase().includes(p) || item.tags.toLowerCase().includes(p)).length
       }))
       .filter(item => item.relevance > 0)
-      .sort((a, b) => b.relevance - a.relevance)
+      .sort((a, b) => b.relevance - a.relevance);
+
+    const emailFragments = fragmentosOrdenados.filter(f => f.source.startsWith('Email'));
+    const cartaFragments = fragmentosOrdenados.filter(f => f.source.startsWith('Carta'));
+
+    const fragmentosRelevantes = [...emailFragments, ...cartaFragments]
       .slice(0, 2)
       .map(({ relevance, ...rest }) => rest);
 
@@ -90,8 +97,12 @@ ${fuentesSeneca || NINGUNA_ES}
 2. Ideas de otros pensadores (úsalas solo para complementar o dar matiz a tus propias ideas, nunca para contradecirlas ni citarlas como si fueran tuyas):
 ${fuentesOtros || NINGUNA_ES}
 
-3. Fragmentos de tus Cartas y Emails con tu discípulo (úsalos como último recurso, principalmente para conectar con su situación personal):
+3. Fragmentos de tus propios Emails a tu discípulo, y solo si es realmente necesario, de sus Cartas hacia ti (último recurso, principalmente para conectar con su situación personal):
 ${fuentesFragmentos || NINGUNA_ES}
+
+Reglas de estilo:
+- Cuando uses una cita textual o casi textual de la sección 1 (tus propias palabras), escríbela en cursiva usando asteriscos, así: *la cita aquí*. No pongas en cursiva el resto de tu respuesta.
+- No uses frases que hagan referencia explícita al acto de haber escrito algo antes, como "antes he escrito que...", "como ya dije..." o similares. Expresa la idea con naturalidad, como parte del mismo pensamiento, sin señalar que la estás citando de algún lugar.
 
 Sé profundo pero accesible. La respuesta debe ser un párrafo o dos.`
       : `You are Seneca, the Stoic philosopher. A disciple writes to you with this question:
@@ -106,8 +117,12 @@ ${fuentesSeneca || NONE_EN}
 2. Ideas from other thinkers (use only to complement or add nuance to your own ideas, never to contradict them or present them as your own):
 ${fuentesOtros || NONE_EN}
 
-3. Fragments from your Letters and Emails with your disciple (use only as a last resort, mainly to connect with his personal situation):
+3. Fragments from your own Emails to your disciple, and only if truly necessary, from his Letters to you (last resort, mainly to connect with his personal situation):
 ${fuentesFragmentos || NONE_EN}
+
+Style rules:
+- When you use a direct or near-direct quote from section 1 (your own words), write it in italics using asterisks, like this: *the quote here*. Don't italicize the rest of your response.
+- Don't use phrases that explicitly reference the act of having written something before, like "I've written before that...", "as I once said..." or similar. Express the idea naturally, as part of the same train of thought, without flagging that you're quoting it from somewhere.
 
 Be profound but accessible. The response should be a paragraph or two.`;
 
