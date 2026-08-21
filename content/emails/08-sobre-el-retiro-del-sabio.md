@@ -2,8 +2,8 @@
 id: 8
 slug: sobre-el-retiro-del-sabio
 titleEs: "Sobre el retiro del sabio"
-titleEn: "On the Sage's Retreat"
-date: "2026-04-04"
+titleEn: "On the Philosopher's Retreat"
+date: "2026-04-16"
 ---
 Son cinco los niveles de comunión, Lucilio, que podemos y deberíamos lograr durante la vigilia, el único estado donde tenemos verdadero control — o al menos es útil así creerlo.
 
